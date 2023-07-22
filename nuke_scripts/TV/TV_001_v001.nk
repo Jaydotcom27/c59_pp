@@ -2,13 +2,13 @@
 version 14.0 v5
 define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
-    <window x="0" y="0" w="2557" h="1360" screen="0">
+    <window x="-1" y="-8" w="2560" h="1369" maximized="1" screen="0">
         <splitter orientation="1">
-            <split size="40"/>
+            <split size="0"/>
             <dock id="" hideTitles="1" activePageId="Toolbar.1">
                 <page id="Toolbar.1"/>
             </dock>
-            <split size="1144" stretch="1"/>
+            <split size="1099" stretch="1"/>
             <splitter orientation="2">
                 <split size="1322"/>
                 <dock id="" activePageId="DAG.1" focus="true">
@@ -17,11 +17,11 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
                     <page id="DopeSheet.1"/>
                 </dock>
             </splitter>
-            <split size="914"/>
+            <split size="948"/>
             <dock id="" activePageId="Viewer.1">
                 <page id="Viewer.1"/>
             </dock>
-            <split size="447"/>
+            <split size="501"/>
             <dock id="" activePageId="Properties.1">
                 <page id="Properties.1"/>
                 <page id="uk.co.thefoundry.backgroundrenderview.1"/>
@@ -34,7 +34,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 Root {
  inputs 0
  name C:/3D_Temp/PP/nuke_scripts/TV/TV_001_v001.nk
- frame 1029
+ frame 1026
  first_frame 1001
  last_frame 1042
  lock_range true
@@ -56,10 +56,44 @@ BackdropNode {
  label PLATE
  note_font "Verdana Bold"
  note_font_size 41
- xpos 181
+ xpos 669
  ypos -875
  bdwidth 257
  bdheight 330
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode2
+ tile_color 0x7195c6ff
+ label "TV_Plates\n"
+ note_font_size 42
+ xpos -2231
+ ypos -821
+ bdwidth 1655
+ bdheight 565
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode3
+ tile_color 0x71c67100
+ label CRT_RAYS
+ note_font "Verdana Bold"
+ note_font_size 18
+ xpos 505
+ ypos -122
+ bdwidth 200
+ bdheight 237
+}
+BackdropNode {
+ inputs 0
+ name Roto_Batch
+ tile_color 0xc6ab71ff
+ label Roto_Batch
+ note_font_size 42
+ xpos -2539
+ ypos -823
+ bdwidth 271
+ bdheight 565
 }
 Roto {
  inputs 0
@@ -74,12 +108,11 @@ Roto {
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px
-        {x447ac000 x44816000}
+       {px x447c8000
         {{{xc3040000 -}}
 	 {{x41300000 -}}}
-        {{{x4498e000 -}}
-	 {{x44780000 -}}}
+        {{{x449996db x3f50fa49 1 0 1}}
+	 {{x4475db6e xbf9cbc00 1 0 1}}}
         {{{x43040000 -}}
 	 {{xc1300000 -}}}
         {{{xc2c80000 -}}
@@ -91,7 +124,7 @@ Roto {
         {{{xc1600000 -}}
 	 {{x42e60000 -}}}
         {{{x44f8e000 -}}
-	 {{x444d8000 -}}}
+	 {{x444da5a6 x3dac1b6e 1 0 1}}}
         {{{x41600000 -}}
 	 {{xc2e60000 -}}}
         {{{x42880000 -}}
@@ -102,18 +135,14 @@ Roto {
 	 {{xc2440000 -}}}
         {{{x42540000 -}}
 	 {{x41800000 -}}}
-        {{{x44cfbb6f 0 1 xbf836de0 1}
-	  {x44cba000 xbf836de0 1 0 1}}
-	 {{x42e32491 0 1 xbde49220 1}
-	  {x42dc0000 xbde49220 1 0 1}}}
+        {{{x44ced56f xbf836db7 1 0 1}}
+	 {{x42e19491 xbde49249 1 0 1}}}
         {{{xc2540000 -}}
 	 {{xc1800000 -}}}
         {{{x41900000 -}}
 	 {{x40a00000 -}}}
-        {{{x44b56000 0 1 x3ea00000 1}
-	  {x44b6a000 x3ea00000 1 0 1}}
-	 {{x42289244 0 1 x3ecdb6f0 1}
-	  {x425c0000 x3ecdb6f0 1 0 1}}}
+        {{{x44b5a600 x3ea00000 1 0 1}}
+	 {{x4233d245 x3ecdb6ee 1 0 1}}}
         {{{xc1900000 -}}
 	 {{xc0a00000 -}}}
         {{{x40e00000 -}}
@@ -124,22 +153,85 @@ Roto {
 	 {{0 -}}}
         {{{0 -}}
 	 {{0 -}}}
-        {{{x44734000 -}}
-	 {{xc2140000 -}}}
+        {{{x44758aaa x3fa79e49 1 0 1}}
+	 {{xc0aaaaa0 x4090c30e 1 0 1}}}
         {{{0 -}}
 	 {{0 -}}}
         {{{xc1300000 -}}
 	 {{xc3070000 -}}}
-        {{{x44704000 -}}
-	 {{x437a0000 -}}}
+        {{{x44757554 x403e79b7 1 0 1}}
+	 {{x439deaab x411679e9 1 0 1}}}
         {{{x41300000 -}}
 	 {{x43070000 -}}}
-        {{{xc1d80000 -}}
-	 {{xc2500000 -}}}
-        {{{x4486e000 -}}
-	 {{x445b8000 -}}}
-        {{{x41d80000 -}}
-	 {{x42500000 -}}}}}     idem}
+        {{{xc1985040 x3f9191b7 1 0 1}}
+	 {{xc25da600 xbef99249 1 0 1}}}
+        {{{x4486524b xbf21f36e 1 0 1}}
+	 {{x444e12d3 xc0f58337 1 0 1}}}
+        {{{x419f6d80 xbf814edb 1 0 1}}
+	 {{x42680000 x3f5b6db7 1 0 1}}}}}
+      {cc
+       {f 8192}
+       {px x447c8000
+        {{{xc3040000 -}}
+	 {{x41300000 -}}}
+        {{{xc12d5580 xbfc61892 1 0 1}}
+	 {{x41a6aa80 x403e79b7 1 0 1}}}
+        {{{x43040000 -}}
+	 {{xc1300000 -}}}
+        {{{xc2c80000 -}}
+	 {{x42000000 -}}}
+        {{{x40169600 x3eac1925 1 0 1}}
+	 {{x40e1e180 x3f811325 1 0 1}}}
+        {{{x42c80000 -}}
+	 {{xc2000000 -}}}
+        {{{xc1600000 -}}
+	 {{x42e60000 -}}}
+        {{{x40969700 x3f2c1a49 1 0 1}}
+	 {{x3f969800 x3e2c1b6e 1 0 1}}}
+        {{{x41600000 -}}
+	 {{xc2e60000 -}}}
+        {{{x42880000 -}}
+	 {{x42440000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc2880000 -}}
+	 {{xc2440000 -}}}
+        {{{x42540000 -}}
+	 {{x41800000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc2540000 -}}
+	 {{xc1800000 -}}}
+        {{{x41900000 -}}
+	 {{x40a00000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1900000 -}}
+	 {{xc0a00000 -}}}
+        {{{x40e00000 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc0e00000 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1a6aaa0 xc03e79db 1 0 1}}
+	 {{x40200080 x3eb6dc00 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1300000 -}}
+	 {{xc3070000 -}}}
+        {{{xc1a00000 xc036db6e 1 0 1}}
+	 {{xbfd55500 xbe73cedb 1 0 1}}}
+        {{{x41300000 -}}
+	 {{x43070000 -}}}
+        {{{xc1985040 x3f9191b7 1 0 1}}
+	 {{xc25da600 xbef99249 1 0 1}}}
+        {{{xc17d5580 xc010c325 1 0 1}}
+	 {{x41555580 x3ff3cf6e 1 0 1}}}
+        {{{x419f6d80 xbf814edb 1 0 1}}
+	 {{x42680000 x3f5b6db7 1 0 1}}}}}}
      {tx x44816000 x44b16000 x43d33333}
      {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44816000 ltm x44816000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -170,7 +262,7 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto1
- xpos -1964
+ xpos -2458
  ypos -710
 }
 Roto {
@@ -179,34 +271,100 @@ Roto {
   {f 0}
   {n
    {layer Root
-    {f 2097152}
+    {f 2097664}
     {t x44f00000 x44870000}
     {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x44816000
-        {0 0}
-        {x45051000 x445a4000}
-        {0 0}
-        {0 0}
-        {x4504b000 x4393c000}
-        {0 0}
-        {xc2680000 xc1400000}
-        {x4508d800 x4394c000}
-        {x42680000 x41400000}
-        {xc1e00000 xc22c0000}
-        {x4519a000 x43c6c000}
-        {x41e00000 x422c0000}
-        {0 xc1100000}
-        {x451ac800 x4420e000}
-        {0 x41100000}
-        {x424c0000 xc1180000}
-        {x45177800 x4452e000}
-        {xc24c0000 x41180000}
-        {x42c70000 x40d00000}
-        {x45068800 x445aa000}
-        {xc2c70000 xc0d00000}}}     idem}
+       {px x447dc000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4504f000 0 1 x3dcccccd 1}}
+	 {{x445a4000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4504b5a6 0 1 xbc90999a 1}}
+	 {{x43945696 0 1 xbd70f000 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc2680000 -}}
+	 {{xc1400000 -}}}
+        {{{x4508d800 -}}
+	 {{x4394c000 -}}}
+        {{{x42680000 -}}
+	 {{x41400000 -}}}
+        {{{xc1e00000 -}}
+	 {{xc22c0000 -}}}
+        {{{x4519a000 -}}
+	 {{x43c6c000 -}}}
+        {{{x41e00000 -}}
+	 {{x422c0000 -}}}
+        {{{0 -}}
+	 {{xc1100000 -}}}
+        {{{x451ac800 -}}
+	 {{x4420e000 -}}}
+        {{{0 -}}
+	 {{x41100000 -}}}
+        {{{x424c0000 -}}
+	 {{xc1180000 -}}}
+        {{{x45177800 -}}
+	 {{x4452e000 -}}}
+        {{{xc24c0000 -}}
+	 {{x41180000 -}}}
+        {{{x42c70000 -}}
+	 {{x40d00000 -}}}
+        {{{x45068800 -}}
+	 {{x445aa000 -}}}
+        {{{xc2c70000 -}}
+	 {{xc0d00000 -}}}}}
+      {cc
+       {f 8192}
+       {px x447dc000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc04db800 0 1 x3e249333 1}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc2680000 -}}
+	 {{xc1400000 -}}}
+        {{{x3f892000 0 1 xbd5b6666 1}}
+	 {{xc0649200 0 1 x3e36db33 1}}}
+        {{{x42680000 -}}
+	 {{x41400000 -}}}
+        {{{xc1e00000 -}}
+	 {{xc22c0000 -}}}
+        {{{x40480000 0 1 xbe200000 1}}
+	 {{xbf855500 0 1 x3d5554cd 1}}}
+        {{{x41e00000 -}}
+	 {{x422c0000 -}}}
+        {{{0 -}}
+	 {{xc1100000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{x41100000 -}}}
+        {{{x424c0000 -}}
+	 {{xc1180000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc24c0000 -}}
+	 {{x41180000 -}}}
+        {{{x42c70000 -}}
+	 {{x40d00000 -}}}
+        {{{0 -}}
+	 {{x40296a00 0 1 xbe078800 1}}}
+        {{{xc2c70000 -}}
+	 {{xc0d00000 -}}}}}}
      {tx x44816000 x450e6db7 x4416e492}
      {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44816000 ltm x44816000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -237,7 +395,7 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto2
- xpos -1964
+ xpos -2458
  ypos -674
 }
 Roto {
@@ -252,19 +410,58 @@ Roto {
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x44816000
-        {0 0}
-        {x451ee000 x44518000}
-        {0 0}
-        {0 0}
-        {x45206ccd x43d68ccd}
-        {0 0}
-        {xc1d4cc80 xc2466660}
-        {x45293ccd x43f28000}
-        {x41d4cc80 x42466660}
-        {x41580000 xc1c80000}
-        {x4527a000 x444c8000}
-        {xc1580000 x41c80000}}}     idem}
+       {px x447dc000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x451ee000 -}}
+	 {{x44518000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x451ff273 0 1 x3ec3c333 1}}
+	 {{x43d64182 0 1 x3cf0f000 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1d4cc80 -}}
+	 {{xc2466660 -}}}
+        {{{x45290f16 0 1 x3e12499a 1}}
+	 {{x43f476dc 0 1 xbe4924cd 1}}}
+        {{{x41d4cc80 -}}
+	 {{x42466660 -}}}
+        {{{x41580000 -}}
+	 {{xc1c80000 -}}}
+        {{{x4527a000 -}}
+	 {{x444c8000 -}}}
+        {{{xc1580000 -}}
+	 {{x41c80000 -}}}}}
+      {cc
+       {f 8192}
+       {px x447dc000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc0e80000 0 1 x3eb9999a 1}}
+	 {{x3f000000 0 1 xbccccccd 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc074b800 0 1 x3e43c666 1}}
+	 {{x3fe1e200 0 1 xbdb4b4cd 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1d4cc80 -}}
+	 {{xc2466660 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x41d4cc80 -}}
+	 {{x42466660 -}}}
+        {{{x41580000 -}}
+	 {{xc1c80000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1580000 -}}
+	 {{x41c80000 -}}}}}}
      {tx x44816000 x45240a66 x4420a19a}
      {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44816000 ltm x44816000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -295,7 +492,7 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto3
- xpos -1964
+ xpos -2458
  ypos -638
 }
 Roto {
@@ -304,49 +501,160 @@ Roto {
   {f 0}
   {n
    {layer Root
-    {f 2097152}
+    {f 2097664}
     {t x44f00000 x44870000}
     {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x44816000
-        {xc1ef3340 x40600000}
-        {x44cda000 x44f74000}
-        {x41ef3340 xc0600000}
-        {xc2b20000 x43190000}
-        {x45093000 x44cd4000}
-        {0 0}
-        {x40b00000 x42d20000}
-        {x450aa800 x44b95000}
-        {xc0b00000 xc2d20000}
-        {x41800000 x41d40000}
-        {x4508a000 x4498a000}
-        {0 0}
-        {0 0}
-        {x44e886dc x44a4c925}
-        {0 0}
-        {0 0}
-        {x44d7d99a x44aa8ccd}
-        {0 0}
-        {0 0}
-        {x44cfe666 x44ad399a}
-        {0 0}
-        {0 0}
-        {x44c9399a x44af8666}
-        {0 0}
-        {0 0}
-        {x44c77333 x44b04666}
-        {0 0}
-        {xc0733200 xc26d99a0}
-        {x44c2999a x44b9cccd}
-        {x40733200 x426d99a0}
-        {xc1600000 xc2ac0000}
-        {x44c3c000 x44d75000}
-        {x41600000 x42ac0000}
-        {xc0e00000 xc19c0000}
-        {x44c8d000 x44f44000}
-        {x40e00000 x419c0000}}}     idem}
+       {px x447e0000
+        {{{xc1ef3340 -}}
+	 {{x40600000 -}}}
+        {{{x44cfb000 0 1 xbf5e50d8 1}}
+	 {{x44f7b000 0 1 xbe3ca1af 1}}}
+        {{{x41ef3340 -}}
+	 {{xc0600000 -}}}
+        {{{xc2b20000 -}}
+	 {{x43190000 -}}}
+        {{{x45090000 0 1 x3e21af28 1}}
+	 {{x44cdb000 0 1 xbe3ca1af 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40b00000 -}}
+	 {{x42d20000 -}}}
+        {{{x450a5000 0 1 x3e9435e5 1}}
+	 {{x44b98000 0 1 xbda1af28 1}}}
+        {{{xc0b00000 -}}
+	 {{xc2d20000 -}}}
+        {{{x41800000 -}}
+	 {{x41d40000 -}}}
+        {{{x45088800 0 1 x3da1af28 1}}
+	 {{x4498e000 0 1 xbdd79436 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44e886dc -}}
+	 {{x44a4c925 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44d7d99a -}}
+	 {{x44aa8ccd -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44cfe666 -}}
+	 {{x44ad399a -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44c9399a -}}
+	 {{x44af8666 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44c77333 -}}
+	 {{x44b04666 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40ab8500 0 1 xbef6d5e5 1}}
+	 {{xc26d1e60 0 1 xbbcf9436 1}}}
+        {{{x44c2999a -}}
+	 {{x44b9e777 0 1 xbd33a1af 1}}}
+        {{{xc0d99a00 0 1 x3f0ed21b 1}}
+	 {{x42968890 0 1 xbf55c86c 1}}}
+        {{{xc0f58400 0 1 xbeaa835e 1}}
+	 {{xc2ad9640 0 1 x3d2b0d79 1}}}
+        {{{x44c3c000 -}}
+	 {{x44d75000 -}}}
+        {{{x41000000 0 1 x3ea1af28 1}}
+	 {{x42b50000 0 1 xbe7286bd 1}}}
+        {{{xc0e00000 -}}
+	 {{xc19c0000 -}}}
+        {{{x44c87000 0 1 x3e21af28 1}}
+	 {{x44f36000 0 1 x3ebca1af 1}}}
+        {{{x40e00000 -}}
+	 {{x419c0000 -}}}}}
+      {cc
+       {f 8192}
+       {px x447e0000
+        {{{xc1ef3340 -}}
+	 {{x40600000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x41ef3340 -}}
+	 {{xc0600000 -}}}
+        {{{xc2b20000 -}}
+	 {{x43190000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40b00000 -}}
+	 {{x42d20000 -}}}
+        {{{x40b00000 0 1 xbe9435e5 1}}
+	 {{xc0400000 0 1 x3e21af28 1}}}
+        {{{xc0b00000 -}}
+	 {{xc2d20000 -}}}
+        {{{x41800000 -}}
+	 {{x41d40000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40ab8500 0 1 xbef6d5e5 1}}
+	 {{xc26d1e60 0 1 xbbcf9436 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc0d99a00 0 1 x3f0ed21b 1}}
+	 {{x42968890 0 1 xbf55c86c 1}}}
+        {{{xc0f58400 0 1 xbeaa835e 1}}
+	 {{xc2ad9640 0 1 x3d2b0d79 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x41000000 0 1 x3ea1af28 1}}
+	 {{x42b50000 0 1 xbe7286bd 1}}}
+        {{{xc0e00000 -}}
+	 {{xc19c0000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40e00000 -}}
+	 {{x419c0000 -}}}}}}
      {tx x44816000 x44df391c x44bf58c3}
      {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44816000 ltm x44816000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -377,7 +685,7 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto4
- xpos -1964
+ xpos -2458
  ypos -602
 }
 Roto {
@@ -386,31 +694,88 @@ Roto {
   {f 0}
   {n
    {layer Root
-    {f 2097152}
+    {f 2097664}
     {t x44f00000 x44870000}
     {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x44816000
-        {xc0933400 x4154cd00}
-        {x4513f666 x44ba599a}
-        {x40933400 xc154cd00}
-        {0 0}
-        {x45150333 x448bd333}
-        {0 0}
-        {0 xbeccd000}
-        {x4517c333 x4489accd}
-        {0 x3eccd000}
-        {0 0}
-        {x4520c000 x44838666}
-        {0 0}
-        {0 0}
-        {x4521019a x4484a333}
-        {0 0}
-        {x421c0000 xc2920000}
-        {x451f6800 x44a8e000}
-        {xc21c0000 x42920000}}}     idem}
+       {px x447e0000
+        {{{xc0933400 -}}
+	 {{x4154cd00 -}}}
+        {{{x4513d41d 0 1 x3de6f943 1}}
+	 {{x44b99751 0 1 x3ea39bca 1}}}
+        {{{x40933400 -}}
+	 {{xc154cd00 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x45149c58 0 1 x3ead3af3 1}}
+	 {{x448ba147 0 1 x3da8286c 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{xbeccd000 -}}}
+        {{{x4517c333 -}}
+	 {{x4489accd -}}}
+        {{{0 -}}
+	 {{x3eccd000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4520a3c4 0 1 x3dbe35e5 1}}
+	 {{x4483bedf 0 1 xbdbe3943 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4520e55e 0 1 x3dbe35e5 1}}
+	 {{x44878aba 0 1 xbf9c8836 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x421c0000 -}}
+	 {{xc2920000 -}}}
+        {{{x451f7c00 0 1 xbd86bca2 1}}
+	 {{x44a65000 0 1 x3f8a1af3 1}}}
+        {{{xc21c0000 -}}
+	 {{x42920000 -}}}}}
+      {cc
+       {f 8192}
+       {px x447e0000
+        {{{xc0933400 -}}
+	 {{x4154cd00 -}}}
+        {{{xc0649400 0 1 x3e407ca2 1}}
+	 {{xbf36e000 0 1 x3d1a0000 1}}}
+        {{{x40933400 -}}
+	 {{xc154cd00 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{xbeccd000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{x3eccd000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x3fe1e000 0 1 xbdbe35e5 1}}
+	 {{xbf969800 0 1 x3d7da1af 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x421c0000 -}}
+	 {{xc2920000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc21c0000 -}}
+	 {{x42920000 -}}}}}}
      {tx x44816000 x451afbbc x44957b33}
      {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44816000 ltm x44816000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -441,7 +806,7 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto5
- xpos -1964
+ xpos -2458
  ypos -566
 }
 Roto {
@@ -450,40 +815,67 @@ Roto {
   {f 0}
   {n
    {layer Root
-    {f 2097152}
+    {f 2097664}
     {t x44f00000 x44870000}
     {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x44816000
-        {0 0}
-        {x45059800 x45073000}
-        {0 0}
-        {0 0}
-        {x45058000 x44fc6000}
-        {0 0}
-        {0 0}
-        {x45057ccd x44fa599a}
-        {0 0}
-        {xc1599a00 x41200000}
-        {x4506a000 x44f7b99a}
-        {x41599a00 xc1200000}
-        {xbeccc000 0}
-        {x4510b000 x44e5999a}
-        {x3eccc000 0}
-        {0 0}
-        {x45176333 x44d88666}
-        {0 0}
-        {xbe4cc000 xc1f99980}
-        {x45178ccd x44dbc000}
-        {x3e4cc000 x41f99980}
-        {x420c0000 xc2659980}
-        {x4515d666 x44fa6000}
-        {xc20c0000 x42659980}
-        {0 xbeccc000}
-        {x450df99a x4507999a}
-        {0 x3eccc000}}}     idem}
+       {px x447e0000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x45055000 0 1 x3e7286bd 1}}
+	 {{x45074c00 0 1 xbdbca1af 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x45055000 0 1 x3e21af28 1}}
+	 {{x44fc7000 0 1 xbcd79436 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x45054ccd 0 1 x3e21af28 1}}
+	 {{x44fa699a 0 1 xbcd79436 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1599a00 -}}
+	 {{x41200000 -}}}
+        {{{x4506a000 -}}
+	 {{x44f7b99a -}}}
+        {{{x41599a00 -}}
+	 {{xc1200000 -}}}
+        {{{xbeccc000 -}}
+	 {{0 -}}}
+        {{{x4510b000 -}}
+	 {{x44e5999a -}}}
+        {{{x3eccc000 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x45176333 -}}
+	 {{x44d88666 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xbe4cc000 -}}
+	 {{xc1f99980 -}}}
+        {{{x45178ccd -}}
+	 {{x44dbc000 -}}}
+        {{{x3e4cc000 -}}
+	 {{x41f99980 -}}}
+        {{{x420c0000 -}}
+	 {{xc2659980 -}}}
+        {{{x4515d666 -}}
+	 {{x44fa6000 -}}}
+        {{{xc20c0000 -}}
+	 {{x42659980 -}}}
+        {{{0 -}}
+	 {{xbeccc000 -}}}
+        {{{x450df99a -}}
+	 {{x4507999a -}}}
+        {{{0 -}}
+	 {{x3eccc000 -}}}}}     idem}
      {tx x44816000 x450da088 x44f55d27}
      {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44816000 ltm x44816000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -514,51 +906,45 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto6
- xpos -1964
+ xpos -2458
  ypos -530
 }
 FilterErode {
  size -5
  name FilterErode1
- xpos -1964
+ xpos -2458
  ypos -487
 }
 Blur {
  size 15
  name Blur1
- xpos -1964
+ xpos -2458
  ypos -444
 }
 Dot {
  name Dot2
- xpos -1930
+ xpos -2424
  ypos -34
 }
-set N980e3800 [stack 0]
+set Nbfa7800 [stack 0]
 Dot {
  name Dot1
- xpos -1930
+ xpos -2424
  ypos 278
 }
-CheckerBoard2 {
- inputs 0
- name CheckerBoard1
- xpos -1409
- ypos -833
-}
-push $N980e3800
+push $Nbfa7800
 Dot {
  name Dot4
- xpos -620
+ xpos -256
  ypos -34
 }
-set N97d21400 [stack 0]
+set Nbdb4400 [stack 0]
 Dot {
  name Dot9
- xpos -619
+ xpos -255
  ypos -190
 }
-set N97d21800 [stack 0]
+set Nbdb4800 [stack 0]
 Roto {
  inputs 0
  output alpha
@@ -630,23 +1016,23 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto7
- xpos -1678
+ xpos -2026
  ypos -671
 }
 Invert {
  name Invert1
- xpos -1678
+ xpos -2026
  ypos -635
 }
 Blur {
  size 600
  name Blur5
- xpos -1678
+ xpos -2026
  ypos -599
 }
 Dot {
  name Dot11
- xpos -1644
+ xpos -1992
  ypos -558
 }
 Read {
@@ -658,27 +1044,39 @@ Read {
  origlast 36
  origset true
  name Read2
- xpos -1780
- ypos -714
+ xpos -2128
+ ypos -738
+}
+Retime {
+ input.last 36
+ output.first 1001
+ output.first_lock true
+ output.last 1036
+ before loop
+ after loop
+ time ""
+ name Retime2
+ xpos -2128
+ ypos -654
 }
 Transform {
  scale {1.824000001 1.200000048}
  center {960 540}
  name Transform1
- xpos -1780
+ xpos -2128
  ypos -630
 }
 Reformat {
  name Reformat1
- xpos -1780
+ xpos -2128
  ypos -598
 }
-set N97d20c00 [stack 0]
+set Nbc54400 [stack 0]
 Grade {
  inputs 1+1
  black 0.02
  name Grade2
- xpos -1779
+ xpos -2127
  ypos -561
 }
 LensDistortion2 {
@@ -693,14 +1091,14 @@ entries 0
  distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
  distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
  name LensDistortion1
- xpos -1779
+ xpos -2127
  ypos -524
 }
 Transform {
  scale 1.3
  center {1920 1080}
  name Transform2
- xpos -1779
+ xpos -2127
  ypos -488
 }
 CornerPin2D {
@@ -714,12 +1112,12 @@ CornerPin2D {
  from3 {3840 2160}
  from4 {0 2160}
  name CornerPin2D1
- xpos -1779
+ xpos -2127
  ypos -419
 }
 Dot {
  name Dot3
- xpos -1745
+ xpos -2093
  ypos -350
 }
 Roto {
@@ -793,23 +1191,23 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto8
- xpos -1417
+ xpos -1768
  ypos -669
 }
 Invert {
  name Invert2
- xpos -1417
+ xpos -1768
  ypos -633
 }
 Blur {
  size 600
  name Blur6
- xpos -1417
+ xpos -1768
  ypos -597
 }
 Dot {
  name Dot12
- xpos -1383
+ xpos -1734
  ypos -556
 }
 Read {
@@ -821,26 +1219,38 @@ Read {
  origlast 36
  origset true
  name Read3
- xpos -1519
- ypos -712
+ xpos -1870
+ ypos -739
+}
+Retime {
+ input.last 36
+ output.first 1001
+ output.first_lock true
+ output.last 1036
+ before loop
+ after loop
+ time ""
+ name Retime3
+ xpos -1870
+ ypos -655
 }
 Transform {
  scale {1.824000001 1.200000048}
  center {960 540}
  name Transform3
- xpos -1519
+ xpos -1870
  ypos -628
 }
 Reformat {
  name Reformat2
- xpos -1519
+ xpos -1870
  ypos -596
 }
 Grade {
  inputs 1+1
  black 0.02
  name Grade3
- xpos -1518
+ xpos -1869
  ypos -559
 }
 LensDistortion2 {
@@ -855,14 +1265,14 @@ entries 0
  distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
  distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
  name LensDistortion2
- xpos -1518
+ xpos -1869
  ypos -522
 }
 Transform {
  scale 1.3
  center {1920 1080}
  name Transform4
- xpos -1518
+ xpos -1869
  ypos -486
 }
 CornerPin2D {
@@ -876,25 +1286,154 @@ CornerPin2D {
  from3 {3840 2160}
  from4 {0 2160}
  name CornerPin2D2
- xpos -1518
+ xpos -1869
  ypos -421
 }
 Merge2 {
  inputs 2
  name Merge3
- xpos -1517
+ xpos -1868
  ypos -353
 }
-CheckerBoard2 {
+Roto {
  inputs 0
- name CheckerBoard3
- xpos -1350
- ypos -517
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097664}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Rectangle1 512 bezier
+     {{cc
+       {f 8192}
+       {px x447ac000
+        {0 xc40a5554}
+        {x43848004 x44f28005}
+        {x44891556 0}
+        {xc4891554 0}
+        {x455e3001 x44f28005}
+        {0 xc40a5554}
+        {0 x440a5555}
+        {x455e3001 x438c000e}
+        {xc4891554 0}
+        {x44891556 0}
+        {x43848004 x438c000e}
+        {0 x440a5555}}}     idem}
+     {tx x447ac000 x44eec000 x4488e000}
+     {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x447ac000 ltm x447ac000 tt x41000000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 tt 8 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1003
+ lifetime_end 1003
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto9
+ xpos -1518
+ ypos -666
+}
+Invert {
+ name Invert3
+ xpos -1518
+ ypos -630
+}
+Blur {
+ size 600
+ name Blur7
+ xpos -1518
+ ypos -594
+}
+Dot {
+ name Dot13
+ xpos -1484
+ ypos -553
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 36
+ origlast 36
+ origset true
+ name Read4
+ xpos -1620
+ ypos -736
+}
+Retime {
+ input.last 36
+ output.first 1001
+ output.first_lock true
+ output.last 1036
+ before loop
+ after loop
+ time ""
+ name Retime4
+ xpos -1620
+ ypos -652
+}
+Transform {
+ scale {1.824000001 1.200000048}
+ center {960 540}
+ name Transform5
+ xpos -1620
+ ypos -625
 }
 Reformat {
- name Reformat3
- xpos -1350
- ypos -445
+ name Reformat7
+ xpos -1620
+ ypos -593
+}
+Grade {
+ inputs 1+1
+ black 0.02
+ name Grade5
+ xpos -1619
+ ypos -556
+}
+LensDistortion2 {
+ distortionDenominator0 0.25
+ output Undistort
+ outputBBox {381 76 3459 2084}
+ featuresKnob "
+version 1
+entries 0
+entries 0
+"
+ distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
+ name LensDistortion3
+ xpos -1619
+ ypos -519
+}
+Transform {
+ scale 1.3
+ center {1920 1080}
+ name Transform6
+ xpos -1619
+ ypos -483
 }
 CornerPin2D {
  to1 {2566.5 422.5}
@@ -907,25 +1446,169 @@ CornerPin2D {
  from3 {3840 2160}
  from4 {0 2160}
  name CornerPin2D3
- xpos -1349
+ xpos -1619
  ypos -419
 }
 Merge2 {
  inputs 2
  name Merge4
- xpos -1349
+ xpos -1619
  ypos -353
 }
-CheckerBoard2 {
+Roto {
  inputs 0
- name CheckerBoard4
- xpos -1217
- ypos -517
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Rectangle1 512 bezier
+     {{cc
+       {f 8192}
+       {px x447ac000
+        {0 xc40a5554}
+        {x43848004 x44f28005}
+        {x44891556 0}
+        {xc4891554 0}
+        {x455e3001 x44f28005}
+        {0 xc40a5554}
+        {0 x440a5555}
+        {x455e3001 x438c000e}
+        {xc4891554 0}
+        {x44891556 0}
+        {x43848004 x438c000e}
+        {0 x440a5555}}}
+      {cc
+       {f 8192}
+       {px x447ac000
+        {0 xc40a5554}
+        {0 0}
+        {x44891556 0}
+        {xc4891554 0}
+        {0 0}
+        {0 xc40a5554}
+        {0 x440a5555}
+        {0 0}
+        {xc4891554 0}
+        {x44891556 0}
+        {0 0}
+        {0 x440a5555}}}}
+     {tx x447ac000 x44eec000 x4488e000}
+     {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x447ac000 ltm x447ac000 tt x41000000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 tt 8 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1003
+ lifetime_end 1003
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto10
+ xpos -1253
+ ypos -671
+}
+Invert {
+ name Invert4
+ xpos -1253
+ ypos -635
+}
+Blur {
+ size 600
+ name Blur8
+ xpos -1253
+ ypos -599
+}
+Dot {
+ name Dot14
+ xpos -1219
+ ypos -558
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 36
+ origlast 36
+ origset true
+ name Read5
+ xpos -1355
+ ypos -741
+}
+Retime {
+ input.last 36
+ output.first 1001
+ output.first_lock true
+ output.last 1036
+ before loop
+ after loop
+ time ""
+ name Retime5
+ xpos -1355
+ ypos -657
+}
+Transform {
+ scale {1.824000001 1.200000048}
+ center {960 540}
+ name Transform7
+ xpos -1355
+ ypos -630
 }
 Reformat {
- name Reformat4
- xpos -1217
- ypos -445
+ name Reformat3
+ xpos -1355
+ ypos -598
+}
+Grade {
+ inputs 1+1
+ black 0.02
+ name Grade6
+ xpos -1354
+ ypos -561
+}
+LensDistortion2 {
+ distortionDenominator0 0.25
+ output Undistort
+ outputBBox {381 76 3459 2084}
+ featuresKnob "
+version 1
+entries 0
+entries 0
+"
+ distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
+ name LensDistortion4
+ xpos -1354
+ ypos -524
+}
+Transform {
+ scale 1.3
+ center {1920 1080}
+ name Transform8
+ xpos -1354
+ ypos -488
 }
 CornerPin2D {
  to1 {2384.800049 1112.800049}
@@ -938,25 +1621,169 @@ CornerPin2D {
  from3 {3840 2160}
  from4 {0 2160}
  name CornerPin2D4
- xpos -1216
+ xpos -1354
  ypos -421
 }
 Merge2 {
  inputs 2
  name Merge5
- xpos -1216
+ xpos -1354
  ypos -353
 }
-CheckerBoard2 {
+Roto {
  inputs 0
- name CheckerBoard5
- xpos -1091
- ypos -517
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Rectangle1 512 bezier
+     {{cc
+       {f 8192}
+       {px x447ac000
+        {0 xc40a5554}
+        {x43848004 x44f28005}
+        {x44891556 0}
+        {xc4891554 0}
+        {x455e3001 x44f28005}
+        {0 xc40a5554}
+        {0 x440a5555}
+        {x455e3001 x438c000e}
+        {xc4891554 0}
+        {x44891556 0}
+        {x43848004 x438c000e}
+        {0 x440a5555}}}
+      {cc
+       {f 8192}
+       {px x447ac000
+        {0 xc40a5554}
+        {0 0}
+        {x44891556 0}
+        {xc4891554 0}
+        {0 0}
+        {0 xc40a5554}
+        {0 x440a5555}
+        {0 0}
+        {xc4891554 0}
+        {x44891556 0}
+        {0 0}
+        {0 x440a5555}}}}
+     {tx x447ac000 x44eec000 x4488e000}
+     {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x447ac000 ltm x447ac000 tt x41000000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 tt 8 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1003
+ lifetime_end 1003
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto11
+ xpos -1001
+ ypos -672
+}
+Invert {
+ name Invert5
+ xpos -1001
+ ypos -636
+}
+Blur {
+ size 600
+ name Blur9
+ xpos -1001
+ ypos -600
+}
+Dot {
+ name Dot15
+ xpos -967
+ ypos -559
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 36
+ origlast 36
+ origset true
+ name Read6
+ xpos -1103
+ ypos -742
+}
+Retime {
+ input.last 36
+ output.first 1001
+ output.first_lock true
+ output.last 1036
+ before loop
+ after loop
+ time ""
+ name Retime6
+ xpos -1103
+ ypos -658
+}
+Transform {
+ scale {1.824000001 1.200000048}
+ center {960 540}
+ name Transform9
+ xpos -1103
+ ypos -631
 }
 Reformat {
- name Reformat5
- xpos -1091
- ypos -445
+ name Reformat8
+ xpos -1103
+ ypos -599
+}
+Grade {
+ inputs 1+1
+ black 0.02
+ name Grade7
+ xpos -1102
+ ypos -562
+}
+LensDistortion2 {
+ distortionDenominator0 0.25
+ output Undistort
+ outputBBox {381 76 3459 2084}
+ featuresKnob "
+version 1
+entries 0
+entries 0
+"
+ distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
+ name LensDistortion5
+ xpos -1102
+ ypos -525
+}
+Transform {
+ scale 1.3
+ center {1920 1080}
+ name Transform10
+ xpos -1102
+ ypos -489
 }
 CornerPin2D {
  to1 {1524 1404}
@@ -969,25 +1796,169 @@ CornerPin2D {
  from3 {3840 2160}
  from4 {0 2160}
  name CornerPin2D5
- xpos -1090
+ xpos -1102
  ypos -419
 }
 Merge2 {
  inputs 2
  name Merge6
- xpos -1090
+ xpos -1102
  ypos -353
 }
-CheckerBoard2 {
+Roto {
  inputs 0
- name CheckerBoard6
- xpos -953
- ypos -517
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Rectangle1 512 bezier
+     {{cc
+       {f 8192}
+       {px x447ac000
+        {0 xc40a5554}
+        {x43848004 x44f28005}
+        {x44891556 0}
+        {xc4891554 0}
+        {x455e3001 x44f28005}
+        {0 xc40a5554}
+        {0 x440a5555}
+        {x455e3001 x438c000e}
+        {xc4891554 0}
+        {x44891556 0}
+        {x43848004 x438c000e}
+        {0 x440a5555}}}
+      {cc
+       {f 8192}
+       {px x447ac000
+        {0 xc40a5554}
+        {0 0}
+        {x44891556 0}
+        {xc4891554 0}
+        {0 0}
+        {0 xc40a5554}
+        {0 x440a5555}
+        {0 0}
+        {xc4891554 0}
+        {x44891556 0}
+        {0 0}
+        {0 x440a5555}}}}
+     {tx x447ac000 x44eec000 x4488e000}
+     {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x447ac000 ltm x447ac000 tt x41000000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 tt 8 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1003
+ lifetime_end 1003
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto12
+ xpos -731
+ ypos -671
+}
+Invert {
+ name Invert6
+ xpos -731
+ ypos -635
+}
+Blur {
+ size 600
+ name Blur10
+ xpos -731
+ ypos -599
+}
+Dot {
+ name Dot16
+ xpos -697
+ ypos -558
+}
+Read {
+ inputs 0
+ file_type mov
+ file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ last 36
+ origlast 36
+ origset true
+ name Read7
+ xpos -833
+ ypos -741
+}
+Retime {
+ input.last 36
+ output.first 1001
+ output.first_lock true
+ output.last 1036
+ before loop
+ after loop
+ time ""
+ name Retime7
+ xpos -833
+ ypos -657
+}
+Transform {
+ scale {1.824000001 1.200000048}
+ center {960 540}
+ name Transform11
+ xpos -833
+ ypos -630
 }
 Reformat {
- name Reformat6
- xpos -953
- ypos -445
+ name Reformat9
+ xpos -833
+ ypos -598
+}
+Grade {
+ inputs 1+1
+ black 0.02
+ name Grade8
+ xpos -832
+ ypos -561
+}
+LensDistortion2 {
+ distortionDenominator0 0.25
+ output Undistort
+ outputBBox {381 76 3459 2084}
+ featuresKnob "
+version 1
+entries 0
+entries 0
+"
+ distortionModelDisplayX "xu = xd / (1 + k0 * rd^2 + k1 * rd^4)"
+ distortionModelDisplayY "yu = yd / (1 + k0 * rd^2 + k1 * rd^4)"
+ name LensDistortion6
+ xpos -832
+ ypos -524
+}
+Transform {
+ scale 1.3
+ center {1920 1080}
+ name Transform12
+ xpos -832
+ ypos -488
 }
 CornerPin2D {
  to1 {2122.600098 284.3999939}
@@ -1000,54 +1971,55 @@ CornerPin2D {
  from3 {3840 2160}
  from4 {0 2160}
  name CornerPin2D6
- xpos -952
+ xpos -832
  ypos -421
 }
 Merge2 {
  inputs 2
  name Merge7
- xpos -952
+ xpos -832
  ypos -353
 }
 Grade {
  black {0.01074002497 0.009868259542 0.009130922146 0.9983969331}
  white {0.9097573161 0.8527587652 0.8274111152 1}
- multiply 0.9
+ multiply 0.6
  name Grade1
- xpos -808
+ xpos -491
  ypos -353
 }
 Merge2 {
  inputs 2
  operation mask
  name Merge2
- xpos -654
+ selected true
+ xpos -290
  ypos -353
 }
 Blur {
- size 8
+ size 6
  name Blur3
- xpos -536
+ xpos -172
  ypos -359
 }
 Crop {
  box {0 0 3840 2160}
  name Crop1
- xpos -264
+ xpos 100
  ypos -353
 }
 Dot {
  name Dot7
- xpos 56
+ xpos 420
  ypos -350
 }
-set N97a45000 [stack 0]
+set Nbf54c00 [stack 0]
 Group {
  name ExponentialGlow1
  tile_color 0xcc804eff
  label v6
  note_font "Bitstream Vera Sans"
- xpos 22
+ xpos 386
  ypos 363
  mapsize {0.15 0.15}
  addUserKnob {20 User l "Exponential Glow"}
@@ -1109,13 +2081,13 @@ Group {
   addUserKnob {6 add_source l "Add Source" +STARTLINE}
   addUserKnob {6 add_bbox l "Add original bbox" +STARTLINE}
  }
-set N97842c00 [stack 0]
+set Nb618800 [stack 0]
  Dot {
   name Dot12
   xpos -371
   ypos -584
  }
-set N97843000 [stack 0]
+set Nb618c00 [stack 0]
  Saturation {
   saturation 0
   mode Maximum
@@ -1130,7 +2102,7 @@ set N97843000 [stack 0]
   xpos -316
   ypos -562
  }
-push $N97843000
+push $Nb618c00
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1191,49 +2163,49 @@ push $N97843000
   xpos -146
   ypos -292
  }
-set N9786bc00 [stack 0]
+set Nb645800 [stack 0]
  Dot {
   name Dot2
   xpos -36
   ypos -292
  }
-set N978a2000 [stack 0]
+set Nb645c00 [stack 0]
  Dot {
   name Dot4
   xpos 84
   ypos -292
  }
-set N978a2400 [stack 0]
+set Nb676000 [stack 0]
  Dot {
   name Dot5
   xpos 194
   ypos -292
  }
-set N978a2800 [stack 0]
+set Nb676400 [stack 0]
  Dot {
   name Dot6
   xpos 304
   ypos -292
  }
-set N978a2c00 [stack 0]
+set Nb676800 [stack 0]
  Dot {
   name Dot7
   xpos 414
   ypos -292
  }
-set N978a3000 [stack 0]
+set Nb676c00 [stack 0]
  Dot {
   name Dot8
   xpos 524
   ypos -292
  }
-set N978a3400 [stack 0]
+set Nb677000 [stack 0]
  Dot {
   name Dot9
   xpos 631
   ypos -292
  }
-set N978a3800 [stack 0]
+set Nb677400 [stack 0]
  Dot {
   name Dot10
   xpos 741
@@ -1279,7 +2251,7 @@ set N978a3800 [stack 0]
   xpos -289
   ypos 235
  }
-push $N978a3800
+push $Nb677400
  Group {
   name Blur7
   xpos 597
@@ -1321,7 +2293,7 @@ push $N978a3800
   xpos -289
   ypos 194
  }
-push $N978a3400
+push $Nb677000
  Group {
   name Blur6
   xpos 490
@@ -1363,7 +2335,7 @@ push $N978a3400
   xpos -290
   ypos 155
  }
-push $N978a3000
+push $Nb676c00
  Group {
   name Blur5
   xpos 380
@@ -1405,7 +2377,7 @@ push $N978a3000
   xpos -290
   ypos 116
  }
-push $N978a2c00
+push $Nb676800
  Group {
   name Blur4
   xpos 270
@@ -1447,7 +2419,7 @@ push $N978a2c00
   xpos -292
   ypos 77
  }
-push $N978a2800
+push $Nb676400
  Group {
   name Blur3
   xpos 160
@@ -1489,7 +2461,7 @@ push $N978a2800
   xpos -291
   ypos 42
  }
-push $N978a2400
+push $Nb676000
  Group {
   name Blur2
   xpos 50
@@ -1531,7 +2503,7 @@ push $N978a2400
   xpos -292
   ypos 5
  }
-push $N978a2000
+push $Nb645c00
  Group {
   name Blur1
   xpos -70
@@ -1573,8 +2545,8 @@ push $N978a2000
   xpos -293
   ypos -36
  }
-push $N97842c00
-push $N9786bc00
+push $Nb618800
+push $Nb645800
  Group {
   name Blur
   xpos -180
@@ -1700,11 +2672,11 @@ push $N9786bc00
   ypos 383
  }
 end_group
-push $N97d21400
+push $Nbdb4400
 Blur {
  size 30
  name Blur2
- xpos -264
+ xpos 100
  ypos -43
 }
 Read {
@@ -1718,7 +2690,7 @@ Read {
  origlast 86297
  origset true
  name Read1
- xpos 271
+ xpos 759
  ypos -783
 }
 Retime {
@@ -1729,7 +2701,7 @@ Retime {
  output.last 1042
  time ""
  name Retime1
- xpos 271
+ xpos 759
  ypos -666
 }
 Group {
@@ -1738,7 +2710,7 @@ Group {
  onCreate "n = nuke.thisNode()\nn\['tolerance'].setRange(0,2)\nn\['prot1_tolerance'].setFlag(0x00000004)\nn\['prot1_effect'].setFlag(0x00000004)"
  knobChanged "n = nuke.thisNode()\nk = nuke.thisKnob()\nkn = k.name()\nif kn == \"color\":\n    kv = k.getValue()\n    custom_weight_labels = \[\"green - blue\", \"red - blue\", \"red - green\", \" \"]\n    n\[\"custom_weight\"].setLabel(custom_weight_labels\[int(kv)])\n    n\[\"pick\"].setVisible(k.getValue() == 3)\nelif kn == \"mode\":\n    n\[\"custom_weight\"].setVisible(n\[\"mode\"].getValue()==3)\nelif kn in \[\"out\",\"output_alpha\"]:\n    n\[\"respill_math\"].setEnabled(n\[\"out\"].getValue()==0 or n\[\"output_alpha\"].getValue()==1)\n    n\[\"respill_color\"].setEnabled(n\[\"out\"].getValue()==0)\n    n\[\"inverted_spill_matte\"].setEnabled(n\[\"output_alpha\"].value())\nelif kn == \"prot1_activate\":\n    protA = n\[\"prot1_activate\"].value()\n    n\[\"prot1_preview\"].setEnabled(protA)\n    for i in \[\"prot1\", \"prot1_tolerance\", \"prot1_falloff\",\"prot1_effect\"]:\n        n\[i].setVisible(protA)\nelif kn == \"inputChange\":\n    n.knobs()\[\"limit_channel\"].setVisible(n.input(3) is not None)\n    n.knobs()\[\"invert_limit_channel\"].setVisible(n.input(3) is not None)\n    color_enabled = nuke.toNode(\"apDespillKernel\")\[\"apDespillKernel_use_color_input\"].getValue()==0\n    n\[\"color\"].setEnabled(color_enabled)\n    n.knobs()\[\"pick\"].setEnabled(color_enabled)\n    n\[\"info_using_input_color\"].setVisible(not color_enabled)\nelif kn == \"colorspace_shift\":\n    kv = k.value()\n    for i in \[\"colorspace_out\", \"illuminant_out\", \"primary_out\"]:\n        n.knobs()\[i].setEnabled(kv)\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setEnabled(kv and n\[\"input_colorspace\"].value())\n    n\[\"input_colorspace\"].setEnabled(kv)\nelif kn == \"input_colorspace\":\n    kv = k.value()\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setVisible(kv)\n        n.knobs()\[i].setEnabled(kv)\nelif kn == \"imagebased\":\n    kv = k.value()\n    input_names = \[\"color\",\"limit\",\"respill\"]\n    if kv:\n        for i_name in input_names:\n            i_fullname = \"Input\"+i_name\n            if not nuke.exists(i_fullname):\n                i_node = nuke.nodes.Input()\n                i_node\[\"name\"].setValue(i_fullname)\n            else:\n                i_node = nuke.toNode(i_fullname)\n            dot = nuke.toNode(\"Dot\"+i_name)\n            i_node.setXYpos(dot.xpos(),dot.ypos()-40)\n            dot.setInput(0,i_node)\n    else:\n        # If something connected, do nothing\n        if not any(\[n.input(i) for i in \[2,3,4]]):\n            for i_name in input_names:\n                if nuke.exists(\"Input\"+i_name):\n                    nuke.delete(nuke.toNode(\"Input\"+i_name))\n        else:\n            k.setValue(True)"
  tile_color 0x8b8b8bff
- xpos 271
+ xpos 759
  ypos -627
  addUserKnob {20 apDespill}
  addUserKnob {6 pick_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
@@ -1792,7 +2764,7 @@ Group {
  addUserKnob {26 respill_divider l "" +STARTLINE}
  addUserKnob {4 respill_math l "spill math" t "Settings for the math for desaturating the the spill before adding it back." M {"Rec 709" "Ccir 601" "Rec 2020" Average Maximum "" "" "" "" ""}}
  addUserKnob {18 respill_color l "respill color" t "RGB multiplier for the desaturated spill when adding it back.\n\nIf used on non-degrained plates (which should be avoided anyway), any value other than 1 here will most likely produce grain artifacts.\n\nNOTE: If a respill image input is plugged, this value will act as a multiplier." R 0 4}
- respill_color {1 0.191778 0.061016}
+ respill_color {1 0.00687 0}
  addUserKnob {6 respill_color_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
  respill_color_panelDropped true
  addUserKnob {26 ""}
@@ -1816,7 +2788,7 @@ Group {
   xpos 307
   ypos -267
  }
-set N943c9400 [stack 0]
+set Nbe6f000 [stack 0]
  Dot {
   name Dot5
   note_font_size 41
@@ -1872,7 +2844,7 @@ set N943c9400 [stack 0]
   xpos 449
   ypos -761
  }
-set N943fb400 [stack 0]
+set Nc1cb000 [stack 0]
  Dot {
   name Dot2
   note_font_size 41
@@ -1975,16 +2947,16 @@ set N943fb400 [stack 0]
   xpos 788
   ypos -267
  }
-set N9442bc00 [stack 0]
+set Nc1f3800 [stack 0]
  Dot {
   name Dot4
   note_font_size 41
   xpos 788
   ypos -237
  }
-push $N943c9400
-push $N9442bc00
-push $N943fb400
+push $Nbe6f000
+push $Nc1f3800
+push $Nc1cb000
  Merge2 {
   inputs 2+1
   operation copy
@@ -2019,20 +2991,20 @@ push $N943fb400
 end_group
 Dot {
  name Dot5
- xpos 305
+ xpos 793
  ypos -410
 }
-set N97d67000 [stack 0]
+set Nc228c00 [stack 0]
 Dot {
  name Dot6
- xpos -107
+ xpos 257
  ypos -410
 }
 Merge2 {
  inputs 2
  operation mask
  name Merge8
- xpos -141
+ xpos 223
  ypos -37
 }
 ColorCorrect {
@@ -2040,61 +3012,61 @@ ColorCorrect {
  midtones.gain 0.5
  highlights.gain 0.5
  name ColorCorrect1
- xpos 104
+ xpos 562
  ypos -37
 }
 Saturation {
  saturation 0
  name Saturation1
- xpos 104
+ xpos 562
  ypos -13
 }
 Grade {
- white {1 0.353661 0.972885 1}
+ white {1 0.135014 0.535078 1}
  white_panelDropped true
  name Grade4
- xpos 104
+ xpos 562
  ypos 11
 }
 Multiply {
  value 0.46
  name Multiply1
- xpos 104
+ xpos 562
  ypos 35
 }
-push $N97d21800
-push $N97a45000
+push $Nbdb4800
+push $Nbf54c00
 Dot {
  name Dot8
- xpos 119
+ xpos 483
  ypos -350
 }
-set N97d96000 [stack 0]
+set Nb56c800 [stack 0]
 Blur {
  size 40
  name Blur4
- xpos 85
+ xpos 449
  ypos -238
 }
 Merge2 {
  inputs 2
  operation stencil
  name Merge11
- xpos 85
+ xpos 449
  ypos -192
 }
 Multiply {
  value 0.24
  name Multiply2
- xpos 175
+ xpos 539
  ypos -198
 }
-push $N97d96000
-push $N97d67000
+push $Nb56c800
+push $Nc228c00
 Merge2 {
  inputs 2
  name Merge1
- xpos 271
+ xpos 759
  ypos -353
 }
 Dot {
@@ -2102,13 +3074,13 @@ Dot {
  label LIGHTWRAP
  note_font "Verdana Bold"
  note_font_size 21
- xpos 305
+ xpos 793
  ypos -224
 }
 Merge2 {
  inputs 2
  name Merge12
- xpos 271
+ xpos 759
  ypos -192
 }
 Merge2 {
@@ -2116,22 +3088,22 @@ Merge2 {
  operation screen
  mix 0.09
  name Merge9
- xpos 271
+ xpos 759
  ypos 41
 }
-set N97d97c00 [stack 0]
+set Nb5a8400 [stack 0]
 Merge2 {
  inputs 2
  operation screen
  name Merge10
- xpos 271
+ xpos 759
  ypos 369
 }
-push $N97d20c00
-push $N97d97c00
+push $Nbc54400
+push $Nb5a8400
 Viewer {
  inputs 3
- frame 1029
+ frame 1026
  frame_range 1001-1035
  frame_range_lock true
  input_number 2
@@ -2140,6 +3112,6 @@ Viewer {
    }
  monitorOutOutputTransform rec709
  name Viewer1
- xpos 271
+ xpos 759
  ypos 523
 }
