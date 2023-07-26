@@ -4,24 +4,24 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
     <window x="-1" y="-8" w="2560" h="1369" maximized="1" screen="0">
         <splitter orientation="1">
-            <split size="0"/>
+            <split size="40"/>
             <dock id="" hideTitles="1" activePageId="Toolbar.1">
                 <page id="Toolbar.1"/>
             </dock>
-            <split size="1099" stretch="1"/>
+            <split size="1897" stretch="1"/>
             <splitter orientation="2">
-                <split size="1322"/>
+                <split size="779"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="548"/>
                 <dock id="" activePageId="DAG.1" focus="true">
                     <page id="DAG.1"/>
                     <page id="Curve Editor.1"/>
                     <page id="DopeSheet.1"/>
                 </dock>
             </splitter>
-            <split size="948"/>
-            <dock id="" activePageId="Viewer.1">
-                <page id="Viewer.1"/>
-            </dock>
-            <split size="501"/>
+            <split size="615"/>
             <dock id="" activePageId="Properties.1">
                 <page id="Properties.1"/>
                 <page id="uk.co.thefoundry.backgroundrenderview.1"/>
@@ -34,7 +34,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 Root {
  inputs 0
  name C:/3D_Temp/PP/nuke_scripts/TV/TV_001_v001.nk
- frame 1026
+ frame 1016
  first_frame 1001
  last_frame 1042
  lock_range true
@@ -926,25 +926,25 @@ Dot {
  xpos -2424
  ypos -34
 }
-set Nbfa7800 [stack 0]
+set N92c6c400 [stack 0]
 Dot {
  name Dot1
  xpos -2424
  ypos 278
 }
-push $Nbfa7800
+push $N92c6c400
 Dot {
  name Dot4
  xpos -256
  ypos -34
 }
-set Nbdb4400 [stack 0]
+set N92c6cc00 [stack 0]
 Dot {
  name Dot9
  xpos -255
  ypos -190
 }
-set Nbdb4800 [stack 0]
+set N92c6d000 [stack 0]
 Roto {
  inputs 0
  output alpha
@@ -1071,7 +1071,7 @@ Reformat {
  xpos -2128
  ypos -598
 }
-set Nbc54400 [stack 0]
+set N98353000 [stack 0]
 Grade {
  inputs 1+1
  black 0.02
@@ -1992,7 +1992,6 @@ Merge2 {
  inputs 2
  operation mask
  name Merge2
- selected true
  xpos -290
  ypos -353
 }
@@ -2013,7 +2012,7 @@ Dot {
  xpos 420
  ypos -350
 }
-set Nbf54c00 [stack 0]
+set N98c78c00 [stack 0]
 Group {
  name ExponentialGlow1
  tile_color 0xcc804eff
@@ -2081,13 +2080,13 @@ Group {
   addUserKnob {6 add_source l "Add Source" +STARTLINE}
   addUserKnob {6 add_bbox l "Add original bbox" +STARTLINE}
  }
-set Nb618800 [stack 0]
+set N983c8800 [stack 0]
  Dot {
   name Dot12
   xpos -371
   ypos -584
  }
-set Nb618c00 [stack 0]
+set N983c8c00 [stack 0]
  Saturation {
   saturation 0
   mode Maximum
@@ -2102,7 +2101,7 @@ set Nb618c00 [stack 0]
   xpos -316
   ypos -562
  }
-push $Nb618c00
+push $N983c8c00
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -2163,49 +2162,49 @@ push $Nb618c00
   xpos -146
   ypos -292
  }
-set Nb645800 [stack 0]
+set N983f7800 [stack 0]
  Dot {
   name Dot2
   xpos -36
   ypos -292
  }
-set Nb645c00 [stack 0]
+set N983f7c00 [stack 0]
  Dot {
   name Dot4
   xpos 84
   ypos -292
  }
-set Nb676000 [stack 0]
+set N98428000 [stack 0]
  Dot {
   name Dot5
   xpos 194
   ypos -292
  }
-set Nb676400 [stack 0]
+set N98428400 [stack 0]
  Dot {
   name Dot6
   xpos 304
   ypos -292
  }
-set Nb676800 [stack 0]
+set N98428800 [stack 0]
  Dot {
   name Dot7
   xpos 414
   ypos -292
  }
-set Nb676c00 [stack 0]
+set N98428c00 [stack 0]
  Dot {
   name Dot8
   xpos 524
   ypos -292
  }
-set Nb677000 [stack 0]
+set N98429000 [stack 0]
  Dot {
   name Dot9
   xpos 631
   ypos -292
  }
-set Nb677400 [stack 0]
+set N98429400 [stack 0]
  Dot {
   name Dot10
   xpos 741
@@ -2251,7 +2250,7 @@ set Nb677400 [stack 0]
   xpos -289
   ypos 235
  }
-push $Nb677400
+push $N98429400
  Group {
   name Blur7
   xpos 597
@@ -2293,7 +2292,7 @@ push $Nb677400
   xpos -289
   ypos 194
  }
-push $Nb677000
+push $N98429000
  Group {
   name Blur6
   xpos 490
@@ -2335,7 +2334,7 @@ push $Nb677000
   xpos -290
   ypos 155
  }
-push $Nb676c00
+push $N98428c00
  Group {
   name Blur5
   xpos 380
@@ -2377,7 +2376,7 @@ push $Nb676c00
   xpos -290
   ypos 116
  }
-push $Nb676800
+push $N98428800
  Group {
   name Blur4
   xpos 270
@@ -2419,7 +2418,7 @@ push $Nb676800
   xpos -292
   ypos 77
  }
-push $Nb676400
+push $N98428400
  Group {
   name Blur3
   xpos 160
@@ -2461,7 +2460,7 @@ push $Nb676400
   xpos -291
   ypos 42
  }
-push $Nb676000
+push $N98428000
  Group {
   name Blur2
   xpos 50
@@ -2503,7 +2502,7 @@ push $Nb676000
   xpos -292
   ypos 5
  }
-push $Nb645c00
+push $N983f7c00
  Group {
   name Blur1
   xpos -70
@@ -2545,8 +2544,8 @@ push $Nb645c00
   xpos -293
   ypos -36
  }
-push $Nb618800
-push $Nb645800
+push $N983c8800
+push $N983f7800
  Group {
   name Blur
   xpos -180
@@ -2672,7 +2671,7 @@ push $Nb645800
   ypos 383
  }
 end_group
-push $Nbdb4400
+push $N92c6cc00
 Blur {
  size 30
  name Blur2
@@ -2788,7 +2787,7 @@ Group {
   xpos 307
   ypos -267
  }
-set Nbe6f000 [stack 0]
+set N93283000 [stack 0]
  Dot {
   name Dot5
   note_font_size 41
@@ -2844,7 +2843,7 @@ set Nbe6f000 [stack 0]
   xpos 449
   ypos -761
  }
-set Nc1cb000 [stack 0]
+set N932cd000 [stack 0]
  Dot {
   name Dot2
   note_font_size 41
@@ -2947,16 +2946,16 @@ set Nc1cb000 [stack 0]
   xpos 788
   ypos -267
  }
-set Nc1f3800 [stack 0]
+set N98285800 [stack 0]
  Dot {
   name Dot4
   note_font_size 41
   xpos 788
   ypos -237
  }
-push $Nbe6f000
-push $Nc1f3800
-push $Nc1cb000
+push $N93283000
+push $N98285800
+push $N932cd000
  Merge2 {
   inputs 2+1
   operation copy
@@ -2994,7 +2993,7 @@ Dot {
  xpos 793
  ypos -410
 }
-set Nc228c00 [stack 0]
+set N982c6c00 [stack 0]
 Dot {
  name Dot6
  xpos 257
@@ -3034,14 +3033,14 @@ Multiply {
  xpos 562
  ypos 35
 }
-push $Nbdb4800
-push $Nbf54c00
+push $N92c6d000
+push $N98c78c00
 Dot {
  name Dot8
  xpos 483
  ypos -350
 }
-set Nb56c800 [stack 0]
+set N98306800 [stack 0]
 Blur {
  size 40
  name Blur4
@@ -3061,8 +3060,8 @@ Multiply {
  xpos 539
  ypos -198
 }
-push $Nb56c800
-push $Nc228c00
+push $N98306800
+push $N982c6c00
 Merge2 {
  inputs 2
  name Merge1
@@ -3091,7 +3090,7 @@ Merge2 {
  xpos 759
  ypos 41
 }
-set Nb5a8400 [stack 0]
+set N92f64400 [stack 0]
 Merge2 {
  inputs 2
  operation screen
@@ -3099,14 +3098,13 @@ Merge2 {
  xpos 759
  ypos 369
 }
-push $Nbc54400
-push $Nb5a8400
+push $N98353000
+push $N92f64400
 Viewer {
  inputs 3
- frame 1026
+ frame 1016
  frame_range 1001-1035
  frame_range_lock true
- input_number 2
  colour_sample_bbox {0.1041666642 0.08333333582 0.104687497 0.08385416865}
  samplepoints {{-0.3270833194 -0.03333333507}
    }
