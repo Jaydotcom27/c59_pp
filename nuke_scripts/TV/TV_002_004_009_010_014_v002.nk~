@@ -4,24 +4,24 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
     <window x="-2561" y="-8" w="2560" h="1369" maximized="1" screen="1">
         <splitter orientation="1">
-            <split size="40"/>
+            <split size="0"/>
             <dock id="" hideTitles="1" activePageId="Toolbar.1">
                 <page id="Toolbar.1"/>
             </dock>
-            <split size="1897" stretch="1"/>
+            <split size="1116" stretch="1"/>
             <splitter orientation="2">
-                <split size="779"/>
-                <dock id="" activePageId="Viewer.1">
-                    <page id="Viewer.1"/>
-                </dock>
-                <split size="548"/>
+                <split size="1331"/>
                 <dock id="" activePageId="DAG.1" focus="true">
                     <page id="DAG.1"/>
                     <page id="Curve Editor.1"/>
                     <page id="DopeSheet.1"/>
                 </dock>
             </splitter>
-            <split size="615"/>
+            <split size="914"/>
+            <dock id="" activePageId="Viewer.1">
+                <page id="Viewer.1"/>
+            </dock>
+            <split size="518"/>
             <dock id="" activePageId="Properties.1">
                 <page id="Properties.1"/>
                 <page id="uk.co.thefoundry.backgroundrenderview.1"/>
@@ -34,7 +34,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 Root {
  inputs 0
  name C:/3D_Temp/PP/nuke_scripts/TV/TV_002_004_009_010_014_v002.nk
- frame 1039
+ frame 1028
  first_frame 1001
  last_frame 1076
  lock_range true
@@ -58,7 +58,7 @@ BackdropNode {
  note_font "Verdana Bold"
  note_font_size 41
  xpos -537
- ypos -1133
+ ypos -324
  bdwidth 680
  bdheight 445
 }
@@ -107,15 +107,15 @@ Read {
  origlast 95382
  origset true
  name Read13
- xpos -3093
- ypos -816
+ xpos -3079
+ ypos -598
 }
 StickyNote {
  inputs 0
  name StickyNote2
  label "Junior - 2\n"
- xpos -3093
- ypos -858
+ xpos -3079
+ ypos -640
 }
 Roto {
  inputs 0
@@ -731,7 +731,7 @@ Dot {
  xpos -3605
  ypos 585
 }
-set N13246000 [stack 0]
+set N137d6400 [stack 0]
 Dot {
  name Dot1
  xpos -3605
@@ -753,10 +753,33 @@ StickyNote {
 }
 StickyNote {
  inputs 0
+ name StickyNote3
+ label "Jasiel - 3\n"
+ xpos -2838
+ ypos -644
+}
+Read {
+ inputs 0
+ file_type exr
+ file C:/3D_Temp/PP/Footage/Chica/CHICA_001_V1/V1_CHICA_001_%05d.exr
+ format "3840 2160 0 0 3840 2160 1 UHD_4K"
+ first 95064
+ before loop
+ last 95231
+ after loop
+ origfirst 95064
+ origlast 95231
+ origset true
+ name Read12
+ xpos -2893
+ ypos -502
+}
+StickyNote {
+ inputs 0
  name StickyNote1
  label "PP - 1\n"
- xpos -2907
- ypos -759
+ xpos -2893
+ ypos -541
 }
 Grade {
  inputs 0
@@ -764,16 +787,8 @@ Grade {
  whitepoint {0.1270751953 0.09442138672 0.08673095703 0}
  multiply 0.5
  name Grade13
- xpos -2910
- ypos -627
-}
-Grade {
- inputs 0
- black {0.3799999952 0.2153597176 0.1346214563 1}
- white {0.5378130078 0.3179269135 0.2000717819 1}
- name Grade14
- xpos -1670
- ypos 391
+ xpos -2896
+ ypos -409
 }
 Read {
  inputs 0
@@ -787,9 +802,9 @@ Read {
  origset true
  name Read11
  xpos -69
- ypos -887
+ ypos -78
 }
-set N1326c000 [stack 0]
+set N179d2800 [stack 0]
 Read {
  inputs 0
  file_type exr
@@ -802,22 +817,22 @@ Read {
  origset true
  name Read10
  xpos -71
- ypos -1026
+ ypos -217
 }
-set N1326c400 [stack 0]
-push $N13246000
+set N179d2c00 [stack 0]
+push $N137d6400
 Dot {
  name Dot4
  xpos -1213
  ypos 585
 }
-set N1326c800 [stack 0]
+set N137d6c00 [stack 0]
 Dot {
  name Dot9
  xpos -1212
  ypos 429
 }
-set N1326cc00 [stack 0]
+set N137d7000 [stack 0]
 Roto {
  inputs 0
  output alpha
@@ -915,7 +930,8 @@ Roto {
  source_black_outside true
  name Roto15
  xpos -1527
- ypos 180
+ ypos 181
+ disable true
 }
 Roto {
  inputs 0
@@ -1015,7 +1031,6 @@ Roto {
  name Roto13
  xpos -1673
  ypos 181
- disable true
 }
 Roto {
  inputs 0
@@ -1122,19 +1137,19 @@ Dot {
  xpos -3275
  ypos -95
 }
-set N13325000 [stack 0]
+set N15657800 [stack 0]
 Dot {
  name Dot18
  xpos -3017
  ypos -95
 }
-set N13325400 [stack 0]
+set N633d1000 [stack 0]
 Dot {
  name Dot19
  xpos -2767
  ypos -95
 }
-set N13325800 [stack 0]
+set N1e679400 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -1201,7 +1216,7 @@ Dot {
  xpos -2766
  ypos 163
 }
-set N1335b800 [stack 0]
+set N633d0000 [stack 0]
 Dot {
  name Dot24
  xpos -2640
@@ -1329,7 +1344,7 @@ Dot {
  xpos -2915
  ypos 63
 }
-push $N13325400
+push $N633d1000
 Retime {
  input.first 95417
  input.last 95490
@@ -1389,7 +1404,7 @@ Dot {
  xpos -3016
  ypos 161
 }
-set N14428000 [stack 0]
+set N3aaf7400 [stack 0]
 Dot {
  name Dot28
  xpos -2893
@@ -1502,7 +1517,7 @@ Dot {
  xpos -3173
  ypos 61
 }
-push $N13325000
+push $N15657800
 Retime {
  input.first 95417
  input.last 95490
@@ -1583,7 +1598,7 @@ Dot {
  xpos -3275
  ypos 324
 }
-push $N14428000
+push $N3aaf7400
 CornerPin2D {
  to1 {1590.300049 1004.299988}
  to2 {1649 1055.099976}
@@ -1610,7 +1625,7 @@ Merge2 {
  xpos -2927
  ypos 322
 }
-push $N1335b800
+push $N633d0000
 CornerPin2D {
  to1 {1650.900024 1055}
  to2 {1706 1105.400024}
@@ -1727,13 +1742,13 @@ Dot {
  xpos -2400
  ypos 61
 }
-push $N13325800
+push $N1e679400
 Dot {
  name Dot20
  xpos -2502
  ypos -95
 }
-set N1455e400 [stack 0]
+set N79f2800 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -1898,13 +1913,13 @@ Dot {
  xpos -2148
  ypos 60
 }
-push $N1455e400
+push $N79f2800
 Dot {
  name Dot21
  xpos -2250
  ypos -95
 }
-set N1460e000 [stack 0]
+set N79f2400 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -2076,7 +2091,7 @@ Dot {
  xpos -1878
  ypos 61
 }
-push $N1460e000
+push $N79f2400
 Dot {
  name Dot22
  xpos -1980
@@ -2173,7 +2188,6 @@ Grade {
  name Grade1
  xpos -1673
  ypos 266
- disable true
 }
 Grade {
  inputs 1+1
@@ -2182,6 +2196,7 @@ Grade {
  name Grade12
  xpos -1527
  ypos 266
+ disable true
 }
 Merge2 {
  inputs 2
@@ -2284,7 +2299,7 @@ Group {
   xpos -329
   ypos 474
  }
-set N14756c00 [stack 0]
+set Nde821c00 [stack 0]
  Dot {
   name Dot3
   xpos -186
@@ -2295,7 +2310,7 @@ set N14756c00 [stack 0]
   xpos -186
   ypos 985
  }
-push $N14756c00
+push $Nde821c00
  Grade {
   white 0
   add 0.5
@@ -2326,7 +2341,7 @@ push $N14756c00
   xpos -526
   ypos 753
  }
-push $N14756c00
+push $Nde821c00
  Colorspace {
   colorspace_out Cineon
   name Colorspace6
@@ -2334,7 +2349,7 @@ push $N14756c00
   ypos 658
   disable {{parent.v_cinSpace?0:1 i}}
  }
-set N147d2000 [stack 0]
+set N37cb3000 [stack 0]
  ColorLookup {
   lut {master {}
     red {curve L 1 0.5 s0}
@@ -2365,7 +2380,7 @@ set N147d2000 [stack 0]
   xpos -403
   ypos 875
  }
-push $N147d2000
+push $N37cb3000
  Merge2 {
   inputs 2
   operation plus
@@ -2392,7 +2407,7 @@ push $N147d2000
   ypos 1088
   disable {{"\[exists parent.input1] ? 0 : 1" i x1 0}}
  }
-push $N14756c00
+push $Nde821c00
  Dot {
   name Dot5
   note_font_size 22
@@ -2429,7 +2444,7 @@ Dot {
  xpos -605
  ypos 268
 }
-set N14845400 [stack 0]
+set N171fd000 [stack 0]
 Group {
  name ExponentialGlow1
  tile_color 0xcc804eff
@@ -2497,13 +2512,13 @@ Group {
   addUserKnob {6 add_source l "Add Source" +STARTLINE}
   addUserKnob {6 add_bbox l "Add original bbox" +STARTLINE}
  }
-set N14867000 [stack 0]
+set N17238c00 [stack 0]
  Dot {
   name Dot12
   xpos -371
   ypos -584
  }
-set N14867400 [stack 0]
+set N17239000 [stack 0]
  Saturation {
   saturation 0
   mode Maximum
@@ -2518,7 +2533,7 @@ set N14867400 [stack 0]
   xpos -316
   ypos -562
  }
-push $N14867400
+push $N17239000
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -2579,49 +2594,49 @@ push $N14867400
   xpos -146
   ypos -292
  }
-set N148d2000 [stack 0]
+set N1382bc00 [stack 0]
  Dot {
   name Dot2
   xpos -36
   ypos -292
  }
-set N148d2400 [stack 0]
+set N13862000 [stack 0]
  Dot {
   name Dot4
   xpos 84
   ypos -292
  }
-set N148d2800 [stack 0]
+set N13862400 [stack 0]
  Dot {
   name Dot5
   xpos 194
   ypos -292
  }
-set N148d2c00 [stack 0]
+set N13862800 [stack 0]
  Dot {
   name Dot6
   xpos 304
   ypos -292
  }
-set N148d3000 [stack 0]
+set N13862c00 [stack 0]
  Dot {
   name Dot7
   xpos 414
   ypos -292
  }
-set N148d3400 [stack 0]
+set N13863000 [stack 0]
  Dot {
   name Dot8
   xpos 524
   ypos -292
  }
-set N148d3800 [stack 0]
+set N13863400 [stack 0]
  Dot {
   name Dot9
   xpos 631
   ypos -292
  }
-set N148d3c00 [stack 0]
+set N13863800 [stack 0]
  Dot {
   name Dot10
   xpos 741
@@ -2667,7 +2682,7 @@ set N148d3c00 [stack 0]
   xpos -289
   ypos 235
  }
-push $N148d3c00
+push $N13863800
  Group {
   name Blur7
   xpos 597
@@ -2709,7 +2724,7 @@ push $N148d3c00
   xpos -289
   ypos 194
  }
-push $N148d3800
+push $N13863400
  Group {
   name Blur6
   xpos 490
@@ -2751,7 +2766,7 @@ push $N148d3800
   xpos -290
   ypos 155
  }
-push $N148d3400
+push $N13863000
  Group {
   name Blur5
   xpos 380
@@ -2793,7 +2808,7 @@ push $N148d3400
   xpos -290
   ypos 116
  }
-push $N148d3000
+push $N13862c00
  Group {
   name Blur4
   xpos 270
@@ -2835,7 +2850,7 @@ push $N148d3000
   xpos -292
   ypos 77
  }
-push $N148d2c00
+push $N13862800
  Group {
   name Blur3
   xpos 160
@@ -2877,7 +2892,7 @@ push $N148d2c00
   xpos -291
   ypos 42
  }
-push $N148d2800
+push $N13862400
  Group {
   name Blur2
   xpos 50
@@ -2919,7 +2934,7 @@ push $N148d2800
   xpos -292
   ypos 5
  }
-push $N148d2400
+push $N13862000
  Group {
   name Blur1
   xpos -70
@@ -2961,8 +2976,8 @@ push $N148d2400
   xpos -293
   ypos -36
  }
-push $N14867000
-push $N148d2000
+push $N17238c00
+push $N1382bc00
  Group {
   name Blur
   xpos -180
@@ -3094,7 +3109,7 @@ Grade {
  xpos -515
  ypos 987
 }
-push $N1326c800
+push $N137d6c00
 Blur {
  size 30
  name Blur2
@@ -3159,10 +3174,10 @@ Roto {
  source_black_outside true
  name Roto17
  xpos -508
- ypos -757
+ ypos 52
 }
-push $N1326c000
-push $N1326c400
+push $N179d2800
+push $N179d2c00
 Read {
  inputs 0
  file_type exr
@@ -3175,7 +3190,7 @@ Read {
  origset true
  name Read9
  xpos -266
- ypos -1028
+ ypos -219
 }
 Read {
  inputs 0
@@ -3189,9 +3204,9 @@ Read {
  origset true
  name Read1
  xpos -443
- ypos -1028
+ ypos -219
 }
-set N14ac7800 [stack 0]
+set N179d3400 [stack 0]
 Read {
  inputs 0
  file_type exr
@@ -3204,15 +3219,15 @@ Read {
  origset true
  name Read8
  xpos -446
- ypos -887
+ ypos -78
 }
-set N14ac7c00 [stack 0]
+set N179d3800 [stack 0]
 Switch {
  inputs 5
- which 2.02
+ which 4
  name Switch1
  xpos -266
- ypos -857
+ ypos -48
 }
 Retime {
  input.first 86916
@@ -3223,7 +3238,7 @@ Retime {
  time ""
  name Retime1
  xpos -266
- ypos -813
+ ypos -4
 }
 Group {
  inputs 2
@@ -3232,8 +3247,9 @@ Group {
  onCreate "n = nuke.thisNode()\nn\['tolerance'].setRange(0,2)\nn\['prot1_tolerance'].setFlag(0x00000004)\nn\['prot1_effect'].setFlag(0x00000004)"
  knobChanged "n = nuke.thisNode()\nk = nuke.thisKnob()\nkn = k.name()\nif kn == \"color\":\n    kv = k.getValue()\n    custom_weight_labels = \[\"green - blue\", \"red - blue\", \"red - green\", \" \"]\n    n\[\"custom_weight\"].setLabel(custom_weight_labels\[int(kv)])\n    n\[\"pick\"].setVisible(k.getValue() == 3)\nelif kn == \"mode\":\n    n\[\"custom_weight\"].setVisible(n\[\"mode\"].getValue()==3)\nelif kn in \[\"out\",\"output_alpha\"]:\n    n\[\"respill_math\"].setEnabled(n\[\"out\"].getValue()==0 or n\[\"output_alpha\"].getValue()==1)\n    n\[\"respill_color\"].setEnabled(n\[\"out\"].getValue()==0)\n    n\[\"inverted_spill_matte\"].setEnabled(n\[\"output_alpha\"].value())\nelif kn == \"prot1_activate\":\n    protA = n\[\"prot1_activate\"].value()\n    n\[\"prot1_preview\"].setEnabled(protA)\n    for i in \[\"prot1\", \"prot1_tolerance\", \"prot1_falloff\",\"prot1_effect\"]:\n        n\[i].setVisible(protA)\nelif kn == \"inputChange\":\n    n.knobs()\[\"limit_channel\"].setVisible(n.input(3) is not None)\n    n.knobs()\[\"invert_limit_channel\"].setVisible(n.input(3) is not None)\n    color_enabled = nuke.toNode(\"apDespillKernel\")\[\"apDespillKernel_use_color_input\"].getValue()==0\n    n\[\"color\"].setEnabled(color_enabled)\n    n.knobs()\[\"pick\"].setEnabled(color_enabled)\n    n\[\"info_using_input_color\"].setVisible(not color_enabled)\nelif kn == \"colorspace_shift\":\n    kv = k.value()\n    for i in \[\"colorspace_out\", \"illuminant_out\", \"primary_out\"]:\n        n.knobs()\[i].setEnabled(kv)\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setEnabled(kv and n\[\"input_colorspace\"].value())\n    n\[\"input_colorspace\"].setEnabled(kv)\nelif kn == \"input_colorspace\":\n    kv = k.value()\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setVisible(kv)\n        n.knobs()\[i].setEnabled(kv)\nelif kn == \"imagebased\":\n    kv = k.value()\n    input_names = \[\"color\",\"limit\",\"respill\"]\n    if kv:\n        for i_name in input_names:\n            i_fullname = \"Input\"+i_name\n            if not nuke.exists(i_fullname):\n                i_node = nuke.nodes.Input()\n                i_node\[\"name\"].setValue(i_fullname)\n            else:\n                i_node = nuke.toNode(i_fullname)\n            dot = nuke.toNode(\"Dot\"+i_name)\n            i_node.setXYpos(dot.xpos(),dot.ypos()-40)\n            dot.setInput(0,i_node)\n    else:\n        # If something connected, do nothing\n        if not any(\[n.input(i) for i in \[2,3,4]]):\n            for i_name in input_names:\n                if nuke.exists(\"Input\"+i_name):\n                    nuke.delete(nuke.toNode(\"Input\"+i_name))\n        else:\n            k.setValue(True)"
  tile_color 0x8b8b8bff
+ selected true
  xpos -266
- ypos -751
+ ypos 58
  addUserKnob {20 apDespill}
  addUserKnob {6 pick_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
  addUserKnob {6 imagebased l image-based t "Show or hide image-based inputs.\n\nThis doesn't change anything internally except hiding inputs, just to avoid intimidating arrows on the node graph.\n\nNote: While any image-based input is connected, this won't let you hide them." +STARTLINE}
@@ -3309,7 +3325,7 @@ Group {
   xpos 307
   ypos -267
  }
-set N14b34c00 [stack 0]
+set N3f2edc00 [stack 0]
  Dot {
   name Dot5
   note_font_size 41
@@ -3365,7 +3381,7 @@ set N14b34c00 [stack 0]
   xpos 449
   ypos -761
  }
-set N14b64c00 [stack 0]
+set N3597e000 [stack 0]
  Dot {
   name Dot2
   note_font_size 41
@@ -3468,16 +3484,16 @@ set N14b64c00 [stack 0]
   xpos 788
   ypos -267
  }
-set N14b8f400 [stack 0]
+set N29fa9800 [stack 0]
  Dot {
   name Dot4
   note_font_size 41
   xpos 788
   ypos -237
  }
-push $N14b34c00
-push $N14b8f400
-push $N14b64c00
+push $N3f2edc00
+push $N29fa9800
+push $N3597e000
  Merge2 {
   inputs 2+1
   operation copy
@@ -3515,7 +3531,7 @@ Dot {
  xpos -232
  ypos 208
 }
-set N14c0a800 [stack 0]
+set N17886400 [stack 0]
 Dot {
  name Dot6
  xpos -768
@@ -3555,14 +3571,14 @@ Multiply {
  xpos -463
  ypos 653
 }
-push $N1326cc00
-push $N14845400
+push $N137d7000
+push $N171fd000
 Dot {
  name Dot8
  xpos -542
  ypos 268
 }
-set N14c48400 [stack 0]
+set N178c6000 [stack 0]
 Blur {
  size 40
  name Blur4
@@ -3582,8 +3598,8 @@ Multiply {
  xpos -437
  ypos 420
 }
-push $N14c48400
-push $N14c0a800
+push $N178c6000
+push $N17886400
 Merge2 {
  inputs 2
  name Merge1
@@ -3619,11 +3635,11 @@ Merge2 {
  xpos -266
  ypos 987
 }
-push $N14ac7800
-push $N14ac7c00
+push $N179d3400
+push $N179d3800
 Viewer {
  inputs 5
- frame 1039
+ frame 1028
  frame_range 1001-1074
  frame_range_lock true
  input_number 2
@@ -3635,26 +3651,11 @@ Viewer {
  xpos -266
  ypos 1157
 }
-StickyNote {
+Grade {
  inputs 0
- name StickyNote3
- label "Jasiel - 3\n"
- xpos -3341
- ypos -614
-}
-Read {
- inputs 0
- file_type exr
- file C:/3D_Temp/PP/Footage/Chica/CHICA_001_V1/V1_CHICA_001_%05d.exr
- format "3840 2160 0 0 3840 2160 1 UHD_4K"
- first 95064
- before loop
- last 95231
- after loop
- origfirst 95064
- origlast 95231
- origset true
- name Read12
- xpos -2907
- ypos -720
+ black {0.3799999952 0.2153597176 0.1346214563 1}
+ white {0.5378130078 0.3179269135 0.2000717819 1}
+ name Grade14
+ xpos -1670
+ ypos 391
 }

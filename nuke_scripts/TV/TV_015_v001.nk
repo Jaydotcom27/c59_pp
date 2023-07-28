@@ -2,26 +2,26 @@
 version 14.0 v5
 define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
-    <window x="0" y="0" w="2557" h="1360" screen="0">
+    <window x="-1" y="-8" w="2560" h="1369" maximized="1" screen="0">
         <splitter orientation="1">
             <split size="40"/>
             <dock id="" hideTitles="1" activePageId="Toolbar.1">
                 <page id="Toolbar.1"/>
             </dock>
-            <split size="921" stretch="1"/>
+            <split size="1897" stretch="1"/>
             <splitter orientation="2">
-                <split size="1322"/>
+                <split size="1005"/>
+                <dock id="" activePageId="Viewer.1" focus="true">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="322"/>
                 <dock id="" activePageId="DAG.1">
                     <page id="DAG.1"/>
                     <page id="Curve Editor.1"/>
                     <page id="DopeSheet.1"/>
                 </dock>
             </splitter>
-            <split size="1137"/>
-            <dock id="" activePageId="Viewer.1" focus="true">
-                <page id="Viewer.1"/>
-            </dock>
-            <split size="447"/>
+            <split size="615"/>
             <dock id="" activePageId="Properties.1">
                 <page id="Properties.1"/>
                 <page id="uk.co.thefoundry.backgroundrenderview.1"/>
@@ -34,10 +34,11 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 Root {
  inputs 0
  name C:/3D_Temp/PP/nuke_scripts/TV/TV_015_v001.nk
- frame 1051
+ frame 1070
  first_frame 1001
  last_frame 1091
  format "3840 2160 0 0 3840 2160 1 UHD_4K"
+ proxy true
  proxy_type scale
  proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
  colorManagement Nuke
@@ -56,7 +57,7 @@ BackdropNode {
  note_font "Verdana Bold"
  note_font_size 41
  xpos 444
- ypos -706
+ ypos -1246
  bdwidth 364
  bdheight 320
 }
@@ -67,9 +68,9 @@ BackdropNode {
  label "TV_Plates\n"
  note_font_size 42
  xpos -2410
- ypos -707
- bdwidth 1655
- bdheight 565
+ ypos -953
+ bdwidth 1657
+ bdheight 812
 }
 BackdropNode {
  inputs 0
@@ -107,56 +108,49 @@ Roto {
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px
-        {x447a4000 x44836000}
-        {{x3f4cd000}
-	 {x41c199c0}}
-        {{x44ed799a}
-	 {x44b90ccd}}
-        {{xbf4cd000}
-	 {xc1c199c0}}
-        {{xc0d33300}
-	 {x40b99a00}}
-        {{x44edf99a x44edec21}
-	 {x44b42000 x44b4050e}}
-        {{x40d33300}
-	 {xc0b99a00}}
-        {{xc0c66600}
-	 {xc0000000}}
-        {{{x44f7e000 -}
-       {x44f8086c -}}
-      {{x44b4d99a -}
-       {x44b4cf7f -}}}
-        {{x40c66600}
-	 {x40000000}}
-        {{xbe4cc000}
-	 {xc1666600}}
-        {{{x44fa1800 -}
-       {x44fa2c36 -}}
-      {{x44b7299a -}
-       {x44b70ea8 -}}}
-        {{x3e4cc000}
-	 {x41666600}}
-        {{0}
-	 {xbe4ce000}}
-        {{{x44fa4000 -}
-       {x44fa3956 -}}
-      {{x44bc7333 -}
-       {x44bca889 -}}}
-        {{0}
-	 {x3e4ce000}}
-        {{x40f33400}
-	 {0}}
-        {{x44f9399a}
-	 {x44bd2666}}
-        {{xc0f33400}
-	 {0}}
-        {{x3e4cc000}
-	 {x40333400}}
-        {{x44ee2000}
-	 {x44bc0ccd}}
-        {{xbe4cc000}
-	 {xc0333400}}}}     idem}
+       {px x44854000
+        {{{x3f4cd000 -}}
+	 {{x41c199c0 -}}}
+        {{{x44ed363c xbd04a95b 1 0 1}}
+	 {{x44b8f1db xbc543f04 1 0 1}}}
+        {{{xbf4cd000 -}}
+	 {{xc1c199c0 -}}}
+        {{{xc0d33300 -}}
+	 {{x40b99a00 -}}}
+        {{{x44edbcf8 xbceecccd 1 0 1}}
+	 {{x44b3c1b0 xbd39b91c 1 0 1}}}
+        {{{x40d33300 -}}
+	 {{xc0b99a00 -}}}
+        {{{xc0c66600 -}}
+	 {{xc0000000 -}}}
+        {{{x44f81ca1 x3ceec8dd 1 0 1}}
+	 {{x44b4a713 xbcc70000 1 0 1}}}
+        {{{x40c66600 -}}
+	 {{x40000000 -}}}
+        {{{xbe4cc000 -}}
+	 {{xc1666600 -}}}
+        {{{x44fa8a87 x3d6187e0 1 0 1}}
+	 {{x44b707ef xbc84999a 1 0 1}}}
+        {{{x3e4cc000 -}}
+	 {{x41666600 -}}}
+        {{{0 -}}
+	 {{xbe4ce000 -}}}
+        {{{x44fa8c04 x3d15b13b 1 0 1}}
+	 {{x44bcbee8 x3d1515a9 1 0 1}}}
+        {{{0 -}}
+	 {{x3e4ce000 -}}}
+        {{{x40f33400 -}}
+	 {{0 -}}}
+        {{{x44f92df7 xbbb752b5 1 0 1}}
+	 {{x44bd437e x3c652b53 1 0 1}}}
+        {{{xc0f33400 -}}
+	 {{0 -}}}
+        {{{x3e4cc000 -}}
+	 {{x40333400 -}}}
+        {{{x44edd0ff xbd1b93b1 1 0 1}}
+	 {{x44bc0ef3 x3a876276 1 0 1}}}
+        {{{xbe4cc000 -}}
+	 {{xc0333400 -}}}}}     idem}
      {tx x447a4000 x44f46e66 x44b8fa0f}
      {a osw x41200000 osf 0 str 1 spx x44800000 spy x44428000 sb 1 ltn x447a4000 ltm x447a4000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -188,7 +182,7 @@ Roto {
  source_black_outside true
  name Roto1
  xpos -2637
- ypos -596
+ ypos -613
 }
 Roto {
  output alpha
@@ -202,31 +196,52 @@ Roto {
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x447a4000
-        {0 0}
-        {x44fbd99a x44b6d99a}
-        {0 0}
-        {xc0fccd00 0}
-        {x44fc9c00 x44b548cd}
-        {x40fccd00 0}
-        {xc0d33200 xc19999c0}
-        {x4503dccc x44b74333}
-        {x408f9c00 x4150e580}
-        {xbdc20000 xc158ea80}
-        {x450439ea x44bddaa2}
-        {x3d350000 x40cc4400}
-        {x40c7ae00 x3f0b4000}
-        {x45030000 x44be4333}
-        {xc19c0000 xbfd99800}
-        {0 0}
-        {x44fd2b33 x44bd7f33}
-        {0 0}
-        {x3f333000 x420b99a0}
-        {x44fbe666 x44b9399a}
-        {xbf333000 xc20b99a0}}}     idem}
+       {px x44854000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44fbb8c3 xbe81599a 1 0 1}}
+	 {{x44b6c017 xbe16e99a 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc0fccd00 -}}
+	 {{0 -}}}
+        {{{x44fc7b29 xbe81599a 1 0 1}}
+	 {{x44b52f4a xbe16e99a 1 0 1}}}
+        {{{x40fccd00 -}}
+	 {{0 -}}}
+        {{{xc0d33200 -}}
+      {{xc19999c0 -}}}
+        {{{x4503f37e x3eac799a 1 0 1}}
+      {{x44b71de4 xbd5849d8 1 0 1}}}
+        {{{x408f9c00 -}}
+      {{x4150e580 -}}}
+        {{{xbdc20000 -}}
+      {{xc158ea80 -}}}
+        {{{x45044682 x3eac799a 1 0 1}}
+      {{x44bdddc0 xbd5849d8 1 0 1}}}
+        {{{x3d340000 -}}
+      {{x40cc4400 -}}}
+        {{{x40c7ac00 -}}
+      {{x3f0b4000 -}}}
+        {{{x4503319e x3eac799a 1 0 1}}
+      {{x44be5d3a xbd816000 1 0 1}}}
+        {{{xc19c0000 -}}
+      {{xbfd99800 -}}}
+        {{{0 -}}
+      {{0 -}}}
+        {{{x44fcf627 xbe81599a 1 0 1}}
+      {{x44bd8e1d xbe16e99a 1 0 1}}}
+        {{{0 -}}
+      {{0 -}}}
+        {{{x3f333000 -}}
+	 {{x420b99a0 -}}}
+        {{{x44fbc58f xbe81599a 1 0 1}}
+	 {{x44b92017 xbe16e99a 1 0 1}}}
+        {{{xbf333000 -}}
+	 {{xc20b99a0 -}}}}}     idem}
      {tx x447a4000 x45008d42 x44ba0751}
      {a osw x41200000 osf 0 str 1 spx x44800000 spy x44428000 sb 1 ltn x447a4000 ltm x447a4000 tt x40800000}}}}}}
- toolbox {addPoints {
+ toolbox {selectAll {
   { selectAll str 1 ssx 1 ssy 1 sf 1 }
   { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
   { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
@@ -256,7 +271,7 @@ Roto {
  source_black_outside true
  name Roto2
  xpos -2637
- ypos -560
+ ypos -577
 }
 Roto {
  output alpha
@@ -270,34 +285,61 @@ Roto {
     {curvegroup Bezier2 512 bezier
      {{cc
        {f 8192}
-       {px x447a4000
-        {0 0}
-        {x4504d666 x44b8299a}
-        {0 0}
-        {xc0866600 x3f999c00}
-        {x4505019a x44b6accd}
-        {x40866600 xbf999c00}
-        {xc104cd00 xc1133300}
-        {x450a4ccd x44b7fccd}
-        {x4104cd00 x41133300}
-        {0 x3e999000}
-        {x450ae19a x44bb9666}
-        {0 xbe999000}
-        {0 0}
-        {x450af99a x44bee000}
-        {0 0}
-        {x3ff33000 xbfe66800}
-        {x450ae800 x44bfc000}
-        {xbff33000 x3fe66800}
-        {0 0}
-        {x4509599a x44bfa333}
-        {0 0}
-        {x40733000 x40733200}
-        {x45055c66 x44bec333}
-        {xc0733000 xc0733200}
-        {xbdcd0000 x3dccc000}
-        {x4504f800 x44bbd333}
-        {x3dcd0000 xbdccc000}}}     idem}
+       {px x44854000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4504bbfb xbe9e6889 1 0 1}}
+	 {{x44b7d6e9 xbe74fdde 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc0866600 -}}
+	 {{x3f999c00 -}}}
+        {{{x4504e72f xbe9e6889 1 0 1}}
+	 {{x44b65a1c xbe74fdde 1 0 1}}}
+        {{{x40866600 -}}
+	 {{xbf999c00 -}}}
+        {{{xc104cd00 -}}
+	 {{xc1133300 -}}}
+        {{{x450a5dee x3e3addde 1 0 1}}
+	 {{x44b79192 xbde5f333 1 0 1}}}
+        {{{x4104cd00 -}}
+	 {{x41133300 -}}}
+        {{{0 -}}
+	 {{x3e999000 -}}}
+        {{{x450b1218 x3ea05777 1 0 1}}
+	 {{x44bb7e8a x3d7b8889 1 0 1}}}
+        {{{0 -}}
+	 {{xbe999000 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x450b1421 x3e8deccd 1 0 1}}
+	 {{x44bed90d x3ea34222 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x3ff33000 -}}
+	 {{xbfe66800 -}}}
+        {{{x450b0287 x3e8deccd 1 0 1}}
+	 {{x44bfd7a9 x3ec3e889 1 0 1}}}
+        {{{xbff33000 -}}
+	 {{x3fe66800 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4509688a x3df13bbc 1 0 1}}
+	 {{x44bfd275 x3ea43000 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40733000 -}}
+	 {{x40733200 -}}}
+        {{{x45053b61 xbe900ccd 1 0 1}}
+	 {{x44bea0cb x3dab2666 1 0 1}}}
+        {{{xc0733000 -}}
+	 {{xc0733200 -}}}
+        {{{xbdcd0000 -}}
+	 {{x3dccc000 -}}}
+        {{{x4504e0f2 xbe973bbc 1 0 1}}
+	 {{x44bbc3e1 xbdca8889 1 0 1}}}
+        {{{x3dcd0000 -}}
+	 {{xbdccc000 -}}}}}     idem}
      {tx x447a4000 x4508138e x44bbeb04}
      {a osw x41200000 osf 0 str 1 spx x44800000 spy x44428000 sb 1 ltn x447a4000 ltm x447a4000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -329,7 +371,7 @@ Roto {
  source_black_outside true
  name Roto3
  xpos -2637
- ypos -524
+ ypos -541
 }
 Roto {
  output alpha
@@ -343,28 +385,49 @@ Roto {
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x447a4000
-        {x3f999c00 x40d33300}
-        {x44f29ccd x44caa333}
-        {xbf999c00 xc0d33300}
-        {xc0a66600 x41600000}
-        {x44f2599a x44c2f333}
-        {0 0}
-        {xc17ccc80 xbfc00000}
-        {x44f8a623 x44c26733}
-        {x417ccc80 x3fc00000}
-        {xbf4cc800 xc0600000}
-        {x44fee045 x44c31b78}
-        {x3f4cc800 x40600000}
-        {x40a99c00 xc1e26640}
-        {x44ffae3c x44cb400e}
-        {0 0}
-        {x40e66600 xbf333000}
-        {x44feb7d5 x44cbc341}
-        {xc0e66600 x3f333000}
-        {0 xbe4cc000}
-        {x44f37000 x44cb9ccd}
-        {0 x3e4cc000}}}     idem}
+       {px x44854000
+        {{{x3f999c00 -}}
+	 {{x40d33300 -}}}
+        {{{x44f251ab xbe706ccd 1 0 1}}
+	 {{x44cabf07 x3db2199a 1 0 1}}}
+        {{{xbf999c00 -}}
+	 {{xc0d33300 -}}}
+        {{{xc0a66600 -}}
+	 {{x41600000 -}}}
+        {{{x44f23724 xbddc8ccd 1 0 1}}
+	 {{x44c27d0c xbebd0b33 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc17ccc80 -}}
+	 {{xbfc00000 -}}}
+        {{{x44f8a623 -}}
+	 {{x44c22c20 xbe3d099a 1 0 1}}}
+        {{{x417ccc80 -}}
+	 {{x3fc00000 -}}}
+        {{{xbf4cc800 -}}
+	 {{xc0600000 -}}}
+        {{{x44fefdcf x3dbd0ccd 1 0 1}}
+	 {{x44c2b416 xbea5699a 1 0 1}}}
+        {{{x3f4cc800 -}}
+	 {{x40600000 -}}}
+        {{{x40a99c00 xb74ccccd 1 0 1}}
+	 {{xc1e26640 -}}}
+        {{{x44fff104 x3e8474cd 1 0 1}}
+	 {{x44cb1d04 x3e0fdccd 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40e66600 -}}
+	 {{xbf333000 -}}}
+        {{{x44fefa9c x3e847333 1 0 1}}
+	 {{x44cbb5e9 x3e55499a 1 0 1}}}
+        {{{xc0e66600 -}}
+	 {{x3f333000 -}}}
+        {{{0 -}}
+	 {{xbe4cc000 -}}}
+        {{{x44f324dd xbe707000 1 0 1}}
+	 {{x44cbce53 x3e1e799a 1 0 1}}}
+        {{{0 -}}
+	 {{x3e4cc000 -}}}}}     idem}
      {tx x447a4000 x44f8f493 x44c7b160}
      {a osw x41200000 osf 0 str 1 spx x44800000 spy x44428000 sb 1 ltn x447a4000 ltm x447a4000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -397,7 +460,7 @@ Roto {
  source_black_outside true
  name Roto4
  xpos -2637
- ypos -488
+ ypos -505
 }
 Roto {
  output alpha
@@ -411,25 +474,82 @@ Roto {
     {curvegroup Bezier1 512 bezier
      {{cc
        {f 8192}
-       {px x447a4000
-        {0 0}
-        {x4502d800 x44ca7ccd}
-        {0 0}
-        {xc0666400 x3fcccc00}
-        {x4502cccd x44c42ccd}
-        {x40666400 xbfcccc00}
-        {xc0600000 xc104cd00}
-        {x4508899a x44c5799a}
-        {x40607000 x41050b80}
-        {x3f333000 xc1699a00}
-        {x4508eccd x44c96666}
-        {0 0}
-        {0 0}
-        {x4507659a x44c9619a}
-        {0 0}
-        {x411e6600 xc00cce00}
-        {x45043e66 x44c9f333}
-        {xc11e6600 x400cce00}}}     idem}
+       {px x44854000
+        {{{0 -}}
+      {{0 -}}}
+        {{{x4502c1c7 xbde38ccd 1 0 1}}
+      {{x44ca1145 x3ec1be66 1 0 1}}}
+        {{{0 -}}
+      {{0 -}}}
+        {{{xc0666400 -}}
+	 {{x3fcccc00 -}}}
+        {{{x4502ce7b x3c2c0000 1 0 1}}
+	 {{x44c3f6e8 xbe2c7666 1 0 1}}}
+        {{{x40666400 -}}
+	 {{xbfcccc00 -}}}
+        {{{xc0600000 -}}
+	 {{xc104cd00 -}}}
+        {{{x45088b48 x3c2c0000 1 0 1}}
+	 {{x44c543b5 xbe2c7666 1 0 1}}}
+        {{{x40607000 -}}
+	 {{x41050b80 -}}}
+        {{{x3f333000 -}}
+	 {{xc1699a00 -}}}
+        {{{x450903f1 x3de5a3d7 1 0 1}}
+	 {{x44c97794 x3f1a8b33 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x45077b38 x3dd223d7 1 0 1}}
+	 {{x44c9801d x3f25359a 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4120ca00 -}}
+      {{xbfae9800 -}}}
+        {{{x45045093 x3e179852 1 0 1}}
+      {{x44c9b32f x3f0904cd 1 0 1}}}
+        {{{xc1367c00 -}}
+      {{x3fc61c00 -}}}}}
+      {cc
+       {f 8192}
+       {px x44854000
+        {{{0 -}}
+      {{0 -}}}
+        {{{x3ec00000 xbc4ccccd 1 0 1}}
+      {{x40820000 x3e600000 1 0 1}}}
+        {{{0 -}}
+      {{0 -}}}
+        {{{xc0666400 -}}
+	 {{x3fcccc00 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40666400 -}}
+	 {{xbfcccc00 -}}}
+        {{{xc0600000 -}}
+	 {{xc104cd00 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x40607000 -}}
+	 {{x41050b80 -}}}
+        {{{x3f333000 -}}
+	 {{xc1699a00 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4120c900 -}}
+      {{xbfae8c00 -}}}
+        {{{xbddb8000 x3d8ccccd 1 0 1}}
+      {{x40959c00 x3e4ccccd 1 0 1}}}
+        {{{xc1367e00 -}}
+      {{x3fc62000 -}}}}}}
      {tx x447a4000 x4505ca89 x44c82510}
      {a osw x41200000 osf 0 str 1 spx x44800000 spy x44428000 sb 1 ltn x447a4000 ltm x447a4000 tt x40800000}}}}}}
  toolbox {selectAll {
@@ -462,7 +582,7 @@ Roto {
  source_black_outside true
  name Roto5
  xpos -2637
- ypos -452
+ ypos -469
 }
 Roto {
  output alpha
@@ -526,46 +646,393 @@ Roto {
  source_black_outside true
  name Roto6
  xpos -2637
- ypos -416
+ ypos -433
  disable true
 }
+Roto {
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup BezierCusped1 512 bezier
+     {{cc
+       {f 8192}
+       {px
+        {x44852000 x44854000}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44f7532b 0 1 x41689d00 1}
+	  {x44f92465 x41689d00 1 0 1}}
+	 {{x44afe8a7 0 1 xc180b740 1}
+	  {x44ade5ca xc180b740 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44f77da7 0 1 x415bfe00 1}
+	  {x44f935a3 x415bfe00 1 0 1}}
+	 {{x44b12671 0 1 xc0846300 1}
+	  {x44b0a20e xc0846300 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44f5a354 0 1 xc1350580 1}
+	  {x44f43949 xc1350580 1 0 1}}
+	 {{x44b13d67 0 1 xc0789a00 1}
+	  {x44b0c11a xc0789a00 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}}}
+      {cc
+       {f 8192}
+       {px
+        {x44852000 x44854000}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x41898c80 0 1 xc1721180 1}
+	  {x40041e00 xc1721180 1 0 1}}
+	 {{xc208d460 0 1 x40d0a500 1}
+	  {xc1dd7f80 x40d0a500 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x41a2e580 0 1 xc162d200 1}
+       {x40cdf200 xc162d200 1 0 1}}
+      {{x413bfe00 0 1 xc0216000 1}
+       {x4143a600 xc0216000 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc25e3720 0 1 x41aaae40 1}
+       {xc220bc00 x41aaae40 1 0 1}}
+      {{x3fe24400 0 1 x4066c200 1}
+       {x40fa8a00 x4066c200 1 0 1}}}
+        {{{0 -}}
+	 {{0 -}}}}}}
+     {tx x44852000 x44f5c665 x44af6888}
+     {a fx x40c00000 fy x40c00000 osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44852000 ltm x44852000 tt x40a00000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 tt 5 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1065
+ lifetime_end 1065
+ motionblur_shutter_offset_type centred
+ feather 6
+ source_black_outside true
+ name Roto13
+ xpos -2637
+ ypos -364
+}
+Roto {
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Bezier1 512 bezier
+     {{cc
+       {f 8192}
+       {px x44828000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44fec597 -}}
+	 {{x44b02505 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x44fee321 -}}
+	 {{x44ad8e59 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc17fd000 -}}
+	 {{xc1064600 -}}}
+        {{{x45028173 -}}
+	 {{x44aa44b9 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x4501e382 -}}
+	 {{x44b045aa -}}}
+        {{{0 -}}
+	 {{0 -}}}}}
+      {cc
+       {f 8192}
+       {px x44828000
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1c09a80 -}}
+	 {{x41f6fb80 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc1dba180 -}}
+	 {{xc1e98900 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{xc17fd100 -}}
+	 {{xc1064500 -}}}
+        {{{x41a29180 0 1 xbe73d249 1}}
+	 {{xc1ac4540 0 1 xbf4db6db 1}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{0 -}}
+	 {{0 -}}}
+        {{{x42038300 -}}
+	 {{x42135de0 -}}}
+        {{{0 -}}
+	 {{0 -}}}}}}
+     {tx x44852000 x4500699a x44acb666}
+     {a fx x41200000 fy x41200000 osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44852000 ltm x44852000 tt x40800000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1065
+ lifetime_end 1065
+ motionblur_shutter_offset_type centred
+ feather 10
+ source_black_outside true
+ name Roto14
+ xpos -2637
+ ypos -328
+}
+Roto {
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Bezier1 512 bezier
+     {{cc
+       {f 8192}
+       {px x44854000
+        {0 0}
+        {x4505670f x44b1973a}
+        {0 0}
+        {0 0}
+        {x450539e0 x44ab83e0}
+        {0 0}
+        {xc1175e00 xc1a58780}
+        {x4505e7d6 x44adbc4c}
+        {x41175e00 x41a58780}
+        {0 0}
+        {x4506d50d x44b1b036}
+        {0 0}}}
+      {cc
+       {f 8192}
+       {px x44854000
+        {0 0}
+        {xc1272a00 x419d9cc0}
+        {0 0}
+        {0 0}
+        {xc1739400 xc2200000}
+        {0 0}
+        {xc1175e00 xc1a58780}
+        {x414d6000 xc0bf0b00}
+        {x41175e00 x41a58780}
+        {0 0}
+        {x41ff8600 x4185bb40}
+        {0 0}}}}
+     {tx x44854000 x450604cd x44ae299a}
+     {a fx x40a00000 fy x40a00000 osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x44854000 ltm x44854000 tt x40800000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1066
+ lifetime_end 1066
+ motionblur_shutter_offset_type centred
+ feather 5
+ source_black_outside true
+ name Roto16
+ xpos -2637
+ ypos -292
+}
 FilterErode {
- size -5
+ size -1
  name FilterErode1
  xpos -2637
- ypos -373
+ ypos -226
  disable true
 }
 Blur {
- size 5
+ size 3
  name Blur1
  xpos -2637
- ypos -337
+ ypos -190
 }
 Dot {
  name Dot2
  xpos -2603
  ypos 80
 }
-set N1bd9ec00 [stack 0]
+set N93051000 [stack 0]
 Dot {
  name Dot1
  xpos -2603
  ypos 392
 }
-push $N1bd9ec00
+push $N93051000
 Dot {
  name Dot4
  xpos -435
  ypos 80
 }
-set N1bd9f400 [stack 0]
+set N93051800 [stack 0]
 Dot {
  name Dot9
  xpos -434
  ypos -76
 }
-set N1bd9f800 [stack 0]
+set N93051c00 [stack 0]
+Roto {
+ inputs 0
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097664}
+    {t x44f00000 x44870000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Rectangle1 512 bezier
+     {{cc
+       {f 8192}
+       {px x44854000
+        {xc2a26c20 xc08e7800}
+        {x450cbb15 x44da165e}
+        {x40f04c00 xc308f5e8}
+        {xc0f04800 x4308f5f0}
+        {x450e2382 x44a6ba1e}
+        {xc2a26c20 xc08e7a00}
+        {x42a26c60 x408e7d00}
+        {x44ff3806 x44a4fc62}
+        {xc0f04800 x4308f620}
+        {x40f04700 xc308f5f0}
+        {x44fc6730 x44d858a6}
+        {x42a26bc0 x408e7b00}}}
+      {cc
+       {f 8192}
+       {px x44854000
+        {xc2a26c20 xc08e7800}
+        {0 0}
+        {x40f04c00 xc308f5e8}
+        {xc0f04800 x4308f5f0}
+        {0 0}
+        {xc2a26c20 xc08e7a00}
+        {x42a26c40 x408e7a00}
+        {xc3a0b878 xc1e49140}
+        {xc0f04900 x4308f5f8}
+        {x40f04700 xc308f600}
+        {xc39d19f4 xc1941d80}
+        {x42a26c50 x408e7900}}}}
+     {tx x447b8000 x44c3b800 x44993000}
+     {a osw x41200000 osf 0 str 1 spx x44f00000 spy x44870000 sb 1 ltn x447b8000 ltm x447b8000 tt x41000000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { selectCurves str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 tt 5 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 tt 8 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1920 1080}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ lifetime_start 1006
+ lifetime_end 1006
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto15
+ xpos -676
+ ypos -318
+}
 Roto {
  inputs 0
  output alpha
@@ -643,16 +1110,44 @@ Dot {
 }
 Read {
  inputs 0
- file_type mov
- file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
- format "1920 1080 0 0 1920 1080 1 HD_1080"
- last 36
- origlast 36
+ file_type exr
+ file C:/3D_Temp/PP/Footage/Chica/CHICA_001_V1/V1_CHICA_001_%05d.exr
+ format "3840 2160 0 0 3840 2160 1 UHD_4K"
+ first 95064
+ before loop
+ last 95231
+ after loop
+ origfirst 95064
+ origlast 95231
  origset true
- name Read2
- xpos -2307
- ypos -624
+ name Read12
+ selected true
+ xpos -2309
+ ypos -855
 }
+set Ncd4a9400 [stack 0]
+Grade {
+ blackpoint {0.01019100565 0.00891824346 0.008767046034 0}
+ whitepoint {0.1344236732 0.08275037259 0.1013997421 0}
+ name Grade12
+ xpos -2309
+ ypos -762
+}
+Grade {
+ blackpoint {0.002128869062 0.001020906144 0.00153569621 0}
+ whitepoint {0.2615280747 0.2147933543 0.2800000012 0}
+ white 1.4
+ name Grade11
+ xpos -2307
+ ypos -734
+ disable true
+}
+Dot {
+ name Dot17
+ xpos -2273
+ ypos -684
+}
+set Na5c29c00 [stack 0]
 Retime {
  input.last 36
  output.first 1001
@@ -663,7 +1158,14 @@ Retime {
  time ""
  name Retime2
  xpos -2307
- ypos -540
+ ypos -621
+}
+TimeOffset {
+ time_offset 8
+ time ""
+ name TimeOffset1
+ xpos -2307
+ ypos -597
 }
 Transform {
  scale {1.824000001 1.200000048}
@@ -677,7 +1179,6 @@ Reformat {
  xpos -2307
  ypos -484
 }
-set N1a2b5800 [stack 0]
 Grade {
  inputs 1+1
  black 0.02
@@ -707,6 +1208,12 @@ Transform {
  xpos -2306
  ypos -374
 }
+Dot {
+ name Dot24
+ xpos -2272
+ ypos -338
+}
+set Nd8665c00 [stack 0]
 CornerPin2D {
  to1 {1892.400024 1430.800049}
  to2 {2006.400024 1436.199951}
@@ -724,7 +1231,52 @@ CornerPin2D {
 Dot {
  name Dot3
  xpos -2272
- ypos -236
+ ypos -172
+}
+push $Nd8665c00
+Dot {
+ name Dot27
+ xpos -2155
+ ypos -338
+}
+Mirror2 {
+ flip true
+ name Mirror2_2
+ xpos -2189
+ ypos -301
+}
+CornerPin2D {
+ to1 {1888.5 1355.5}
+ to2 {1999.5 1350}
+ to3 {2000 1427.5}
+ to4 {1893 1439}
+ invert false
+ from1 {0 0}
+ from2 {3840 0}
+ from3 {3840 2160}
+ from4 {0 2160}
+ name CornerPin2D8
+ xpos -2189
+ ypos -277
+}
+Blur {
+ size 31.5
+ quality 40
+ name Blur12
+ xpos -2189
+ ypos -253
+}
+Grade {
+ white 0.22
+ name Grade9
+ xpos -2189
+ ypos -217
+}
+Merge2 {
+ inputs 2
+ name Merge13
+ xpos -2189
+ ypos -175
 }
 Roto {
  inputs 0
@@ -816,18 +1368,13 @@ Dot {
  xpos -1913
  ypos -442
 }
-Read {
- inputs 0
- file_type mov
- file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
- format "1920 1080 0 0 1920 1080 1 HD_1080"
- last 36
- origlast 36
- origset true
- name Read3
- xpos -2049
- ypos -625
+push $Na5c29c00
+Dot {
+ name Dot18
+ xpos -2015
+ ypos -684
 }
+set Na5c29800 [stack 0]
 Retime {
  input.last 36
  output.first 1001
@@ -881,11 +1428,17 @@ Transform {
  xpos -2048
  ypos -372
 }
+Dot {
+ name Dot25
+ xpos -2014
+ ypos -338
+}
+set Nd8664000 [stack 0]
 CornerPin2D {
  to1 {2011.400024 1441.400024}
- to2 {2118.399902 1446.400024}
- to3 {2118.600098 1522.400024}
- to4 {2011.599976 1517.400024}
+ to2 {2120.199951 1444.400024}
+ to3 {2121.199951 1527}
+ to4 {2008.800049 1521.400024}
  invert false
  from1 {0 0}
  from2 {3840 0}
@@ -899,7 +1452,51 @@ Merge2 {
  inputs 2
  name Merge3
  xpos -2047
- ypos -239
+ ypos -175
+}
+push $Nd8664000
+Dot {
+ name Dot28
+ xpos -1880
+ ypos -338
+}
+Mirror2 {
+ flip true
+ name Mirror2_1
+ xpos -1914
+ ypos -298
+}
+CornerPin2D {
+ to1 {2013.5 1362}
+ to2 {2108.5 1357}
+ to3 {2105 1426.599976}
+ to4 {2015.800049 1429.199951}
+ invert false
+ from1 {0 0}
+ from2 {3840 0}
+ from3 {3840 2160}
+ from4 {0 2160}
+ name CornerPin2D7
+ xpos -1914
+ ypos -274
+}
+Blur {
+ size 12
+ name Blur11
+ xpos -1914
+ ypos -250
+}
+Grade {
+ white 0.54
+ name Grade13
+ xpos -1914
+ ypos -214
+}
+Merge2 {
+ inputs 2
+ name Merge14
+ xpos -1914
+ ypos -175
 }
 Roto {
  inputs 0
@@ -976,18 +1573,13 @@ Dot {
  xpos -1663
  ypos -439
 }
-Read {
- inputs 0
- file_type mov
- file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
- format "1920 1080 0 0 1920 1080 1 HD_1080"
- last 36
- origlast 36
- origset true
- name Read1
- xpos -1799
- ypos -622
+push $Na5c29800
+Dot {
+ name Dot19
+ xpos -1765
+ ypos -684
 }
+set Na5c28800 [stack 0]
 Retime {
  input.last 36
  output.first 1001
@@ -998,7 +1590,14 @@ Retime {
  time ""
  name Retime4
  xpos -1799
- ypos -538
+ ypos -619
+}
+TimeOffset {
+ time_offset 16
+ time ""
+ name TimeOffset2
+ xpos -1799
+ ypos -595
 }
 Transform {
  scale {1.824000001 1.200000048}
@@ -1041,11 +1640,17 @@ Transform {
  xpos -1798
  ypos -369
 }
+Dot {
+ name Dot26
+ xpos -1764
+ ypos -345
+}
+set Nb0bde400 [stack 0]
 CornerPin2D {
- to1 {2125.600098 1453.599976}
- to2 {2220.399902 1462.199951}
- to3 {2235.600098 1534}
- to4 {2130.199951 1525.800049}
+ to1 {2118.600098 1453.400024}
+ to2 {2228 1458.599976}
+ to3 {2235.600098 1535.800049}
+ to4 {2124.399902 1532}
  invert false
  from1 {0 0}
  from2 {3840 0}
@@ -1059,7 +1664,51 @@ Merge2 {
  inputs 2
  name Merge4
  xpos -1798
- ypos -239
+ ypos -175
+}
+push $Nb0bde400
+Dot {
+ name Dot29
+ xpos -1619
+ ypos -345
+}
+Mirror2 {
+ flip true
+ name Mirror2_3
+ xpos -1653
+ ypos -298
+}
+CornerPin2D {
+ to1 {2119.5 1378.5}
+ to2 {2215 1380.5}
+ to3 {2207.5 1435}
+ to4 {2130 1431}
+ invert false
+ from1 {0 0}
+ from2 {3840 0}
+ from3 {3840 2160}
+ from4 {0 2160}
+ name CornerPin2D9
+ xpos -1653
+ ypos -274
+}
+Blur {
+ size 50
+ name Blur13
+ xpos -1653
+ ypos -250
+}
+Grade {
+ white 0.31
+ name Grade14
+ xpos -1653
+ ypos -214
+}
+Merge2 {
+ inputs 2
+ name Merge15
+ xpos -1653
+ ypos -175
 }
 Roto {
  inputs 0
@@ -1151,18 +1800,13 @@ Dot {
  xpos -1398
  ypos -444
 }
-Read {
- inputs 0
- file_type mov
- file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
- format "1920 1080 0 0 1920 1080 1 HD_1080"
- last 36
- origlast 36
- origset true
- name Read5
- xpos -1534
- ypos -627
+push $Na5c28800
+Dot {
+ name Dot20
+ xpos -1500
+ ypos -684
 }
+set Na5c28000 [stack 0]
 Retime {
  input.last 36
  output.first 1001
@@ -1217,10 +1861,10 @@ Transform {
  ypos -374
 }
 CornerPin2D {
- to1 {1933.099976 1549.300049}
- to2 {2046.800049 1553.599976}
- to3 {2049.800049 1627.599976}
- to4 {1932 1626}
+ to1 {1927.599976 1549.800049}
+ to2 {2050.600098 1552.800049}
+ to3 {2055 1636}
+ to4 {1931.800049 1637.800049}
  invert false
  from1 {0 0}
  from2 {3840 0}
@@ -1234,7 +1878,7 @@ Merge2 {
  inputs 2
  name Merge5
  xpos -1533
- ypos -239
+ ypos -175
 }
 Roto {
  inputs 0
@@ -1326,17 +1970,11 @@ Dot {
  xpos -1146
  ypos -445
 }
-Read {
- inputs 0
- file_type mov
- file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
- format "1920 1080 0 0 1920 1080 1 HD_1080"
- last 36
- origlast 36
- origset true
- name Read6
- xpos -1282
- ypos -628
+push $Na5c28000
+Dot {
+ name Dot21
+ xpos -1248
+ ypos -684
 }
 Retime {
  input.last 36
@@ -1348,7 +1986,14 @@ Retime {
  time ""
  name Retime6
  xpos -1282
- ypos -544
+ ypos -625
+}
+TimeOffset {
+ time_offset 4
+ time ""
+ name TimeOffset3
+ xpos -1282
+ ypos -601
 }
 Transform {
  scale {1.824000001 1.200000048}
@@ -1392,17 +2037,16 @@ Transform {
  ypos -375
 }
 CornerPin2D {
- to1 {2090 1572.199951}
- to2 {2190.199951 1568.800049}
- to3 {2196.199951 1643.800049}
- to4 {2090.800049 1641.800049}
+ to1 {2079.600098 1557.199951}
+ to2 {2200.199951 1562.800049}
+ to3 {2199.800049 1649.199951}
+ to4 {2081.600098 1647.800049}
  invert false
  from1 {0 0}
  from2 {3840 0}
  from3 {3840 2160}
  from4 {0 2160}
  name CornerPin2D5
- selected true
  xpos -1281
  ypos -305
 }
@@ -1410,7 +2054,7 @@ Merge2 {
  inputs 2
  name Merge6
  xpos -1281
- ypos -239
+ ypos -175
 }
 Roto {
  inputs 0
@@ -1505,20 +2149,8 @@ Dot {
  xpos -876
  ypos -444
 }
-Read {
- inputs 0
- file_type mov
- file C:/3D_Temp/PP/draft-render/SUN_DRAFT_RENDER/sun_002_draft_v2.mov
- format "1920 1080 0 0 1920 1080 1 HD_1080"
- last 36
- origlast 36
- origset true
- name Read7
- xpos -1012
- ypos -627
- disable true
-}
 Retime {
+ inputs 0
  input.last 36
  output.first 1001
  output.first_lock true
@@ -1596,21 +2228,28 @@ Merge2 {
  inputs 2
  name Merge7
  xpos -1011
- ypos -239
+ ypos -175
+}
+Dot {
+ name Dot22
+ xpos -822
+ ypos -172
+}
+Dot {
+ name Dot23
+ xpos -822
+ ypos -236
 }
 Grade {
- black 0.05
- white 0.9
+ inputs 1+1
+ black {0.4107222557 0.2397042364 0.1574764997 1}
+ white {0.7054905295 0.43147403 0.2489282638 1}
  multiply 0.9
  name Grade1
- xpos -718
+ xpos -676
  ypos -239
 }
-Defocus {
- name Defocus1
- xpos -579
- ypos -245
-}
+set N944ac800 [stack 0]
 Merge2 {
  inputs 2
  operation mask
@@ -1619,9 +2258,9 @@ Merge2 {
  ypos -239
 }
 Blur {
- size 6
+ size 2.2
  name Blur3
- xpos -359
+ xpos -279
  ypos -245
 }
 Crop {
@@ -1635,7 +2274,7 @@ Dot {
  xpos 241
  ypos -236
 }
-set Ndcb47800 [stack 0]
+set N944adc00 [stack 0]
 Group {
  name ExponentialGlow1
  tile_color 0xcc804eff
@@ -1695,7 +2334,7 @@ Group {
   ypos -588
   addUserKnob {20 User}
   addUserKnob {7 falloff l Falloff R 0 2}
-  falloff 0.7
+  falloff 0.6
   addUserKnob {7 intensity l Intensity R 0 5}
   intensity {{parent.intensity*10 i}}
   addUserKnob {7 blur_amount l Size R 0 5}
@@ -1703,13 +2342,13 @@ Group {
   addUserKnob {6 add_source l "Add Source" +STARTLINE}
   addUserKnob {6 add_bbox l "Add original bbox" +STARTLINE}
  }
-set Ndcdb7400 [stack 0]
+set N944f7800 [stack 0]
  Dot {
   name Dot12
   xpos -371
   ypos -584
  }
-set Ndcdb7800 [stack 0]
+set N944f7c00 [stack 0]
  Saturation {
   saturation 0
   mode Maximum
@@ -1724,7 +2363,7 @@ set Ndcdb7800 [stack 0]
   xpos -316
   ypos -562
  }
-push $Ndcdb7800
+push $N944f7c00
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1785,49 +2424,49 @@ push $Ndcdb7800
   xpos -146
   ypos -292
  }
-set Ndcf9a400 [stack 0]
+set N9454c800 [stack 0]
  Dot {
   name Dot2
   xpos -36
   ypos -292
  }
-set Ndcf9a800 [stack 0]
+set N9454cc00 [stack 0]
  Dot {
   name Dot4
   xpos 84
   ypos -292
  }
-set Ndcf9ac00 [stack 0]
+set N9454d000 [stack 0]
  Dot {
   name Dot5
   xpos 194
   ypos -292
  }
-set Ndcf9b000 [stack 0]
+set N9454d400 [stack 0]
  Dot {
   name Dot6
   xpos 304
   ypos -292
  }
-set Ndcf9b400 [stack 0]
+set N9454d800 [stack 0]
  Dot {
   name Dot7
   xpos 414
   ypos -292
  }
-set Ndcf9b800 [stack 0]
+set N9454dc00 [stack 0]
  Dot {
   name Dot8
   xpos 524
   ypos -292
  }
-set Ndcf9bc00 [stack 0]
+set N94570000 [stack 0]
  Dot {
   name Dot9
   xpos 631
   ypos -292
  }
-set Ndcfc2000 [stack 0]
+set N94570400 [stack 0]
  Dot {
   name Dot10
   xpos 741
@@ -1873,7 +2512,7 @@ set Ndcfc2000 [stack 0]
   xpos -289
   ypos 235
  }
-push $Ndcfc2000
+push $N94570400
  Group {
   name Blur7
   xpos 597
@@ -1893,7 +2532,6 @@ push $Ndcfc2000
    size {{width/3*(xpercent/100) x1001 6.826666667e+10} {height/3*(ypercent/100)*(1/AspectRatio)}}
    crop false
    name Blur120
-   selected true
    xpos 514
    ypos -164
    addUserKnob {20 User}
@@ -1915,7 +2553,7 @@ push $Ndcfc2000
   xpos -289
   ypos 194
  }
-push $Ndcf9bc00
+push $N94570000
  Group {
   name Blur6
   xpos 490
@@ -1935,7 +2573,6 @@ push $Ndcf9bc00
    size {{width/3*(xpercent/100) x1001 6.826666667e+10} {height/3*(ypercent/100)*(1/AspectRatio)}}
    crop false
    name Blur120
-   selected true
    xpos 514
    ypos -185
    addUserKnob {20 User}
@@ -1957,7 +2594,7 @@ push $Ndcf9bc00
   xpos -290
   ypos 155
  }
-push $Ndcf9b800
+push $N9454dc00
  Group {
   name Blur5
   xpos 380
@@ -1977,7 +2614,6 @@ push $Ndcf9b800
    size {{width/3*(xpercent/100) x1001 6.826666667e+10} {height/3*(ypercent/100)*(1/AspectRatio)}}
    crop false
    name Blur120
-   selected true
    xpos 514
    ypos -172
    addUserKnob {20 User}
@@ -1999,7 +2635,7 @@ push $Ndcf9b800
   xpos -290
   ypos 116
  }
-push $Ndcf9b400
+push $N9454d800
  Group {
   name Blur4
   xpos 270
@@ -2019,7 +2655,6 @@ push $Ndcf9b400
    size {{width/3*(xpercent/100) x1001 6.826666667e+10} {height/3*(ypercent/100)*(1/AspectRatio)}}
    crop false
    name Blur120
-   selected true
    xpos 514
    ypos -179
    addUserKnob {20 User}
@@ -2041,7 +2676,7 @@ push $Ndcf9b400
   xpos -292
   ypos 77
  }
-push $Ndcf9b000
+push $N9454d400
  Group {
   name Blur3
   xpos 160
@@ -2061,7 +2696,6 @@ push $Ndcf9b000
    size {{width/3*(xpercent/100) i x1001 6.826666667e+10} {height/3*(ypercent/100)*(1/AspectRatio) i}}
    crop false
    name Blur120
-   selected true
    xpos 514
    ypos -189
    addUserKnob {20 User}
@@ -2083,7 +2717,7 @@ push $Ndcf9b000
   xpos -291
   ypos 42
  }
-push $Ndcf9ac00
+push $N9454d000
  Group {
   name Blur2
   xpos 50
@@ -2103,7 +2737,6 @@ push $Ndcf9ac00
    size {{width/3*(xpercent/100) i x1001 6.826666667e+10} {height/3*(ypercent/100)*(1/AspectRatio) i}}
    crop false
    name Blur120
-   selected true
    xpos 514
    ypos -184
    addUserKnob {20 User}
@@ -2125,7 +2758,7 @@ push $Ndcf9ac00
   xpos -292
   ypos 5
  }
-push $Ndcf9a800
+push $N9454cc00
  Group {
   name Blur1
   xpos -70
@@ -2145,7 +2778,6 @@ push $Ndcf9a800
    size {{width/3*(xpercent/100) i x1001 6.826666667e+10} {height/3*(ypercent/100)*(1/AspectRatio) i}}
    crop false
    name Blur120
-   selected true
    xpos 514
    ypos -189
    addUserKnob {20 User}
@@ -2167,8 +2799,8 @@ push $Ndcf9a800
   xpos -293
   ypos -36
  }
-push $Ndcdb7400
-push $Ndcf9a400
+push $N944f7800
+push $N9454c800
  Group {
   name Blur
   xpos -180
@@ -2294,7 +2926,13 @@ push $Ndcf9a400
   ypos 383
  }
 end_group
-push $N1bd9f400
+Grade {
+ multiply {0.6369137168 0.3738145232 0.2240551114 0.9999998808}
+ name Grade10
+ xpos 327
+ ypos 483
+}
+push $N93051800
 Blur {
  size 30
  name Blur2
@@ -2313,7 +2951,7 @@ Read {
  origset true
  name Read4
  xpos 580
- ypos -624
+ ypos -1164
 }
 Retime {
  input.first 86959
@@ -2324,16 +2962,16 @@ Retime {
  time ""
  name Retime1
  xpos 580
- ypos -514
+ ypos -1054
 }
 Group {
- name apDespill
+ name apDespill1
  help "apDespill v2.0 by Adrian Pueyo\n\nGizmo to despill an image, with options to despill any hue (and not only the primaries), select different algorithms for de/respilling, and protect tones from the despill.\n\nIf you just want a basic despill, its default values should already be enough and the tool will avoid any extra calculations.\n\nv2 includes a new \"absolute\" mode which lets you basically perform a key, or do a \"despill to color\" operation. Also, the despill color, respill color and limit can now be plugged as image inputs if you wish, letting you perform a fully image-based despill or key, sort of iKeylight. Additionally, it allows you to perform the despill under a colorspace sandwich, for the artists who prefer to loop through different colorspaces in order to find one that works. Thanks to Tony Lyons the best feedback!\n\nadrianpueyo.com, 2014-2021"
  onCreate "n = nuke.thisNode()\nn\['tolerance'].setRange(0,2)\nn\['prot1_tolerance'].setFlag(0x00000004)\nn\['prot1_effect'].setFlag(0x00000004)"
  knobChanged "n = nuke.thisNode()\nk = nuke.thisKnob()\nkn = k.name()\nif kn == \"color\":\n    kv = k.getValue()\n    custom_weight_labels = \[\"green - blue\", \"red - blue\", \"red - green\", \" \"]\n    n\[\"custom_weight\"].setLabel(custom_weight_labels\[int(kv)])\n    n\[\"pick\"].setVisible(k.getValue() == 3)\nelif kn == \"mode\":\n    n\[\"custom_weight\"].setVisible(n\[\"mode\"].getValue()==3)\nelif kn in \[\"out\",\"output_alpha\"]:\n    n\[\"respill_math\"].setEnabled(n\[\"out\"].getValue()==0 or n\[\"output_alpha\"].getValue()==1)\n    n\[\"respill_color\"].setEnabled(n\[\"out\"].getValue()==0)\n    n\[\"inverted_spill_matte\"].setEnabled(n\[\"output_alpha\"].value())\nelif kn == \"prot1_activate\":\n    protA = n\[\"prot1_activate\"].value()\n    n\[\"prot1_preview\"].setEnabled(protA)\n    for i in \[\"prot1\", \"prot1_tolerance\", \"prot1_falloff\",\"prot1_effect\"]:\n        n\[i].setVisible(protA)\nelif kn == \"inputChange\":\n    n.knobs()\[\"limit_channel\"].setVisible(n.input(3) is not None)\n    n.knobs()\[\"invert_limit_channel\"].setVisible(n.input(3) is not None)\n    color_enabled = nuke.toNode(\"apDespillKernel\")\[\"apDespillKernel_use_color_input\"].getValue()==0\n    n\[\"color\"].setEnabled(color_enabled)\n    n.knobs()\[\"pick\"].setEnabled(color_enabled)\n    n\[\"info_using_input_color\"].setVisible(not color_enabled)\nelif kn == \"colorspace_shift\":\n    kv = k.value()\n    for i in \[\"colorspace_out\", \"illuminant_out\", \"primary_out\"]:\n        n.knobs()\[i].setEnabled(kv)\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setEnabled(kv and n\[\"input_colorspace\"].value())\n    n\[\"input_colorspace\"].setEnabled(kv)\nelif kn == \"input_colorspace\":\n    kv = k.value()\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setVisible(kv)\n        n.knobs()\[i].setEnabled(kv)\nelif kn == \"imagebased\":\n    kv = k.value()\n    input_names = \[\"color\",\"limit\",\"respill\"]\n    if kv:\n        for i_name in input_names:\n            i_fullname = \"Input\"+i_name\n            if not nuke.exists(i_fullname):\n                i_node = nuke.nodes.Input()\n                i_node\[\"name\"].setValue(i_fullname)\n            else:\n                i_node = nuke.toNode(i_fullname)\n            dot = nuke.toNode(\"Dot\"+i_name)\n            i_node.setXYpos(dot.xpos(),dot.ypos()-40)\n            dot.setInput(0,i_node)\n    else:\n        # If something connected, do nothing\n        if not any(\[n.input(i) for i in \[2,3,4]]):\n            for i_name in input_names:\n                if nuke.exists(\"Input\"+i_name):\n                    nuke.delete(nuke.toNode(\"Input\"+i_name))\n        else:\n            k.setValue(True)"
  tile_color 0x8b8b8bff
  xpos 580
- ypos -469
+ ypos -1004
  addUserKnob {20 apDespill}
  addUserKnob {6 pick_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
  addUserKnob {6 imagebased l image-based t "Show or hide image-based inputs.\n\nThis doesn't change anything internally except hiding inputs, just to avoid intimidating arrows on the node graph.\n\nNote: While any image-based input is connected, this won't let you hide them." +STARTLINE}
@@ -2343,9 +2981,8 @@ Group {
  color custom
  addUserKnob {26 info_using_input_color l " " -STARTLINE +HIDDEN T "<i><font color=#AAA> (Using color from input)"}
  addUserKnob {18 pick t "Pick the color you'd like to use for the despill. \n\nPlease use ctrl/cmd+alt+click for picking.\n\nNOTE: If a despill color image input is plugged, this value will be ignored."}
- pick {0.01208538841 0.04410633817 0.07612729818}
+ pick {0.3719482422 0.3776855469 0.4252929688}
  addUserKnob {6 pick_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
- pick_panelDropped true
  addUserKnob {6 dfg_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
  addUserKnob {4 out l output t "Quick switch to output the despilled image or the substracted one." M {despill spill}}
  addUserKnob {6 output_alpha l "output spill matte in alpha" t "Output the spill luminance in the alpha channel." +STARTLINE}
@@ -2386,7 +3023,7 @@ Group {
  addUserKnob {26 respill_divider l "" +STARTLINE}
  addUserKnob {4 respill_math l "spill math" t "Settings for the math for desaturating the the spill before adding it back." M {"Rec 709" "Ccir 601" "Rec 2020" Average Maximum "" "" "" "" ""}}
  addUserKnob {18 respill_color l "respill color" t "RGB multiplier for the desaturated spill when adding it back.\n\nIf used on non-degrained plates (which should be avoided anyway), any value other than 1 here will most likely produce grain artifacts.\n\nNOTE: If a respill image input is plugged, this value will act as a multiplier." R 0 4}
- respill_color {1 0.00687 0}
+ respill_color {1 0.386788 0}
  addUserKnob {6 respill_color_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
  respill_color_panelDropped true
  addUserKnob {26 ""}
@@ -2410,7 +3047,7 @@ Group {
   xpos 307
   ypos -267
  }
-set Nba54d000 [stack 0]
+set N8f408800 [stack 0]
  Dot {
   name Dot5
   note_font_size 41
@@ -2466,7 +3103,7 @@ set Nba54d000 [stack 0]
   xpos 449
   ypos -761
  }
-set Nba5e7000 [stack 0]
+set N70cde000 [stack 0]
  Dot {
   name Dot2
   note_font_size 41
@@ -2569,16 +3206,302 @@ set Nba5e7000 [stack 0]
   xpos 788
   ypos -267
  }
-set Nba70d800 [stack 0]
+set Na8253c00 [stack 0]
  Dot {
   name Dot4
   note_font_size 41
   xpos 788
   ypos -237
  }
-push $Nba54d000
-push $Nba70d800
-push $Nba5e7000
+push $N8f408800
+push $Na8253c00
+push $N70cde000
+ Merge2 {
+  inputs 2+1
+  operation copy
+  bbox B
+  Achannels {rgba.red rgba.green rgba.blue -rgba.alpha}
+  Bchannels {rgba.red rgba.green rgba.blue -rgba.alpha}
+  output {rgba.red rgba.green rgba.blue -rgba.alpha}
+  name Merge
+  xpos 449
+  ypos -270
+ }
+ Copy {
+  inputs 2+1
+  from0 rgba.alpha
+  to0 rgba.alpha
+  bbox B
+  maskChannelMask {{{parent.Merge.maskChannelMask}}}
+  maskChannelInput {{{parent.Merge.maskChannelInput}}}
+  inject {{parent.Merge.inject}}
+  invert_mask {{parent.Merge.invert_mask}}
+  fringe {{parent.Merge.fringe}}
+  name CopyAlpha
+  xpos 449
+  ypos -246
+  disable {{!parent.output_alpha}}
+ }
+ Output {
+  name Output
+  xpos 449
+  ypos -166
+ }
+end_group
+Group {
+ name apDespill
+ help "apDespill v2.0 by Adrian Pueyo\n\nGizmo to despill an image, with options to despill any hue (and not only the primaries), select different algorithms for de/respilling, and protect tones from the despill.\n\nIf you just want a basic despill, its default values should already be enough and the tool will avoid any extra calculations.\n\nv2 includes a new \"absolute\" mode which lets you basically perform a key, or do a \"despill to color\" operation. Also, the despill color, respill color and limit can now be plugged as image inputs if you wish, letting you perform a fully image-based despill or key, sort of iKeylight. Additionally, it allows you to perform the despill under a colorspace sandwich, for the artists who prefer to loop through different colorspaces in order to find one that works. Thanks to Tony Lyons the best feedback!\n\nadrianpueyo.com, 2014-2021"
+ onCreate "n = nuke.thisNode()\nn\['tolerance'].setRange(0,2)\nn\['prot1_tolerance'].setFlag(0x00000004)\nn\['prot1_effect'].setFlag(0x00000004)"
+ knobChanged "n = nuke.thisNode()\nk = nuke.thisKnob()\nkn = k.name()\nif kn == \"color\":\n    kv = k.getValue()\n    custom_weight_labels = \[\"green - blue\", \"red - blue\", \"red - green\", \" \"]\n    n\[\"custom_weight\"].setLabel(custom_weight_labels\[int(kv)])\n    n\[\"pick\"].setVisible(k.getValue() == 3)\nelif kn == \"mode\":\n    n\[\"custom_weight\"].setVisible(n\[\"mode\"].getValue()==3)\nelif kn in \[\"out\",\"output_alpha\"]:\n    n\[\"respill_math\"].setEnabled(n\[\"out\"].getValue()==0 or n\[\"output_alpha\"].getValue()==1)\n    n\[\"respill_color\"].setEnabled(n\[\"out\"].getValue()==0)\n    n\[\"inverted_spill_matte\"].setEnabled(n\[\"output_alpha\"].value())\nelif kn == \"prot1_activate\":\n    protA = n\[\"prot1_activate\"].value()\n    n\[\"prot1_preview\"].setEnabled(protA)\n    for i in \[\"prot1\", \"prot1_tolerance\", \"prot1_falloff\",\"prot1_effect\"]:\n        n\[i].setVisible(protA)\nelif kn == \"inputChange\":\n    n.knobs()\[\"limit_channel\"].setVisible(n.input(3) is not None)\n    n.knobs()\[\"invert_limit_channel\"].setVisible(n.input(3) is not None)\n    color_enabled = nuke.toNode(\"apDespillKernel\")\[\"apDespillKernel_use_color_input\"].getValue()==0\n    n\[\"color\"].setEnabled(color_enabled)\n    n.knobs()\[\"pick\"].setEnabled(color_enabled)\n    n\[\"info_using_input_color\"].setVisible(not color_enabled)\nelif kn == \"colorspace_shift\":\n    kv = k.value()\n    for i in \[\"colorspace_out\", \"illuminant_out\", \"primary_out\"]:\n        n.knobs()\[i].setEnabled(kv)\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setEnabled(kv and n\[\"input_colorspace\"].value())\n    n\[\"input_colorspace\"].setEnabled(kv)\nelif kn == \"input_colorspace\":\n    kv = k.value()\n    for i in \[\"colorspace_in\", \"illuminant_in\", \"primary_in\"]:\n        n.knobs()\[i].setVisible(kv)\n        n.knobs()\[i].setEnabled(kv)\nelif kn == \"imagebased\":\n    kv = k.value()\n    input_names = \[\"color\",\"limit\",\"respill\"]\n    if kv:\n        for i_name in input_names:\n            i_fullname = \"Input\"+i_name\n            if not nuke.exists(i_fullname):\n                i_node = nuke.nodes.Input()\n                i_node\[\"name\"].setValue(i_fullname)\n            else:\n                i_node = nuke.toNode(i_fullname)\n            dot = nuke.toNode(\"Dot\"+i_name)\n            i_node.setXYpos(dot.xpos(),dot.ypos()-40)\n            dot.setInput(0,i_node)\n    else:\n        # If something connected, do nothing\n        if not any(\[n.input(i) for i in \[2,3,4]]):\n            for i_name in input_names:\n                if nuke.exists(\"Input\"+i_name):\n                    nuke.delete(nuke.toNode(\"Input\"+i_name))\n        else:\n            k.setValue(True)"
+ tile_color 0x8b8b8bff
+ xpos 580
+ ypos -966
+ disable true
+ addUserKnob {20 apDespill}
+ addUserKnob {6 pick_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {6 imagebased l image-based t "Show or hide image-based inputs.\n\nThis doesn't change anything internally except hiding inputs, just to avoid intimidating arrows on the node graph.\n\nNote: While any image-based input is connected, this won't let you hide them." +STARTLINE}
+ addUserKnob {6 absolute_mode l "absolute mode" t "Absolute mode performs a keying algorithm instead of a regular despill, so that you can do a \"spill to colour\" or even use this node as an image-based Keylight." -STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {4 color t "Select a primary as a starting point, or custom to show RGB controls to select any color.\n\nNote: If an image is plugged on the color input, this will get overwritten by the input." M {red green blue custom "" "" ""}}
+ color custom
+ addUserKnob {26 info_using_input_color l " " -STARTLINE +HIDDEN T "<i><font color=#AAA> (Using color from input)"}
+ addUserKnob {18 pick t "Pick the color you'd like to use for the despill. \n\nPlease use ctrl/cmd+alt+click for picking.\n\nNOTE: If a despill color image input is plugged, this value will be ignored."}
+ pick {0.01208538841 0.04410633817 0.07612729818}
+ addUserKnob {6 pick_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ pick_panelDropped true
+ addUserKnob {6 dfg_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {4 out l output t "Quick switch to output the despilled image or the substracted one." M {despill spill}}
+ addUserKnob {6 output_alpha l "output spill matte in alpha" t "Output the spill luminance in the alpha channel." +STARTLINE}
+ output_alpha true
+ addUserKnob {6 inverted_spill_matte l inverted t "Invert the output spill matte (in the alpha channel), especially useful when the despill is set to Absolute mode, in which case this will output a keying-like alpha." -STARTLINE}
+ inverted_spill_matte true
+ addUserKnob {4 mode l "despill math" t "average = avg of other two channels\nmaximum = max of other two channels\nminimum = min of other two channels\ncustom = select custom weights" M {average maximum minimum custom ""}}
+ addUserKnob {7 custom_weight l " " t "-1 = only capped by the first channel\n0 = capped by avg of both\n1 = only capped by the second channel" -STARTLINE +HIDDEN R -1 1}
+ addUserKnob {26 ""}
+ addUserKnob {6 colorspace_shift l "alt colorspace" t "This allows for the popular artistic approach to refining the despill where you browse through colorspace conversions (mainly white point and primaries) and choose one that matches your desired despill bias.\n\n<b>Tip:</b> Double click on a dropdown and use the Page Up and Page Down keys on your keyboard to browse quickly through the items.\n\n<b>Note:</b> There's no need at all for the values of these dropdowns to match your working colorspace, so you can leave it as-is or tweak it if you prefer, regardless of the colorspace you're comping at (e.g. ACEScg). It is literally an artistic conversion prior to the despill algorithm that then gets reverted." +STARTLINE}
+ colorspace_shift true
+ addUserKnob {6 input_colorspace l "input colorspace" t "Also tweak the input colorspace for the back and forth colorspace conversion. This is generally not needed however, as this colorspace conversion is generally only used for artistic purposes." -STARTLINE}
+ addUserKnob {6 log_space l log t "Perform Lin2Log -> Despill -> Log2Lin." -STARTLINE}
+ addUserKnob {41 colorspace_in l "in colorspace" +DISABLED +HIDDEN T Colorspace1.colorspace_in}
+ addUserKnob {41 illuminant_in l "" -STARTLINE +DISABLED +HIDDEN T Colorspace1.illuminant_in}
+ addUserKnob {41 primary_in l "" -STARTLINE +DISABLED +HIDDEN T Colorspace1.primary_in}
+ addUserKnob {41 colorspace_out l "despill space" T Colorspace1.colorspace_out}
+ addUserKnob {41 illuminant_out l "" -STARTLINE T Colorspace1.illuminant_out}
+ addUserKnob {41 primary_out l "" -STARTLINE T Colorspace1.primary_out}
+ addUserKnob {26 ""}
+ addUserKnob {7 hue_offset l "hue offset" t "Rotate the despill vectors to despill an arbitrary tone other than the primaries or the picked color.\nNote: A rotation of +-120 degrees is the same as selecting a different color channel." R -30 30}
+ addUserKnob {7 tolerance l limit t "Use this to multiply the hue tolerance (the limiter value). You can move it all the way down to 0 to completely remove a hue from your image.\n\n<b>NOTE:</b> If an image is plugged into the <i>limit</i> input, this will act as a multiplier." R 0 2}
+ tolerance 1
+ addUserKnob {41 limit_channel l "limit channel" +HIDDEN T CopyLimit.from0}
+ addUserKnob {6 invert_limit_channel l invert t "The recommended workflow for the image-based limit is keeping this invert turned on, so that the higher the value of the limit channel, the lower the limit gets." -STARTLINE +HIDDEN}
+ invert_limit_channel true
+ addUserKnob {6 prot1_activate l "protect tones" t "Enable controls to select tones to protect from despilling." +STARTLINE}
+ addUserKnob {6 prot1_preview l preview t "Output the protected tones." -STARTLINE +DISABLED}
+ addUserKnob {18 prot1 l protect t "Pick the central hue to protect.\n(ctrl/cmd+alt+click)" +HIDDEN}
+ prot1 {0 0 0}
+ addUserKnob {6 prot1_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {7 prot1_tolerance l tolerance t "Amount of hues to include in the selection." +HIDDEN}
+ prot1_tolerance 0.2
+ addUserKnob {7 prot1_falloff l falloff t "Falloff for the hue selection. A higher falloff will make hues apart from the picked one lose weight more quickly." +HIDDEN R 0 4}
+ prot1_falloff 2
+ addUserKnob {7 prot1_effect l effect t "Multiplier for the hue protection, and for the spill limit value." +HIDDEN R 0 10}
+ prot1_effect 1
+ addUserKnob {26 respill_divider l "" +STARTLINE}
+ addUserKnob {4 respill_math l "spill math" t "Settings for the math for desaturating the the spill before adding it back." M {"Rec 709" "Ccir 601" "Rec 2020" Average Maximum "" "" "" "" ""}}
+ addUserKnob {18 respill_color l "respill color" t "RGB multiplier for the desaturated spill when adding it back.\n\nIf used on non-degrained plates (which should be avoided anyway), any value other than 1 here will most likely produce grain artifacts.\n\nNOTE: If a respill image input is plugged, this value will act as a multiplier." R 0 4}
+ respill_color {1 0.00687 0}
+ addUserKnob {6 respill_color_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ respill_color_panelDropped true
+ addUserKnob {26 ""}
+ addUserKnob {41 maskChannelMask l mask T Merge.maskChannelMask}
+ addUserKnob {41 inject -STARTLINE T Merge.inject}
+ addUserKnob {41 invert_mask l invert -STARTLINE T Merge.invert_mask}
+ addUserKnob {41 fringe -STARTLINE T Merge.fringe}
+ addUserKnob {41 mix T Merge.mix}
+ addUserKnob {26 version_author l "" t "apDespill v2.0\n13 April, 2021" +STARTLINE T "<span style=\"color:#666\"><br/><b>apDespill v2.0</b> - <a href=\"http://www.adrianpueyo.com\" style=\"color:#666;text-decoration: none;\">adrianpueyo.com</a>, 2014-2021</span>"}
+}
+ Input {
+  inputs 0
+  name Inputmask
+  xpos 273
+  ypos -370
+  number 1
+ }
+ Dot {
+  name Dot1
+  note_font_size 41
+  xpos 307
+  ypos -267
+ }
+set N94740000 [stack 0]
+ Dot {
+  name Dot5
+  note_font_size 41
+  xpos 307
+  ypos -237
+ }
+ Dot {
+  inputs 0
+  name Dotrespill
+  label Dotrespill
+  note_font "Verdana Bold"
+  xpos 1190
+  ypos -525
+ }
+ AddChannels {
+  channels rgba
+  format_size true
+  name AddRGBA_spill
+  xpos 1156
+  ypos -442
+ }
+ Dot {
+  inputs 0
+  name Dotcolor
+  label Dotcolor
+  note_font "Verdana Bold"
+  xpos 1080
+  ypos -593
+ }
+ AddChannels {
+  channels rgba
+  format_size true
+  name AddRGBA_color
+  xpos 1046
+  ypos -499
+ }
+ Dot {
+  inputs 0
+  name Dotlimit
+  label Dotlimit
+  note_font "Verdana Bold"
+  xpos 936
+  ypos -732
+ }
+ Shuffle {
+  name Shuffle_limit
+  xpos 902
+  ypos -670
+ }
+ Input {
+  inputs 0
+  name Inputimage
+  xpos 449
+  ypos -761
+ }
+set N94766000 [stack 0]
+ Dot {
+  name Dot2
+  note_font_size 41
+  xpos 788
+  ypos -758
+ }
+ Shuffle {
+  alpha black
+  name Shuffle
+  xpos 754
+  ypos -694
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name CopyLimit
+  xpos 754
+  ypos -670
+ }
+ Invert {
+  channels alpha
+  name InvertLimit
+  xpos 754
+  ypos -611
+  disable {{!invert_limit_channel}}
+ }
+ Colorspace {
+  name Colorspace1
+  label "\[value colorspace_in] >> \[value colorspace_out]"
+  xpos 754
+  ypos -544
+  disable {{!parent.colorspace_shift}}
+ }
+ Log2Lin {
+  operation lin2log
+  name Log2Lin1
+  xpos 754
+  ypos -508
+  disable {{!log_space}}
+ }
+ BlinkScript {
+  inputs 3
+  recompileCount 94
+  ProgramGroup 1
+  KernelDescription "2 \"apDespillKernel\" iterate pixelWise 857ee5211c9dc340b8743026c9778403c1424a4ec1afa5c7990e55b71f93720c 4 \"src\" Read Point \"color_src\" Read Point \"spill_src\" Read Point \"dst\" Write Point 21 \"limit\" Float 1 AACAPw== \"shift\" Float 1 AAAAAA== \"weights\" Float 1 AAAAAA== \"outmode\" Int 1 AAAAAA== \"output_alpha\" Int 1 AAAAAA== \"output_alpha_inverted\" Int 1 AAAAAA== \"clr\" Int 1 AAAAAA== \"mode\" Int 1 AAAAAA== \"respill_math\" Int 1 AAAAAA== \"respill_color\" Float 4 AAAAAAAAAAAAAAAAAAAAAA== \"prot1_on\" Int 1 AAAAAA== \"prot1_preview\" Int 1 AAAAAA== \"prot1\" Float 3 AAAAAAAAAAAAAAAAAAAAAA== \"prot1_tolerance\" Float 1 AAAAAA== \"prot1_mult\" Float 1 AAAAAA== \"prot1_falloff\" Float 1 AAAAAA== \"pickSpill\" Float 3 AAAAAAAAAAAAAAAAAAAAAA== \"despill_method\" Int 1 AAAAAA== \"use_color_input\" Int 1 AAAAAA== \"use_spill_input\" Int 1 AAAAAA== \"use_limit_input\" Int 1 AAAAAA== 21 \"limit\" 1 1 \"shift\" 1 1 \"weights\" 1 1 \"outmode\" 1 1 \"output_alpha\" 1 1 \"output_alpha_inverted\" 1 1 \"clr\" 1 1 \"mode\" 1 1 \"respill_math\" 1 1 \"respill_color\" 4 1 \"prot1_on\" 1 1 \"prot1_preview\" 1 1 \"prot1\" 3 1 \"prot1_tolerance\" 1 1 \"prot1_mult\" 1 1 \"prot1_falloff\" 1 1 \"pickSpill\" 3 1 \"despill_method\" 1 1 \"use_color_input\" 1 1 \"use_spill_input\" 1 1 \"use_limit_input\" 1 1 7 \"_usePicked\" Int 1 1 AAAAAA== \"_clr\" Int 1 1 AAAAAA== \"_ret\" Int 1 1 AAAAAA== \"_hueShift\" Float 1 1 AAAAAA== \"_autoShift\" Float 1 1 AAAAAA== \"despillColor\" Float 3 1 AAAAAAAAAAAAAAAAAAAAAA== \"vNorm\" Float 3 1 AAAAAAAAAAAAAAAAAAAAAA=="
+  kernelSource "//---------------------------------------------------------\n// apDespillKernel - apDespill v1.0 by Adrian Pueyo\n//\n// Despill an image, with options to despill any hue (and\n// not only the primaries), select different algorithms for\n// des/respilling, and protect tones from the despill.\n//\n// v2.0: Ability to plug image inputs for the controls,\n// and to perform a full key and respill.\n//\n// adrianpueyo.com, 2014-2017\n// ---------------------------------------------------------\n\ninline float y_convert_ccir601(const float4 in)\{\n  return in.x * 0.299f + in.y * 0.587f + in.z * 0.114f;\n\}\n\ninline float y_convert_rec709(const float4 in)\{\n  return in.x * 0.2125f + in.y * 0.7154f + in.z * 0.0721f;\n\}\n\ninline float y_convert_rec2020(const float4 in)\{\n  return in.x * 0.2627f + in.y * 0.678f + in.z * 0.0593f;\n\}\n\ninline float4 hueRotate(const float4 in, const float H)\{\n  if(H==0.0f)\{\n    return in;\n  \}else\{\n    float cosH = cos(H*PI/180);\n    float sinH = sin(H*PI/180);\n    float3 ret;\n    ret.x = (in.x+in.y+in.z)*(1-cosH)/3 + in.x*cosH + (-in.y/sqrt(3.0f)+in.z/sqrt(3.0f))*sinH;\n    ret.y = (in.x+in.y+in.z)*(1-cosH)/3 + in.y*cosH + (in.x/sqrt(3.0f)-in.z/sqrt(3.0f))*sinH;\n    ret.z = (in.x+in.y+in.z)*(1-cosH)/3 + in.z*cosH + (-in.x/sqrt(3.0f)+in.y/sqrt(3.0f))*sinH;\n    return float4(ret.x,ret.y,ret.z,in\[3]);\n  \}\n\}\n\nfloat3 vecToPlane(float3 v1, float3 v2 = float3(1.0f,1.0f,1.0f))\{\n  float3 v1onv2;\n  v1onv2 = v2 * float((float(dot(v2,v1))/float(dot(v2,v2)))); //Projection of vector on another (plane's normal)\n  return v1-v1onv2; //Projection of vector on plane\n\}\n\ninline float3 myCross(float3 a, float3 b)\{\n  return float3(float(a.y*b.z-a.z*b.y),float(a.z*b.x-a.x*b.z),float(a.x*b.y-a.y*b.x));\n\}\n\ninline float colorAngle(const float3 v1, const float3 v2)\{\n  const float3 vN=float3(1.0f,1.0f,1.0f);\n  float ang = acos(float(dot(v1,v2))/float(sqrt(dot(v1,v1)*dot(v2,v2))));\n  float3 crs = myCross(v1,v2);\n  if (dot(vN, crs) > 0) \{\n    ang = -ang;\n  \}\n  return ang;\n\}\n\n//Main function to calculate the despill for a float4 colour. If prot1_preview is True, returns the prot1 result instead.\ninline float4 apDespillMain(float4 src_color, float hueShift, int clr, int mode, float limit, float weights, int prot1_preview, int prot1_on, float3 prot1, float prot1_tolerance, float prot1_mult, float prot1_falloff)\{\n    //1. HueRotate IN\n    float4 despilled = hueRotate(src_color, hueShift);\n\n    //2. Calculate the limit\n    float resultLimit = 0.0f;\n    int2 others;\n    if(clr==0)\{//If red (and if _usePicked, also set red)\n      others = int2(1,2);\n    \}else if(clr==1)\{\n      others=int2(0,2);\n    \}else if(clr==2)\{\n      others=int2(0,1);\n    \}\n\n    if(mode==0)\{//average\n      resultLimit = (despilled\[others\[0]]+despilled\[others\[1]])/2;\n    \}else if(mode==1)\{//max\n      resultLimit = max(despilled\[others\[0]],despilled\[others\[1]]);\n    \}else if(mode==2)\{//min\n      resultLimit = min(despilled\[others\[0]],despilled\[others\[1]]);\n    \}else\{//custom\n      resultLimit = despilled\[others\[0]]*weights+despilled\[others\[1]]*(1-weights);\n    \}\n\n    //3. Protect tones\n    float prot1_result;\n    if(prot1_on==1&&(prot1\[0]!=prot1\[1]||prot1\[0]!=prot1\[2]||prot1\[1]!=prot1\[2]))\{\n      float cos_prot1_angle;\n      cos_prot1_angle = (src_color\[0]*prot1\[0]+src_color\[1]*prot1\[1]+src_color\[2]*prot1\[2]) / (sqrt(prot1\[0]*prot1\[0]+prot1\[1]*prot1\[1]+prot1\[2]*prot1\[2]) * sqrt(src_color\[0]*src_color\[0]+src_color\[1]*src_color\[1]+src_color\[2]*src_color\[2]));\n      prot1_result = pow(clamp(cos_prot1_angle,0.0f,1.0f),1/pow(prot1_tolerance,prot1_falloff));\n      resultLimit = resultLimit*(1+prot1_result*prot1_mult);\n    \}\n\n    //4. Calculate the despill and HueRotate OUT\n    for (int component = 0; component < 3; component++)\{\n      despilled\[component] = component==clr?min(despilled\[component],resultLimit*limit):despilled\[component];\n    \}\n    despilled = hueRotate(despilled,-hueShift);\n    despilled\[3] = prot1_result;\n    return despilled;\n\}\n\ninline float getLuma(float4 src_color, int luma_math)\{\n  float luma;\n  if(luma_math==0)\{\n    luma = y_convert_rec709(src_color);\n  \}else if(luma_math==1)\{\n    luma = y_convert_ccir601(src_color);\n  \}else if(luma_math==2)\{\n    luma = y_convert_rec2020(src_color);    \n  \}else if(luma_math==3)\{\n    luma = (src_color\[0]+src_color\[1]+src_color\[2])/3;\n  \}else\{\n    luma = max(max(src_color\[0],src_color\[1]),src_color\[2]);\n  \}\n  return luma;\n\}\n\nkernel apDespillKernel : ImageComputationKernel<ePixelWise>\n\{\n  Image<eRead, eAccessPoint, eEdgeClamped> src;\n  Image<eRead, eAccessPoint, eEdgeClamped> color_src;\n  Image<eRead, eAccessPoint, eEdgeClamped> spill_src; //Acts as a multiplier for the respill color\n  Image<eWrite> dst;\n\n  param:\n    float limit;\n    float shift;\n    float weights;\n    int outmode;//0=despill,1=spill\n    int output_alpha;\n    int output_alpha_inverted;\n    int clr; //0=red,1=green,2=blue\n    int mode; //0=average,1=maximum,2=minimum,3=custom\n    int respill_math; //0=Rec709,1=Ccir601,2=Avg,3=Max\n    float4 respill_color;\n    int prot1_on;\n    int prot1_preview;\n    float3 prot1;\n    float prot1_tolerance;\n    float prot1_mult;\n    float prot1_falloff;\n    float3 pickSpill;\n    int despill_method; //0=despill,1=key/\"absolute\"\n\n    int use_color_input;\n    int use_spill_input;\n    int use_limit_input; //Should be shuffled in the src's alpha\n\n  local:\n    int _usePicked;\n    int _clr;\n    int _ret;\n    float _hueShift;\n    float _autoShift;\n    float3 despillColor;\n    float3 vNorm;\n\n  void define() \{\n    defineParam(limit, \"limit\", 1.0f);\n    defineParam(shift, \"shift\", 0.0f);\n  \}\n\n  void init() \{\n    //1. Calculate which color to affect\n    _ret = 0;\n    if(use_color_input==1)\{\n      _clr = 0;\n      _usePicked = 1;\n    \}else if(clr!=3)\{//red green or blue\n      _usePicked = 0;\n      _clr = clr;\n    \}else if(pickSpill.x==pickSpill.y && pickSpill.x==pickSpill.z)\{\n      _ret = 1;//if \"custom\" selected but has a gray value, avoid any calculations\n    \}else\{\n      _usePicked = 1;\n      _clr = 0;\n    \}\n    vNorm = float3(1.0f,1.0f,1.0f);\n    if(use_color_input==0)\{\n      //2. Calculate the necessary hue shift\n      _autoShift = 0.0f;\n      if(_usePicked==1)\{\n        _autoShift = colorAngle(vecToPlane(pickSpill,vNorm),vecToPlane(float3(1.0f,0.0f,0.0f),vNorm));\n        _autoShift = _autoShift*180/PI;//to deg\n      \}\n      _hueShift = shift-_autoShift;\n    \}\n  \}\n\n  void process()\{\n    if(_ret == 1)\{ dst()=src(); return; \} //Avoid any calculations if no despill selected\n\n    //0. If color from input, calculate the necessary hue shift\n    float hueShift = 0.0f, autoShift = 0.0f;\n    float3 despillColor;\n    if(use_color_input==1)\{\n      despillColor = float3(color_src(0),color_src(1),color_src(2));\n      autoShift = colorAngle(vecToPlane(despillColor,vNorm),vecToPlane(float3(1.0f,0.0f,0.0f),vNorm));\n      autoShift = autoShift*180/PI;//to deg\n      hueShift = shift-autoShift;\n    \}else\{\n      if(_usePicked == 1)\{\n        despillColor = pickSpill;\n      \}else\{\n        despillColor = float3(_clr==0?1.0f:0.0f,_clr==1?1.0f:0.0f,_clr==2?1.0f:0.0f);\n      \}\n      \n      hueShift = _hueShift;\n    \}\n\n    float limit_result = use_limit_input==1?limit*src(3):limit;\n\n    //1. Despill the source image\n    float4 despilled = apDespillMain(src(), hueShift, _clr, mode, limit_result, weights, prot1_preview, prot1_on, prot1, prot1_tolerance, prot1_mult, prot1_falloff);\n    if(prot1_preview==1 && prot1_on==1)\{\n      dst() = src()*clamp(despilled\[3]*prot1_mult,0.0f,1.0f);\n      return;\n    \}\n    float4 spill = src()-despilled;\n    float spill_luma = getLuma(spill, respill_math);\n\n    //2. Process the key if key method selected\n    float4 result;\n    float4 despilled_full, spill_full; //Will account for the key if method selected is key\n    float spill_luma_full;\n    if(despill_method==0)\{\n      //Despill Method = Despill\n      despilled_full = despilled;\n      spill_full = spill;\n      spill_luma_full = spill_luma;\n    \}else\{\n      //Despill Method = Key\n      float4 despillColor4 = float4(despillColor.x,despillColor.y,despillColor.z,1.0f); //For simplicity\n\n      //2.1. Despill the picked despill colour itself, for normalizing the spill\n      float4 pickSpill_despilled = apDespillMain(despillColor4, hueShift, _clr, mode, limit_result, weights, prot1_preview, prot1_on, prot1, prot1_tolerance, prot1_mult, prot1_falloff);\n      float4 pickSpill_spill = despillColor4-pickSpill_despilled;\n      float pickSpill_spill_luma = getLuma(pickSpill_spill, respill_math);\n\n      spill_luma_full = pickSpill_spill_luma == 0? 0:spill_luma/pickSpill_spill_luma;\n      spill_full = despillColor4*spill_luma_full;\n      despilled_full = src()-spill_full;\n    \}\n\n\n    float4 respill_color_result = use_spill_input==1?spill_src()*respill_color:respill_color;\n    //3. Output\n    if(outmode==0)\{ //Despill\n      result = despilled_full+spill_luma_full*respill_color_result;\n    \}else\{ //Spill\n      result = spill_full;\n    \}\n\n    if(output_alpha==0)\{\n      result\[3]=src(3);\n    \}else\{\n      if(output_alpha_inverted == 0)\{\n        result\[3]=spill_luma_full;\n      \}else\{\n        result\[3]=1-spill_luma_full;\n      \}\n    \}\n\n    dst() = result;\n\n  \}\n\};"
+  useGPUIfAvailable false
+  vectorize false
+  rebuild ""
+  apDespillKernel_limit {{parent.tolerance}}
+  apDespillKernel_shift {{parent.hue_offset}}
+  apDespillKernel_weights {{(parent.custom_weight+1)/2}}
+  apDespillKernel_outmode {{parent.out}}
+  apDespillKernel_output_alpha {{parent.output_alpha}}
+  apDespillKernel_output_alpha_inverted {{parent.inverted_spill_matte}}
+  apDespillKernel_clr {{parent.color}}
+  apDespillKernel_mode {{parent.mode}}
+  apDespillKernel_respill_math {{parent.respill_math}}
+  apDespillKernel_respill_color {{parent.respill_color.r} {parent.respill_color.g} {parent.respill_color.b} 1}
+  apDespillKernel_prot1_on {{parent.prot1_activate}}
+  apDespillKernel_prot1_preview {{parent.prot1_preview}}
+  apDespillKernel_prot1 {{parent.prot1} {parent.prot1} {parent.prot1}}
+  apDespillKernel_prot1_tolerance {{parent.prot1_tolerance}}
+  apDespillKernel_prot1_mult {{parent.prot1_effect}}
+  apDespillKernel_prot1_falloff {{parent.prot1_falloff}}
+  apDespillKernel_pickSpill {{parent.pick} {parent.pick} {parent.pick}}
+  apDespillKernel_despill_method {{parent.absolute_mode}}
+  apDespillKernel_use_color_input {{"\[\nif \{ \[lsearch -exact \[channels \[input this 1].input] rgba.red] >= 0\} \{\n    return 1\n\} else \{\n    return 0\n\}\n]"}}
+  apDespillKernel_use_spill_input {{"\[\nif \{ \[lsearch -exact \[channels \[input this 2].input] rgba.red] >= 0\} \{\n    return 1\n\} else \{\n    return 0\n\}\n]"}}
+  apDespillKernel_use_limit_input {{"\[exists parent.input3]"}}
+  rebuild_finalise ""
+  name apDespillKernel
+  xpos 754
+  ypos -448
+ }
+ Log2Lin {
+  name Log2Lin2
+  xpos 754
+  ypos -378
+  disable {{!log_space}}
+ }
+ Colorspace {
+  channels {{{parent.Colorspace5.channels}}}
+  colorspace_in {{parent.Colorspace1.colorspace_out}}
+  illuminant_in {{parent.Colorspace1.illuminant_out}}
+  primary_in {{parent.Colorspace1.primary_out}}
+  colorspace_out {{parent.Colorspace1.colorspace_in}}
+  illuminant_out {{parent.Colorspace1.illuminant_in}}
+  primary_out {{parent.Colorspace1.primary_in}}
+  name Colorspace2
+  label "\[value colorspace_in] >> \[value colorspace_out]"
+  xpos 754
+  ypos -354
+  disable {{!parent.colorspace_shift}}
+ }
+ Dot {
+  name Dot3
+  note_font_size 41
+  xpos 788
+  ypos -267
+ }
+set N947a4800 [stack 0]
+ Dot {
+  name Dot4
+  note_font_size 41
+  xpos 788
+  ypos -237
+ }
+push $N94740000
+push $N947a4800
+push $N94766000
  Merge2 {
   inputs 2+1
   operation copy
@@ -2616,7 +3539,7 @@ Dot {
  xpos 614
  ypos -296
 }
-set Nba870c00 [stack 0]
+set N947a5c00 [stack 0]
 Dot {
  name Dot6
  xpos 78
@@ -2656,19 +3579,19 @@ Multiply {
  xpos 383
  ypos 149
 }
-push $N1bd9f800
-push $Ndcb47800
+push $N93051c00
+push $N944adc00
 Dot {
  name Dot8
  xpos 304
  ypos -236
 }
-set Nd1ace800 [stack 0]
+set N947d7800 [stack 0]
 Blur {
  size 40
  name Blur4
  xpos 270
- ypos -124
+ ypos -167
 }
 Merge2 {
  inputs 2
@@ -2683,8 +3606,8 @@ Multiply {
  xpos 360
  ypos -84
 }
-push $Nd1ace800
-push $Nba870c00
+push $N947d7800
+push $N947a5c00
 Merge2 {
  inputs 2
  name Merge1
@@ -2720,16 +3643,16 @@ Merge2 {
  xpos 580
  ypos 483
 }
-push $N1a2b5800
-push 0
+push $Ncd4a9400
+push $N944ac800
 Viewer {
  inputs 3
- frame 1051
+ frame 1070
  frame_range 1001-1091
  frame_range_lock true
  input_number 2
- colour_sample_bbox {-0.03802083433 0.125 -0.03750000149 0.1255208403}
- samplepoints {{-0.3270833194 -0.03333333507}
+ colour_sample_bbox {0.08541666716 0.209374994 0.08645833284 0.2104166597}
+ samplepoints {{0.08541666716 0.209374994}
    }
  monitorOutOutputTransform rec709
  name Viewer1
