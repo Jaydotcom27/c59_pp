@@ -1,8 +1,9 @@
 #! C:/Program Files/Nuke14.0v5/nuke-14.0.5.dll -nx
+#write_info Write1 file:"C:/3D_Temp/PP/Render/TV_0002_V001/TV_0002_V001_%03d.exr" format:"3840 2160 1" chans:":rgba.red:rgba.green:rgba.blue:" framerange:"1001 1076" fps:"23.976" colorspace:"default (linear)" datatype:"16 bit half" transfer:"unknown" views:"main" timecode:"00:59:56:08" colorManagement:"Nuke"
 version 14.0 v5
 define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
-    <window x="-2561" y="-8" w="2560" h="1369" maximized="1" screen="1">
+    <window x="-1" y="-8" w="2560" h="1369" maximized="1" screen="0">
         <splitter orientation="1">
             <split size="40"/>
             <dock id="" hideTitles="1" activePageId="Toolbar.1">
@@ -34,7 +35,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 Root {
  inputs 0
  name C:/3D_Temp/PP/nuke_scripts/TV/TV_002_004_009_010_014_v002.nk
- frame 1039
+ frame 1015
  first_frame 1001
  last_frame 1076
  lock_range true
@@ -731,7 +732,7 @@ Dot {
  xpos -3605
  ypos 585
 }
-set N13246000 [stack 0]
+set Na7f6000 [stack 0]
 Dot {
  name Dot1
  xpos -3605
@@ -767,13 +768,28 @@ Grade {
  xpos -2910
  ypos -627
 }
-Grade {
+StickyNote {
  inputs 0
- black {0.3799999952 0.2153597176 0.1346214563 1}
- white {0.5378130078 0.3179269135 0.2000717819 1}
- name Grade14
- xpos -1670
- ypos 391
+ name StickyNote3
+ label "Jasiel - 3\n"
+ xpos -3341
+ ypos -614
+}
+Read {
+ inputs 0
+ file_type exr
+ file C:/3D_Temp/PP/Footage/Chica/CHICA_001_V1/V1_CHICA_001_%05d.exr
+ format "3840 2160 0 0 3840 2160 1 UHD_4K"
+ first 95064
+ before loop
+ last 95231
+ after loop
+ origfirst 95064
+ origlast 95231
+ origset true
+ name Read12
+ xpos -2907
+ ypos -720
 }
 Read {
  inputs 0
@@ -789,7 +805,7 @@ Read {
  xpos -69
  ypos -887
 }
-set N1326c000 [stack 0]
+set Na7f7c00 [stack 0]
 Read {
  inputs 0
  file_type exr
@@ -804,20 +820,20 @@ Read {
  xpos -71
  ypos -1026
 }
-set N1326c400 [stack 0]
-push $N13246000
+set Na828000 [stack 0]
+push $Na7f6000
 Dot {
  name Dot4
  xpos -1213
  ypos 585
 }
-set N1326c800 [stack 0]
+set Na828400 [stack 0]
 Dot {
  name Dot9
  xpos -1212
  ypos 429
 }
-set N1326cc00 [stack 0]
+set Na828800 [stack 0]
 Roto {
  inputs 0
  output alpha
@@ -1122,19 +1138,19 @@ Dot {
  xpos -3275
  ypos -95
 }
-set N13325000 [stack 0]
+set Na8d4c00 [stack 0]
 Dot {
  name Dot18
  xpos -3017
  ypos -95
 }
-set N13325400 [stack 0]
+set Na8d5000 [stack 0]
 Dot {
  name Dot19
  xpos -2767
  ypos -95
 }
-set N13325800 [stack 0]
+set Na8d5400 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -1201,7 +1217,7 @@ Dot {
  xpos -2766
  ypos 163
 }
-set N1335b800 [stack 0]
+set Na935400 [stack 0]
 Dot {
  name Dot24
  xpos -2640
@@ -1329,7 +1345,7 @@ Dot {
  xpos -2915
  ypos 63
 }
-push $N13325400
+push $Na8d5000
 Retime {
  input.first 95417
  input.last 95490
@@ -1389,7 +1405,7 @@ Dot {
  xpos -3016
  ypos 161
 }
-set N14428000 [stack 0]
+set Na9d7c00 [stack 0]
 Dot {
  name Dot28
  xpos -2893
@@ -1502,7 +1518,7 @@ Dot {
  xpos -3173
  ypos 61
 }
-push $N13325000
+push $Na8d4c00
 Retime {
  input.first 95417
  input.last 95490
@@ -1583,7 +1599,7 @@ Dot {
  xpos -3275
  ypos 324
 }
-push $N14428000
+push $Na9d7c00
 CornerPin2D {
  to1 {1590.300049 1004.299988}
  to2 {1649 1055.099976}
@@ -1610,7 +1626,7 @@ Merge2 {
  xpos -2927
  ypos 322
 }
-push $N1335b800
+push $Na935400
 CornerPin2D {
  to1 {1650.900024 1055}
  to2 {1706 1105.400024}
@@ -1727,13 +1743,13 @@ Dot {
  xpos -2400
  ypos 61
 }
-push $N13325800
+push $Na8d5400
 Dot {
  name Dot20
  xpos -2502
  ypos -95
 }
-set N1455e400 [stack 0]
+set Nabcc000 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -1898,13 +1914,13 @@ Dot {
  xpos -2148
  ypos 60
 }
-push $N1455e400
+push $Nabcc000
 Dot {
  name Dot21
  xpos -2250
  ypos -95
 }
-set N1460e000 [stack 0]
+set Nac23c00 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -2076,7 +2092,7 @@ Dot {
  xpos -1878
  ypos 61
 }
-push $N1460e000
+push $Nac23c00
 Dot {
  name Dot22
  xpos -1980
@@ -2284,7 +2300,7 @@ Group {
   xpos -329
   ypos 474
  }
-set N14756c00 [stack 0]
+set Nadc8800 [stack 0]
  Dot {
   name Dot3
   xpos -186
@@ -2295,7 +2311,7 @@ set N14756c00 [stack 0]
   xpos -186
   ypos 985
  }
-push $N14756c00
+push $Nadc8800
  Grade {
   white 0
   add 0.5
@@ -2326,7 +2342,7 @@ push $N14756c00
   xpos -526
   ypos 753
  }
-push $N14756c00
+push $Nadc8800
  Colorspace {
   colorspace_out Cineon
   name Colorspace6
@@ -2334,7 +2350,7 @@ push $N14756c00
   ypos 658
   disable {{parent.v_cinSpace?0:1 i}}
  }
-set N147d2000 [stack 0]
+set Nae09c00 [stack 0]
  ColorLookup {
   lut {master {}
     red {curve L 1 0.5 s0}
@@ -2365,7 +2381,7 @@ set N147d2000 [stack 0]
   xpos -403
   ypos 875
  }
-push $N147d2000
+push $Nae09c00
  Merge2 {
   inputs 2
   operation plus
@@ -2392,7 +2408,7 @@ push $N147d2000
   ypos 1088
   disable {{"\[exists parent.input1] ? 0 : 1" i x1 0}}
  }
-push $N14756c00
+push $Nadc8800
  Dot {
   name Dot5
   note_font_size 22
@@ -2429,7 +2445,7 @@ Dot {
  xpos -605
  ypos 268
 }
-set N14845400 [stack 0]
+set Naf03000 [stack 0]
 Group {
  name ExponentialGlow1
  tile_color 0xcc804eff
@@ -2497,13 +2513,13 @@ Group {
   addUserKnob {6 add_source l "Add Source" +STARTLINE}
   addUserKnob {6 add_bbox l "Add original bbox" +STARTLINE}
  }
-set N14867000 [stack 0]
+set Naf2ec00 [stack 0]
  Dot {
   name Dot12
   xpos -371
   ypos -584
  }
-set N14867400 [stack 0]
+set Naf2f000 [stack 0]
  Saturation {
   saturation 0
   mode Maximum
@@ -2518,7 +2534,7 @@ set N14867400 [stack 0]
   xpos -316
   ypos -562
  }
-push $N14867400
+push $Naf2f000
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -2579,49 +2595,49 @@ push $N14867400
   xpos -146
   ypos -292
  }
-set N148d2000 [stack 0]
+set Naf5bc00 [stack 0]
  Dot {
   name Dot2
   xpos -36
   ypos -292
  }
-set N148d2400 [stack 0]
+set Naf8e000 [stack 0]
  Dot {
   name Dot4
   xpos 84
   ypos -292
  }
-set N148d2800 [stack 0]
+set Naf8e400 [stack 0]
  Dot {
   name Dot5
   xpos 194
   ypos -292
  }
-set N148d2c00 [stack 0]
+set Naf8e800 [stack 0]
  Dot {
   name Dot6
   xpos 304
   ypos -292
  }
-set N148d3000 [stack 0]
+set Naf8ec00 [stack 0]
  Dot {
   name Dot7
   xpos 414
   ypos -292
  }
-set N148d3400 [stack 0]
+set Naf8f000 [stack 0]
  Dot {
   name Dot8
   xpos 524
   ypos -292
  }
-set N148d3800 [stack 0]
+set Naf8f400 [stack 0]
  Dot {
   name Dot9
   xpos 631
   ypos -292
  }
-set N148d3c00 [stack 0]
+set Naf8f800 [stack 0]
  Dot {
   name Dot10
   xpos 741
@@ -2667,7 +2683,7 @@ set N148d3c00 [stack 0]
   xpos -289
   ypos 235
  }
-push $N148d3c00
+push $Naf8f800
  Group {
   name Blur7
   xpos 597
@@ -2709,7 +2725,7 @@ push $N148d3c00
   xpos -289
   ypos 194
  }
-push $N148d3800
+push $Naf8f400
  Group {
   name Blur6
   xpos 490
@@ -2751,7 +2767,7 @@ push $N148d3800
   xpos -290
   ypos 155
  }
-push $N148d3400
+push $Naf8f000
  Group {
   name Blur5
   xpos 380
@@ -2793,7 +2809,7 @@ push $N148d3400
   xpos -290
   ypos 116
  }
-push $N148d3000
+push $Naf8ec00
  Group {
   name Blur4
   xpos 270
@@ -2835,7 +2851,7 @@ push $N148d3000
   xpos -292
   ypos 77
  }
-push $N148d2c00
+push $Naf8e800
  Group {
   name Blur3
   xpos 160
@@ -2877,7 +2893,7 @@ push $N148d2c00
   xpos -291
   ypos 42
  }
-push $N148d2800
+push $Naf8e400
  Group {
   name Blur2
   xpos 50
@@ -2919,7 +2935,7 @@ push $N148d2800
   xpos -292
   ypos 5
  }
-push $N148d2400
+push $Naf8e000
  Group {
   name Blur1
   xpos -70
@@ -2961,8 +2977,8 @@ push $N148d2400
   xpos -293
   ypos -36
  }
-push $N14867000
-push $N148d2000
+push $Naf2ec00
+push $Naf5bc00
  Group {
   name Blur
   xpos -180
@@ -3094,7 +3110,7 @@ Grade {
  xpos -515
  ypos 987
 }
-push $N1326c800
+push $Na828400
 Blur {
  size 30
  name Blur2
@@ -3161,8 +3177,8 @@ Roto {
  xpos -508
  ypos -757
 }
-push $N1326c000
-push $N1326c400
+push $Na7f7c00
+push $Na828000
 Read {
  inputs 0
  file_type exr
@@ -3191,7 +3207,7 @@ Read {
  xpos -443
  ypos -1028
 }
-set N14ac7800 [stack 0]
+set Nb18f400 [stack 0]
 Read {
  inputs 0
  file_type exr
@@ -3206,20 +3222,19 @@ Read {
  xpos -446
  ypos -887
 }
-set N14ac7c00 [stack 0]
+set Nb18f800 [stack 0]
 Switch {
  inputs 5
- which 2.02
  name Switch1
  xpos -266
  ypos -857
 }
 Retime {
- input.first 86916
- input.last 86958
+ input.first 86298
+ input.last 86373
  output.first 1001
  output.first_lock true
- output.last 1043
+ output.last 1076
  time ""
  name Retime1
  xpos -266
@@ -3309,7 +3324,7 @@ Group {
   xpos 307
   ypos -267
  }
-set N14b34c00 [stack 0]
+set Nb1f8800 [stack 0]
  Dot {
   name Dot5
   note_font_size 41
@@ -3365,7 +3380,7 @@ set N14b34c00 [stack 0]
   xpos 449
   ypos -761
  }
-set N14b64c00 [stack 0]
+set Nb228800 [stack 0]
  Dot {
   name Dot2
   note_font_size 41
@@ -3468,16 +3483,16 @@ set N14b64c00 [stack 0]
   xpos 788
   ypos -267
  }
-set N14b8f400 [stack 0]
+set Nb25dc00 [stack 0]
  Dot {
   name Dot4
   note_font_size 41
   xpos 788
   ypos -237
  }
-push $N14b34c00
-push $N14b8f400
-push $N14b64c00
+push $Nb1f8800
+push $Nb25dc00
+push $Nb228800
  Merge2 {
   inputs 2+1
   operation copy
@@ -3515,7 +3530,7 @@ Dot {
  xpos -232
  ypos 208
 }
-set N14c0a800 [stack 0]
+set N15c6c400 [stack 0]
 Dot {
  name Dot6
  xpos -768
@@ -3555,14 +3570,14 @@ Multiply {
  xpos -463
  ypos 653
 }
-push $N1326cc00
-push $N14845400
+push $Na828800
+push $Naf03000
 Dot {
  name Dot8
  xpos -542
  ypos 268
 }
-set N14c48400 [stack 0]
+set N15cb0000 [stack 0]
 Blur {
  size 40
  name Blur4
@@ -3582,8 +3597,8 @@ Multiply {
  xpos -437
  ypos 420
 }
-push $N14c48400
-push $N14c0a800
+push $N15cb0000
+push $N15c6c400
 Merge2 {
  inputs 2
  name Merge1
@@ -3619,11 +3634,22 @@ Merge2 {
  xpos -266
  ypos 987
 }
-push $N14ac7800
-push $N14ac7c00
+Write {
+ file C:/3D_Temp/PP/Render/TV_0002_V001/TV_0002_V001_###.exr
+ file_type exr
+ compression DWAB
+ dw_compression_level 50
+ first_part rgba
+ version 6
+ name Write1
+ xpos -266
+ ypos 1071
+}
+push $Nb18f400
+push $Nb18f800
 Viewer {
  inputs 5
- frame 1039
+ frame 1015
  frame_range 1001-1074
  frame_range_lock true
  input_number 2
@@ -3634,27 +3660,4 @@ Viewer {
  name Viewer1
  xpos -266
  ypos 1157
-}
-StickyNote {
- inputs 0
- name StickyNote3
- label "Jasiel - 3\n"
- xpos -3341
- ypos -614
-}
-Read {
- inputs 0
- file_type exr
- file C:/3D_Temp/PP/Footage/Chica/CHICA_001_V1/V1_CHICA_001_%05d.exr
- format "3840 2160 0 0 3840 2160 1 UHD_4K"
- first 95064
- before loop
- last 95231
- after loop
- origfirst 95064
- origlast 95231
- origset true
- name Read12
- xpos -2907
- ypos -720
 }
