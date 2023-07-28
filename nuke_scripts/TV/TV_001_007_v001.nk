@@ -1,21 +1,22 @@
 #! C:/Program Files/Nuke14.0v5/nuke-14.0.5.dll -nx
+#write_info Write1 file:"C:/3D_Temp/PP/Render/TV_0001_V001/TV_0001_V001_%03d.exr" format:"3840 2160 1" chans:":rgba.red:rgba.green:rgba.blue:" framerange:"1001 1042" fps:"23.976" colorspace:"default (linear)" datatype:"16 bit half" transfer:"unknown" views:"main" timecode:"00:59:55:01" colorManagement:"Nuke"
 version 14.0 v5
 define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
-    <window x="-1" y="-8" w="2560" h="1369" maximized="1" screen="0">
+    <window x="0" y="0" w="2557" h="1360" screen="0">
         <splitter orientation="1">
             <split size="40"/>
             <dock id="" hideTitles="1" activePageId="Toolbar.1">
                 <page id="Toolbar.1"/>
             </dock>
-            <split size="1897" stretch="1"/>
+            <split size="1894" stretch="1"/>
             <splitter orientation="2">
-                <split size="970"/>
-                <dock id="" activePageId="Viewer.1" focus="true">
+                <split size="774"/>
+                <dock id="" activePageId="Viewer.1">
                     <page id="Viewer.1"/>
                 </dock>
-                <split size="357"/>
-                <dock id="" activePageId="DAG.1">
+                <split size="544"/>
+                <dock id="" activePageId="DAG.1" focus="true">
                     <page id="DAG.1"/>
                     <page id="Curve Editor.1"/>
                     <page id="DopeSheet.1"/>
@@ -953,7 +954,7 @@ Dot {
  xpos -2424
  ypos -34
 }
-set N12a41000 [stack 0]
+set N7eac1000 [stack 0]
 Dot {
  name Dot1
  xpos -2424
@@ -1015,7 +1016,6 @@ Roto {
  motionblur_shutter_offset_type centred
  source_black_outside true
  name Roto14
- selected true
  xpos -129
  ypos -551
 }
@@ -1102,25 +1102,24 @@ Invert {
 }
 Switch {
  inputs 2
- which 1
  name Switch2
  xpos -25
  ypos -431
 }
-set C27a2f400 [stack 0]
-push $N12a41000
+set C7eb75000 [stack 0]
+push $N7eac1000
 Dot {
  name Dot4
  xpos -256
  ypos -34
 }
-set N12a41400 [stack 0]
+set N7eb75400 [stack 0]
 Dot {
  name Dot9
  xpos -255
  ypos -190
 }
-set N12a41800 [stack 0]
+set N7eb75800 [stack 0]
 Roto {
  inputs 0
  output alpha
@@ -1234,13 +1233,13 @@ Grade {
  xpos -2128
  ypos -800
 }
-set N12af3000 [stack 0]
+set N9319f000 [stack 0]
 Dot {
  name Dot17
  xpos -2094
  ypos -741
 }
-set N12af3400 [stack 0]
+set N9319f400 [stack 0]
 Retime {
  input.first 95265
  input.last 95382
@@ -1268,7 +1267,7 @@ Transform {
  xpos -2128
  ypos -630
 }
-set N12af3c00 [stack 0]
+set N9319fc00 [stack 0]
 Reformat {
  name Reformat1
  xpos -2128
@@ -1412,18 +1411,19 @@ Dot {
  xpos -1734
  ypos -556
 }
-push $N12af3400
+push $N9319f400
 Dot {
  name Dot18
  xpos -1836
  ypos -741
 }
-set N13b59000 [stack 0]
+set N9323f000 [stack 0]
 Retime {
- input.last 36
+ input.first 95265
+ input.last 95382
  output.first 1001
  output.first_lock true
- output.last 1036
+ output.last 1118
  before loop
  after loop
  time ""
@@ -1567,13 +1567,13 @@ Dot {
  xpos -1484
  ypos -553
 }
-push $N13b59000
+push $N9323f000
 Dot {
  name Dot19
  xpos -1586
  ypos -741
 }
-set N13c56c00 [stack 0]
+set N9338ec00 [stack 0]
 Retime {
  input.first 95265
  input.last 95382
@@ -1745,18 +1745,19 @@ Dot {
  xpos -1219
  ypos -558
 }
-push $N13c56c00
+push $N9338ec00
 Dot {
  name Dot20
  xpos -1321
  ypos -741
 }
-set N13d06800 [stack 0]
+set N9441c800 [stack 0]
 Retime {
- input.last 36
+ input.first 95265
+ input.last 95382
  output.first 1001
  output.first_lock true
- output.last 1036
+ output.last 1118
  before loop
  after loop
  time ""
@@ -1915,18 +1916,19 @@ Dot {
  xpos -967
  ypos -559
 }
-push $N13d06800
+push $N9441c800
 Dot {
  name Dot21
  xpos -1069
  ypos -741
 }
-set N13dc6400 [stack 0]
+set N944c4400 [stack 0]
 Retime {
- input.last 36
+ input.first 95265
+ input.last 95382
  output.first 1001
  output.first_lock true
- output.last 1036
+ output.last 1118
  before loop
  after loop
  time ""
@@ -2092,23 +2094,24 @@ Dot {
  xpos -697
  ypos -558
 }
-push $N13dc6400
+push $N944c4400
 Dot {
  name Dot22
  xpos -799
  ypos -741
 }
 Retime {
- input.last 36
+ input.first 95265
+ input.last 95382
  output.first 1001
  output.first_lock true
- output.last 1036
+ output.last 1118
  before loop
  after loop
  time ""
  name Retime7
  xpos -833
- ypos -657
+ ypos -654
 }
 Transform {
  scale {1.824000001 1.200000048}
@@ -2282,7 +2285,7 @@ Group {
   xpos 4714
   ypos -1369
  }
-set N25dac000 [stack 0]
+set N9460a000 [stack 0]
  Noise {
   size {{parent.noiseSize i}}
   gain {{parent.noiseGain i}}
@@ -2293,7 +2296,7 @@ set N25dac000 [stack 0]
   xpos 4825
   ypos -1305
  }
-push $N25dac000
+push $N9460a000
  Flare {
   position {250 250}
   radius {{0 i} {"249 - (parent.ringWidth*249)" i} {249 i}}
@@ -2371,7 +2374,7 @@ push $N25dac000
   xpos 3511
   ypos -1238
  }
-set N2608cc00 [stack 0]
+set N94642c00 [stack 0]
  Input {
   inputs 0
   name map
@@ -2380,7 +2383,7 @@ set N2608cc00 [stack 0]
   ypos -1413
   number 1
  }
-set N2608d000 [stack 0]
+set N94643000 [stack 0]
  Shuffle {
   red alpha
   green black
@@ -2391,7 +2394,7 @@ set N2608d000 [stack 0]
   xpos 2052
   ypos -1219
  }
-push $N2608d000
+push $N94643000
  Shuffle {
   red blue
   green black
@@ -2402,7 +2405,7 @@ push $N2608d000
   xpos 1957
   ypos -1220
  }
-push $N2608d000
+push $N94643000
  Shuffle {
   red green
   green black
@@ -2413,7 +2416,7 @@ push $N2608d000
   xpos 1862
   ypos -1215
  }
-push $N2608d000
+push $N94643000
  Shuffle {
   green black
   blue black
@@ -2439,127 +2442,127 @@ push $N2608d000
   xpos 1952
   ypos -935
  }
-set N25b5c800 [stack 0]
+set N94678800 [stack 0]
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*10)-1/parent.slices} {"(1/parent.slices*9) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer11
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*10/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus10
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*9)-1/parent.slices} {"(1/parent.slices*8) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer10
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*9/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus9
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*8)-1/parent.slices} {"(1/parent.slices*7) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer9
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*8/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus8
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*7)-1/parent.slices} {"(1/parent.slices*6) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer8
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*7/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus7
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*6)-1/parent.slices} {"(1/parent.slices*5) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer7
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*6/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus6
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*5)-1/parent.slices} {"(1/parent.slices*4) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer6
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*5/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus5
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*4)-1/parent.slices} {"(1/parent.slices*3) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer5
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*4/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus4
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*3)-1/parent.slices} {"(1/parent.slices*2) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer3
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*3/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus3
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*2)-1/parent.slices} {"(1/parent.slices*1) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer2
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*2/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus2
  }
-push $N25b5c800
+push $N94678800
  Keyer {
   operation "red keyer"
   range {{(1/parent.slices*1)-1/parent.slices} {"(1/parent.slices*0) + (1/parent.slices*parent.overlap)"} 1 1}
   name Keyer1
  }
-push $N2608cc00
+push $N94642c00
  Defocus {
   defocus {{pow(parent.size/parent.slices*1/parent.size,parent.sliceGamma)*parent.size}}
   ratio {{parent.aspect}}
   name Defocus1
  }
-push $N2608cc00
+push $N94642c00
  Keymix {
   inputs 3
   bbox A
@@ -2620,7 +2623,7 @@ push $N2608cc00
   ypos -34
   disable {{"\[exists parent.input3] ? 0 : 1" x1 0}}
  }
-push $N2608cc00
+push $N94642c00
  Dissolve {
   inputs 2
   which {{parent.mix}}
@@ -2655,13 +2658,13 @@ Dot {
  xpos 206
  ypos -350
 }
-set N27109c00 [stack 0]
+set N94797800 [stack 0]
 Dot {
  name Dot7
  xpos 420
  ypos -350
 }
-set N13ec3c00 [stack 0]
+set N94797c00 [stack 0]
 Group {
  name ExponentialGlow1
  tile_color 0xcc804eff
@@ -2729,13 +2732,13 @@ Group {
   addUserKnob {6 add_source l "Add Source" +STARTLINE}
   addUserKnob {6 add_bbox l "Add original bbox" +STARTLINE}
  }
-set N13f03800 [stack 0]
+set N947c3800 [stack 0]
  Dot {
   name Dot12
   xpos -371
   ypos -584
  }
-set N13f03c00 [stack 0]
+set N947c3c00 [stack 0]
  Saturation {
   saturation 0
   mode Maximum
@@ -2750,7 +2753,7 @@ set N13f03c00 [stack 0]
   xpos -316
   ypos -562
  }
-push $N13f03c00
+push $N947c3c00
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -2811,49 +2814,49 @@ push $N13f03c00
   xpos -146
   ypos -292
  }
-set N13f74800 [stack 0]
+set N9485c800 [stack 0]
  Dot {
   name Dot2
   xpos -36
   ypos -292
  }
-set N13f74c00 [stack 0]
+set N9485cc00 [stack 0]
  Dot {
   name Dot4
   xpos 84
   ypos -292
  }
-set N13f75000 [stack 0]
+set N9485d000 [stack 0]
  Dot {
   name Dot5
   xpos 194
   ypos -292
  }
-set N13f75400 [stack 0]
+set N9485d400 [stack 0]
  Dot {
   name Dot6
   xpos 304
   ypos -292
  }
-set N13f75800 [stack 0]
+set N9485d800 [stack 0]
  Dot {
   name Dot7
   xpos 414
   ypos -292
  }
-set N13f75c00 [stack 0]
+set N9485dc00 [stack 0]
  Dot {
   name Dot8
   xpos 524
   ypos -292
  }
-set N13f9e000 [stack 0]
+set N94886000 [stack 0]
  Dot {
   name Dot9
   xpos 631
   ypos -292
  }
-set N13f9e400 [stack 0]
+set N94886400 [stack 0]
  Dot {
   name Dot10
   xpos 741
@@ -2899,7 +2902,7 @@ set N13f9e400 [stack 0]
   xpos -289
   ypos 235
  }
-push $N13f9e400
+push $N94886400
  Group {
   name Blur7
   xpos 597
@@ -2941,7 +2944,7 @@ push $N13f9e400
   xpos -289
   ypos 194
  }
-push $N13f9e000
+push $N94886000
  Group {
   name Blur6
   xpos 490
@@ -2983,7 +2986,7 @@ push $N13f9e000
   xpos -290
   ypos 155
  }
-push $N13f75c00
+push $N9485dc00
  Group {
   name Blur5
   xpos 380
@@ -3025,7 +3028,7 @@ push $N13f75c00
   xpos -290
   ypos 116
  }
-push $N13f75800
+push $N9485d800
  Group {
   name Blur4
   xpos 270
@@ -3067,7 +3070,7 @@ push $N13f75800
   xpos -292
   ypos 77
  }
-push $N13f75400
+push $N9485d400
  Group {
   name Blur3
   xpos 160
@@ -3109,7 +3112,7 @@ push $N13f75400
   xpos -291
   ypos 42
  }
-push $N13f75000
+push $N9485d000
  Group {
   name Blur2
   xpos 50
@@ -3151,7 +3154,7 @@ push $N13f75000
   xpos -292
   ypos 5
  }
-push $N13f74c00
+push $N9485cc00
  Group {
   name Blur1
   xpos -70
@@ -3193,8 +3196,8 @@ push $N13f74c00
   xpos -293
   ypos -36
  }
-push $N13f03800
-push $N13f74800
+push $N947c3800
+push $N9485c800
  Group {
   name Blur
   xpos -180
@@ -3326,14 +3329,14 @@ Grade {
  xpos 512
  ypos 369
 }
-push $N12a41400
+push $N7eb75400
 Blur {
  size 30
  name Blur2
  xpos 100
  ypos -43
 }
-push $N27109c00
+push $N94797800
 Shuffle2 {
  fromInput1 {{0} B}
  fromInput2 {{0} B}
@@ -3370,7 +3373,7 @@ Read {
  xpos 817
  ypos -1449
 }
-clone $C27a2f400 {
+clone $C7eb75000 {
  inputs 2
  xpos 759
  ypos -1346
@@ -3471,7 +3474,7 @@ Group {
   xpos 307
   ypos -267
  }
-set N14195000 [stack 0]
+set N94a63000 [stack 0]
  Dot {
   name Dot5
   note_font_size 41
@@ -3527,7 +3530,7 @@ set N14195000 [stack 0]
   xpos 449
   ypos -761
  }
-set N141cb000 [stack 0]
+set N94aa9000 [stack 0]
  Dot {
   name Dot2
   note_font_size 41
@@ -3630,16 +3633,16 @@ set N141cb000 [stack 0]
   xpos 788
   ypos -267
  }
-set N141f1800 [stack 0]
+set N94ad3800 [stack 0]
  Dot {
   name Dot4
   note_font_size 41
   xpos 788
   ypos -237
  }
-push $N14195000
-push $N141f1800
-push $N141cb000
+push $N94a63000
+push $N94ad3800
+push $N94aa9000
  Merge2 {
   inputs 2+1
   operation copy
@@ -3684,7 +3687,7 @@ Dot {
  xpos 793
  ypos -410
 }
-set N14233000 [stack 0]
+set N94b1b000 [stack 0]
 Dot {
  name Dot6
  xpos 257
@@ -3724,14 +3727,14 @@ Multiply {
  xpos 562
  ypos 35
 }
-push $N12a41800
-push $N13ec3c00
+push $N7eb75800
+push $N94797c00
 Dot {
  name Dot8
  xpos 483
  ypos -350
 }
-set N1427cc00 [stack 0]
+set N94b5ac00 [stack 0]
 Blur {
  size 40
  name Blur4
@@ -3751,8 +3754,8 @@ Multiply {
  xpos 539
  ypos -198
 }
-push $N1427cc00
-push $N14233000
+push $N94b5ac00
+push $N94b1b000
 Merge2 {
  inputs 2
  operation screen
@@ -3789,8 +3792,19 @@ Merge2 {
  xpos 759
  ypos 369
 }
-push $N12af3c00
-push $N12af3000
+Write {
+ file C:/3D_Temp/PP/Render/TV_0001_V001/TV_0001_V001_###.exr
+ file_type exr
+ compression DWAB
+ dw_compression_level 50
+ first_part rgba
+ version 25
+ name Write1
+ xpos 759
+ ypos 448
+}
+push $N9319fc00
+push $N9319f000
 Viewer {
  inputs 3
  frame_range 1001-1027
