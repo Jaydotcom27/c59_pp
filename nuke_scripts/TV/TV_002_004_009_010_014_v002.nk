@@ -1,5 +1,5 @@
 #! C:/Program Files/Nuke14.0v5/nuke-14.0.5.dll -nx
-#write_info Write1 file:"C:/3D_Temp/PP/Render/TV_0002_V001/TV_0002_V001_%03d.exr" format:"3840 2160 1" chans:":rgba.red:rgba.green:rgba.blue:" framerange:"1001 1076" fps:"23.976" colorspace:"default (linear)" datatype:"16 bit half" transfer:"unknown" views:"main" timecode:"00:59:56:08" colorManagement:"Nuke"
+#write_info Write1 file:"C:/3D_Temp/PP/Render/TV_0009_V002/TV_0009_V002_%03d.exr" format:"3840 2160 1" chans:":rgba.red:rgba.green:rgba.blue:" framerange:"1001 1076" fps:"23.976" colorspace:"default (linear)" datatype:"16 bit half" transfer:"unknown" views:"main" timecode:"01:00:30:11" colorManagement:"Nuke"
 version 14.0 v5
 define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
@@ -35,7 +35,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 Root {
  inputs 0
  name C:/3D_Temp/PP/nuke_scripts/TV/TV_002_004_009_010_014_v002.nk
- frame 1015
+ frame 1053
  first_frame 1001
  last_frame 1076
  lock_range true
@@ -732,7 +732,7 @@ Dot {
  xpos -3605
  ypos 585
 }
-set Na7f6000 [stack 0]
+set N8a686000 [stack 0]
 Dot {
  name Dot1
  xpos -3605
@@ -805,7 +805,7 @@ Read {
  xpos -69
  ypos -887
 }
-set Na7f7c00 [stack 0]
+set N8a6ac000 [stack 0]
 Read {
  inputs 0
  file_type exr
@@ -820,20 +820,20 @@ Read {
  xpos -71
  ypos -1026
 }
-set Na828000 [stack 0]
-push $Na7f6000
+set N8a6ac400 [stack 0]
+push $N8a686000
 Dot {
  name Dot4
  xpos -1213
  ypos 585
 }
-set Na828400 [stack 0]
+set N8a6ac800 [stack 0]
 Dot {
  name Dot9
  xpos -1212
  ypos 429
 }
-set Na828800 [stack 0]
+set N8a6acc00 [stack 0]
 Roto {
  inputs 0
  output alpha
@@ -1138,19 +1138,19 @@ Dot {
  xpos -3275
  ypos -95
 }
-set Na8d4c00 [stack 0]
+set N8a765000 [stack 0]
 Dot {
  name Dot18
  xpos -3017
  ypos -95
 }
-set Na8d5000 [stack 0]
+set N8a765400 [stack 0]
 Dot {
  name Dot19
  xpos -2767
  ypos -95
 }
-set Na8d5400 [stack 0]
+set N8a765800 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -1217,7 +1217,7 @@ Dot {
  xpos -2766
  ypos 163
 }
-set Na935400 [stack 0]
+set N8a7bb800 [stack 0]
 Dot {
  name Dot24
  xpos -2640
@@ -1345,7 +1345,7 @@ Dot {
  xpos -2915
  ypos 63
 }
-push $Na8d5000
+push $N8a765400
 Retime {
  input.first 95417
  input.last 95490
@@ -1405,7 +1405,7 @@ Dot {
  xpos -3016
  ypos 161
 }
-set Na9d7c00 [stack 0]
+set N8a918000 [stack 0]
 Dot {
  name Dot28
  xpos -2893
@@ -1518,7 +1518,7 @@ Dot {
  xpos -3173
  ypos 61
 }
-push $Na8d4c00
+push $N8a765000
 Retime {
  input.first 95417
  input.last 95490
@@ -1599,7 +1599,7 @@ Dot {
  xpos -3275
  ypos 324
 }
-push $Na9d7c00
+push $N8a918000
 CornerPin2D {
  to1 {1590.300049 1004.299988}
  to2 {1649 1055.099976}
@@ -1626,7 +1626,7 @@ Merge2 {
  xpos -2927
  ypos 322
 }
-push $Na935400
+push $N8a7bb800
 CornerPin2D {
  to1 {1650.900024 1055}
  to2 {1706 1105.400024}
@@ -1743,13 +1743,13 @@ Dot {
  xpos -2400
  ypos 61
 }
-push $Na8d5400
+push $N8a765800
 Dot {
  name Dot20
  xpos -2502
  ypos -95
 }
-set Nabcc000 [stack 0]
+set N8aa5e400 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -1914,13 +1914,13 @@ Dot {
  xpos -2148
  ypos 60
 }
-push $Nabcc000
+push $N8aa5e400
 Dot {
  name Dot21
  xpos -2250
  ypos -95
 }
-set Nac23c00 [stack 0]
+set N8ab0e000 [stack 0]
 Retime {
  input.first 95417
  input.last 95490
@@ -2092,7 +2092,7 @@ Dot {
  xpos -1878
  ypos 61
 }
-push $Nac23c00
+push $N8ab0e000
 Dot {
  name Dot22
  xpos -1980
@@ -2109,7 +2109,7 @@ Retime {
  time ""
  name Retime7
  xpos -2014
- ypos -38
+ ypos -35
 }
 Transform {
  scale {1.824000001 1.200000048}
@@ -2300,7 +2300,7 @@ Group {
   xpos -329
   ypos 474
  }
-set Nadc8800 [stack 0]
+set N8ac56c00 [stack 0]
  Dot {
   name Dot3
   xpos -186
@@ -2311,7 +2311,7 @@ set Nadc8800 [stack 0]
   xpos -186
   ypos 985
  }
-push $Nadc8800
+push $N8ac56c00
  Grade {
   white 0
   add 0.5
@@ -2342,7 +2342,7 @@ push $Nadc8800
   xpos -526
   ypos 753
  }
-push $Nadc8800
+push $N8ac56c00
  Colorspace {
   colorspace_out Cineon
   name Colorspace6
@@ -2350,7 +2350,7 @@ push $Nadc8800
   ypos 658
   disable {{parent.v_cinSpace?0:1 i}}
  }
-set Nae09c00 [stack 0]
+set N8acd2000 [stack 0]
  ColorLookup {
   lut {master {}
     red {curve L 1 0.5 s0}
@@ -2381,7 +2381,7 @@ set Nae09c00 [stack 0]
   xpos -403
   ypos 875
  }
-push $Nae09c00
+push $N8acd2000
  Merge2 {
   inputs 2
   operation plus
@@ -2408,7 +2408,7 @@ push $Nae09c00
   ypos 1088
   disable {{"\[exists parent.input1] ? 0 : 1" i x1 0}}
  }
-push $Nadc8800
+push $N8ac56c00
  Dot {
   name Dot5
   note_font_size 22
@@ -2445,7 +2445,7 @@ Dot {
  xpos -605
  ypos 268
 }
-set Naf03000 [stack 0]
+set N8ad95400 [stack 0]
 Group {
  name ExponentialGlow1
  tile_color 0xcc804eff
@@ -2513,13 +2513,13 @@ Group {
   addUserKnob {6 add_source l "Add Source" +STARTLINE}
   addUserKnob {6 add_bbox l "Add original bbox" +STARTLINE}
  }
-set Naf2ec00 [stack 0]
+set N8adb7000 [stack 0]
  Dot {
   name Dot12
   xpos -371
   ypos -584
  }
-set Naf2f000 [stack 0]
+set N8adb7400 [stack 0]
  Saturation {
   saturation 0
   mode Maximum
@@ -2534,7 +2534,7 @@ set Naf2f000 [stack 0]
   xpos -316
   ypos -562
  }
-push $Naf2f000
+push $N8adb7400
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -2595,49 +2595,49 @@ push $Naf2f000
   xpos -146
   ypos -292
  }
-set Naf5bc00 [stack 0]
+set N8ae22000 [stack 0]
  Dot {
   name Dot2
   xpos -36
   ypos -292
  }
-set Naf8e000 [stack 0]
+set N8ae22400 [stack 0]
  Dot {
   name Dot4
   xpos 84
   ypos -292
  }
-set Naf8e400 [stack 0]
+set N8ae22800 [stack 0]
  Dot {
   name Dot5
   xpos 194
   ypos -292
  }
-set Naf8e800 [stack 0]
+set N8ae22c00 [stack 0]
  Dot {
   name Dot6
   xpos 304
   ypos -292
  }
-set Naf8ec00 [stack 0]
+set N8ae23000 [stack 0]
  Dot {
   name Dot7
   xpos 414
   ypos -292
  }
-set Naf8f000 [stack 0]
+set N8ae23400 [stack 0]
  Dot {
   name Dot8
   xpos 524
   ypos -292
  }
-set Naf8f400 [stack 0]
+set N8ae23800 [stack 0]
  Dot {
   name Dot9
   xpos 631
   ypos -292
  }
-set Naf8f800 [stack 0]
+set N8ae23c00 [stack 0]
  Dot {
   name Dot10
   xpos 741
@@ -2683,7 +2683,7 @@ set Naf8f800 [stack 0]
   xpos -289
   ypos 235
  }
-push $Naf8f800
+push $N8ae23c00
  Group {
   name Blur7
   xpos 597
@@ -2725,7 +2725,7 @@ push $Naf8f800
   xpos -289
   ypos 194
  }
-push $Naf8f400
+push $N8ae23800
  Group {
   name Blur6
   xpos 490
@@ -2767,7 +2767,7 @@ push $Naf8f400
   xpos -290
   ypos 155
  }
-push $Naf8f000
+push $N8ae23400
  Group {
   name Blur5
   xpos 380
@@ -2809,7 +2809,7 @@ push $Naf8f000
   xpos -290
   ypos 116
  }
-push $Naf8ec00
+push $N8ae23000
  Group {
   name Blur4
   xpos 270
@@ -2851,7 +2851,7 @@ push $Naf8ec00
   xpos -292
   ypos 77
  }
-push $Naf8e800
+push $N8ae22c00
  Group {
   name Blur3
   xpos 160
@@ -2893,7 +2893,7 @@ push $Naf8e800
   xpos -291
   ypos 42
  }
-push $Naf8e400
+push $N8ae22800
  Group {
   name Blur2
   xpos 50
@@ -2935,7 +2935,7 @@ push $Naf8e400
   xpos -292
   ypos 5
  }
-push $Naf8e000
+push $N8ae22400
  Group {
   name Blur1
   xpos -70
@@ -2977,8 +2977,8 @@ push $Naf8e000
   xpos -293
   ypos -36
  }
-push $Naf2ec00
-push $Naf5bc00
+push $N8adb7000
+push $N8ae22000
  Group {
   name Blur
   xpos -180
@@ -3110,7 +3110,7 @@ Grade {
  xpos -515
  ypos 987
 }
-push $Na828400
+push $N8a6ac800
 Blur {
  size 30
  name Blur2
@@ -3177,8 +3177,22 @@ Roto {
  xpos -508
  ypos -757
 }
-push $Na7f7c00
-push $Na828000
+Read {
+ inputs 0
+ file_type exr
+ file C:/3D_Temp/PP/Footage/TV_009/V2/V1_0009_TV_EXTENDED_%05d.exr
+ format "3840 2160 0 0 3840 2160 1 UHD_4K"
+ first 87131
+ last 87183
+ origfirst 87131
+ origlast 87183
+ origset true
+ name Read2
+ xpos 214
+ ypos -763
+}
+push $N8a6ac000
+push $N8a6ac400
 Read {
  inputs 0
  file_type exr
@@ -3207,7 +3221,7 @@ Read {
  xpos -443
  ypos -1028
 }
-set Nb18f400 [stack 0]
+set N8b017800 [stack 0]
 Read {
  inputs 0
  file_type exr
@@ -3222,19 +3236,20 @@ Read {
  xpos -446
  ypos -887
 }
-set Nb18f800 [stack 0]
+set N8b017c00 [stack 0]
 Switch {
- inputs 5
+ inputs 6
+ which 5
  name Switch1
  xpos -266
  ypos -857
 }
 Retime {
- input.first 86298
- input.last 86373
+ input.first 87131
+ input.last 87183
  output.first 1001
  output.first_lock true
- output.last 1076
+ output.last 1053
  time ""
  name Retime1
  xpos -266
@@ -3324,7 +3339,7 @@ Group {
   xpos 307
   ypos -267
  }
-set Nb1f8800 [stack 0]
+set N8b084c00 [stack 0]
  Dot {
   name Dot5
   note_font_size 41
@@ -3380,7 +3395,7 @@ set Nb1f8800 [stack 0]
   xpos 449
   ypos -761
  }
-set Nb228800 [stack 0]
+set N8b0b4c00 [stack 0]
  Dot {
   name Dot2
   note_font_size 41
@@ -3483,16 +3498,16 @@ set Nb228800 [stack 0]
   xpos 788
   ypos -267
  }
-set Nb25dc00 [stack 0]
+set N8b0df400 [stack 0]
  Dot {
   name Dot4
   note_font_size 41
   xpos 788
   ypos -237
  }
-push $Nb1f8800
-push $Nb25dc00
-push $Nb228800
+push $N8b084c00
+push $N8b0df400
+push $N8b0b4c00
  Merge2 {
   inputs 2+1
   operation copy
@@ -3530,7 +3545,7 @@ Dot {
  xpos -232
  ypos 208
 }
-set N15c6c400 [stack 0]
+set N8b15a800 [stack 0]
 Dot {
  name Dot6
  xpos -768
@@ -3570,14 +3585,14 @@ Multiply {
  xpos -463
  ypos 653
 }
-push $Na828800
-push $Naf03000
+push $N8a6acc00
+push $N8ad95400
 Dot {
  name Dot8
  xpos -542
  ypos 268
 }
-set N15cb0000 [stack 0]
+set N8b198400 [stack 0]
 Blur {
  size 40
  name Blur4
@@ -3597,8 +3612,8 @@ Multiply {
  xpos -437
  ypos 420
 }
-push $N15cb0000
-push $N15c6c400
+push $N8b198400
+push $N8b15a800
 Merge2 {
  inputs 2
  name Merge1
@@ -3634,23 +3649,13 @@ Merge2 {
  xpos -266
  ypos 987
 }
-Write {
- file C:/3D_Temp/PP/Render/TV_0002_V001/TV_0002_V001_###.exr
- file_type exr
- compression DWAB
- dw_compression_level 50
- first_part rgba
- version 6
- name Write1
- xpos -266
- ypos 1071
-}
-push $Nb18f400
-push $Nb18f800
+set N8b1d0400 [stack 0]
+push $N8b017800
+push $N8b017c00
 Viewer {
  inputs 5
- frame 1015
- frame_range 1001-1074
+ frame 1053
+ frame_range 1001-1053
  frame_range_lock true
  input_number 2
  colour_sample_bbox {-0.2833333313 0.25 -0.2822916806 0.2510416806}
@@ -3660,4 +3665,16 @@ Viewer {
  name Viewer1
  xpos -266
  ypos 1157
+}
+push $N8b1d0400
+Write {
+ file C:/3D_Temp/PP/Render/TV_0009_V002/TV_0009_V002_###.exr
+ file_type exr
+ compression DWAB
+ dw_compression_level 50
+ first_part rgba
+ version 7
+ name Write1
+ xpos -266
+ ypos 1071
 }
